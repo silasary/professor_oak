@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[requires]
+python_version = "3.7"
+
+[packages]
+"discord.py" = "*"
+pylint = "*"
+mypy = "*"
+aioredis = "*"
+peewee = "*"
+peewee-db-evolve = "*"
+peewee-async = "*"
+mysqlclient = "*"
+requests = "*"
+
+[dev-packages]
+autopep8 = "*"
