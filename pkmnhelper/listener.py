@@ -1,12 +1,14 @@
-import re
-import os
 import hashlib
-import requests
+import os
+import re
+
 import discord
+import requests
 from discord.ext import commands
 
 Pokecord_id = 365975655608745985
-catch_msg = re.compile(r'Congratulations <@[0-9]+>! You caught a level \d+ (\w+)!')
+catch_msg = re.compile(
+    r'Congratulations <@([0-9]+)>! You caught a level \d+ ([\w ]+)!')
 
 class Listener(commands.Cog):
     def __init__(self, bot):
@@ -23,7 +25,6 @@ class Listener(commands.Cog):
                     title = e.title.strip('\u200c')
                     if title == 'A wild pokémon has appeared!':
                         await self.spawn(e, message)
-                        # return
                     else:
                         print('> unknown pokecord message')
                         print(f'> {e}\n title: {repr(title)}\n desc: {e.description}')
@@ -47,17 +48,31 @@ class Listener(commands.Cog):
         if not pkmn.name:
             await message.channel.send("I don't know this pokemon")
         else:
-            await message.channel.send(f'This is a `{pkmn.name}`!')
+            embed = discord.Embed()
+            for p in self.active_players(message.guild):
+                entry = db.get_pokedex_entry(p.id, pkmn.name)
+                embed.add_field(name=p.display_name, value=entry.checkmark(), inline=False)
+            await message.channel.send(f'This is a `{pkmn.name}`!', embed=embed)
+
+
 
     async def catch(self, message):
         match = catch_msg.match(message.content)
-        print('Caught something!')
+        player_id = int(match.group(1))
+        truename = match.group(2)
+        print(f'Caught {truename}!')
         md5 = await self.bot.redis.get(f'pkmn:lastspawn:{message.channel.id}')
         db = self.bot.get_cog('Database')
         pkmn = db.get_pokemon_by_hash(md5)
         if not pkmn.name:
-            pkmn.name = match.group(1)
-            db.update_pkmn(pkmn)
+            pkmn.name = truename
+            pkmn.save()
+        elif pkmn.name != truename:
+            print(f'Caught {truename}, expected {pkmn.name}. Aborting.')
+            return
+        entry = db.get_pokedex_entry(player_id, truename)
+        entry.caught = True
+        entry.save()
 
     def get_md5(self, url: str) -> str:
         resp = requests.get(url)
@@ -70,5 +85,15 @@ class Listener(commands.Cog):
                     fd.write(chunk)
         return md5
 
+    def active_players(self, guild: discord.Guild):
+        db = self.bot.get_cog('Database')
+        players = []
+        for m in guild.members:
+            if m.status == discord.Status.online and db.check_player(m.id):
+                players.append(m)
+        return players
+
+
 def setup(bot):
     bot.add_cog(Listener(bot))
+
