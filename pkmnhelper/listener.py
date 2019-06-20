@@ -96,4 +96,3 @@ class Listener(commands.Cog):
 
 def setup(bot):
     bot.add_cog(Listener(bot))
-
