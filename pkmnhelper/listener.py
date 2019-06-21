@@ -40,19 +40,21 @@ class Listener(commands.Cog):
     async def spawn(self, embed, message):
         md5 = self.get_md5(embed.image.url)
         await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}', md5)
-        db = self.bot.get_cog('Database')
-        pkmn = db.get_pokemon_by_hash(md5)
-        if not pkmn.name:
-            pkmn.load_name()
+        with self.bot.get_cog('Database') as db:
+            pkmn = db.get_pokemon_by_hash(md5)
+            if not pkmn.name:
+                pkmn.load_name()
 
-        if not pkmn.name:
-            await message.channel.send("I don't know this pokemon")
-        else:
-            embed = discord.Embed()
-            for p in self.active_players(message.guild):
-                entry = db.get_pokedex_entry(p.id, pkmn.name)
-                embed.add_field(name=p.display_name, value=entry.checkmark(), inline=False)
-            await message.channel.send(f'This is a `{pkmn.name}`!', embed=embed)
+            if not pkmn.name:
+                await message.channel.send("I don't know this pokemon")
+            else:
+                embed = discord.Embed()
+                for p in self.active_players(message.guild):
+                    entry = db.get_pokedex_entry(p.id, pkmn.name)
+                    embed.add_field(name=p.display_name, value=entry.checkmark(), inline=False)
+                if len(embed) == 0:
+                    embed = None
+                await message.channel.send(f'This is a `{pkmn.name}`!', embed=embed)
 
 
 
@@ -62,17 +64,17 @@ class Listener(commands.Cog):
         truename = match.group(2)
         print(f'Caught {truename}!')
         md5 = await self.bot.redis.get(f'pkmn:lastspawn:{message.channel.id}')
-        db = self.bot.get_cog('Database')
-        pkmn = db.get_pokemon_by_hash(md5)
-        if not pkmn.name:
-            pkmn.name = truename
-            pkmn.save()
-        elif pkmn.name != truename:
-            print(f'Caught {truename}, expected {pkmn.name}. Aborting.')
-            return
-        entry = db.get_pokedex_entry(player_id, truename)
-        entry.caught = True
-        entry.save()
+        with self.bot.get_cog('Database') as db:
+            pkmn = db.get_pokemon_by_hash(md5)
+            if not pkmn.name:
+                pkmn.name = truename
+                pkmn.save()
+            elif pkmn.name != truename:
+                print(f'Caught {truename}, expected {pkmn.name}. Aborting.')
+                return
+            entry = db.get_pokedex_entry(player_id, truename)
+            entry.caught = True
+            entry.save()
 
     def get_md5(self, url: str) -> str:
         resp = requests.get(url)

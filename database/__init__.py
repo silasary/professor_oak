@@ -94,6 +94,14 @@ class Database(Cog):
         entry, _ = PokedexEntry.get_or_create(pokemon=pkmn, person=player)
         return entry
 
+    def __enter__(self):
+        if self.pool.is_closed():
+            self.pool.connect()
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.pool.close()
+
 POOL.evolve(interactive=False)
 
 def setup(bot: Bot) -> None:
