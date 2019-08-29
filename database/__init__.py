@@ -1,6 +1,6 @@
 import asyncio
 import json
-from typing import Optional
+from typing import Optional, Dict
 
 import peewee
 import peewee_async
@@ -12,8 +12,8 @@ from shared import configuration
 
 POOL = db_url.connect(configuration.get('db'))
 
-HASHES = {}
-HASHES_BY_NAME = {}
+HASHES: Dict[str, str] = {}
+HASHES_BY_NAME: Dict[str, str] = {}
 
 class BaseModel(peewee.Model):
     class Meta:
@@ -55,7 +55,7 @@ class PokedexEntry(BaseModel):
     person = peewee.ForeignKeyField(Player)
     caught = peewee.BooleanField(null=True)
 
-    def checkmark(self):
+    def checkmark(self) -> str:
         if self.caught is None:
             return '❓'
         elif self.caught:
@@ -94,7 +94,7 @@ class Database(Cog):
         entry, _ = PokedexEntry.get_or_create(pokemon=pkmn, person=player)
         return entry
 
-    def __enter__(self):
+    def __enter__(self) -> 'Database':
         if self.pool.is_closed():
             self.pool.connect()
         return self

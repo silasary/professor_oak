@@ -1,22 +1,27 @@
 import hashlib
 import os
 import re
-
+from typing import TYPE_CHECKING, List
 import discord
 import requests
 from discord.ext import commands
 
+if TYPE_CHECKING:
+    import database
+
 Pokecord_id = 365975655608745985
-catch_msg = re.compile(
-    r'Congratulations <@([0-9]+)>! You caught a level \d+ ([\w ]+)!')
+catch_msg = re.compile(r'Congratulations <@([0-9]+)>! You caught a level \d+ ([\w ]+)!')
+lvlup_title = re.compile(r'^Congratulations ([\w ]+)!$')
+lvlup_desc = re.compile(r'^Your ([\w ]+) is now level \d+!$')
+
 
 class Listener(commands.Cog):
-    def __init__(self, bot):
+    def __init__(self, bot: commands.Bot) -> None:
         self.bot = bot
         self._last_result = None
 
     @commands.Cog.listener()
-    async def on_message(self, message):
+    async def on_message(self, message: discord.Message) -> None:
         if message.author.id == Pokecord_id:
             print(f'pokecord message: {message}')
             print(f'"{message.content}"')
@@ -25,6 +30,8 @@ class Listener(commands.Cog):
                     title = e.title.strip('\u200c')
                     if title == 'A wild pokémon has appeared!':
                         await self.spawn(e, message)
+                    elif title.startswith('Congratulations '):
+                        await self.levelup(e, message)
                     else:
                         print('> unknown pokecord message')
                         print(f'> {e}\n title: {repr(title)}\n desc: {e.description}')
@@ -34,13 +41,37 @@ class Listener(commands.Cog):
             elif catch_msg.match(message.content):
                 await self.catch(message)
             else:
+                print('> no embed?')
                 pass
+
+    async def levelup(self, embed: discord.Embed, message: discord.Message) -> None:
+        print("levelup")
+        reg_level = lvlup_title.match(embed.title)
+        if reg_level:
+            name = reg_level.group(1)
+            print(f'trainer={name}')
+            member = self.get_user(message.guild, name)
+            if member is None:
+                print(f"I don't know who {name} is!")
+                return
+            reg_desc = lvlup_desc.match(embed.description)
+            print(f'{member}->{reg_desc.group(1)}')
+            with self.get_db() as db:
+                entry = db.get_pokedex_entry(member.id, reg_desc.group(1))
+                if entry.caught != True:
+                    entry.caught = True
+                    entry.save()
+            return
+        print('unknown levelup:')
+        print(f'> {embed}\n title: {repr(embed.title)}\n desc: {embed.description}')
+        for f in embed.fields:
+            print(f'>> {f.name}={f.value}')
 
 
     async def spawn(self, embed, message):
         md5 = self.get_md5(embed.image.url)
         await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}', md5)
-        with self.bot.get_cog('Database') as db:
+        with self.get_db() as db:
             pkmn = db.get_pokemon_by_hash(md5)
             if not pkmn.name:
                 pkmn.load_name()
@@ -56,15 +87,13 @@ class Listener(commands.Cog):
                     embed = None
                 await message.channel.send(f'This is a `{pkmn.name}`!', embed=embed)
 
-
-
     async def catch(self, message):
         match = catch_msg.match(message.content)
         player_id = int(match.group(1))
         truename = match.group(2)
         print(f'Caught {truename}!')
         md5 = await self.bot.redis.get(f'pkmn:lastspawn:{message.channel.id}')
-        with self.bot.get_cog('Database') as db:
+        with self.get_db() as db:
             pkmn = db.get_pokemon_by_hash(md5)
             if not pkmn.name:
                 pkmn.name = truename
@@ -87,14 +116,22 @@ class Listener(commands.Cog):
                     fd.write(chunk)
         return md5
 
-    def active_players(self, guild: discord.Guild):
-        db = self.bot.get_cog('Database')
+    def active_players(self, guild: discord.Guild) -> List[discord.Member]:
+        db = self.get_db()
         players = []
         for m in guild.members:
             if m.status == discord.Status.online and db.check_player(m.id):
                 players.append(m)
         return players
 
+    def get_user(self, guild: discord.Guild, name: str) -> discord.Member:
+        for m in guild.members:
+            if m.display_name == name:
+                return m
+        return None
 
-def setup(bot):
+    def get_db(self) -> 'database.Database':
+        return self.bot.get_cog('Database')
+
+def setup(bot: commands.Bot) -> None:
     bot.add_cog(Listener(bot))
