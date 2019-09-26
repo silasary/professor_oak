@@ -29,7 +29,7 @@ class Listener(commands.Cog):
             if message.embeds:
                 for e in message.embeds:
                     title = e.title.strip('\u200c')
-                    if title == 'A wild pokémon has appeared!':
+                    if title == 'A wild pokémon has appeared!' or title == 'A wild pokémon has аppeаred!': # homographs???
                         await self.spawn(e, message)
                     elif title.startswith('Congratulations '):
                         await self.levelup(e, message)
