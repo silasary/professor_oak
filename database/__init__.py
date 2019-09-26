@@ -1,6 +1,6 @@
 import asyncio
 import json
-from typing import Optional, Dict
+from typing import Dict, Optional
 
 import peewee
 import peewee_async

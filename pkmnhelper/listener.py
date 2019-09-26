@@ -2,6 +2,7 @@ import hashlib
 import os
 import re
 from typing import TYPE_CHECKING, List
+
 import discord
 import requests
 from discord.ext import commands
@@ -45,11 +46,9 @@ class Listener(commands.Cog):
                 pass
 
     async def levelup(self, embed: discord.Embed, message: discord.Message) -> None:
-        print("levelup")
         reg_level = lvlup_title.match(embed.title)
         if reg_level:
             name = reg_level.group(1)
-            print(f'trainer={name}')
             member = self.get_user(message.guild, name)
             if member is None:
                 print(f"I don't know who {name} is!")
