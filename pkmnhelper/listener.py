@@ -6,6 +6,7 @@ from typing import TYPE_CHECKING, List
 import discord
 import requests
 from discord.ext import commands
+from confusable_homoglyphs import categories, confusables
 
 if TYPE_CHECKING:
     import database
@@ -29,7 +30,8 @@ class Listener(commands.Cog):
             if message.embeds:
                 for e in message.embeds:
                     title = e.title.strip('\u200c')
-                    if title == 'A wild pokémon has appeared!' or title == 'A wild pokémon has аppeаred!': # homographs???
+                    title = rationalize_characterset(title) # They're using homographs on us
+                    if title == 'A wild pokémon has appeared!':
                         await self.spawn(e, message)
                     elif title.startswith('Congratulations '):
                         await self.levelup(e, message)
@@ -134,3 +136,13 @@ class Listener(commands.Cog):
 
 def setup(bot: commands.Bot) -> None:
     bot.add_cog(Listener(bot))
+
+
+def rationalize_characterset(text: str) -> str:
+    chars = confusables.is_confusable(text, preferred_aliases=['latin'], greedy=True)
+    for issue in chars:
+        bad = issue['character']
+        replacement = [c for c in issue['homoglyphs'] if categories.aliases_categories(c['c'])[0] == 'LATIN'][0]
+        print(f"{bad} ({issue['alias']}) -> {replacement['c']} ({replacement['n']})")
+        text = text.replace(bad, replacement['c'])
+    return text

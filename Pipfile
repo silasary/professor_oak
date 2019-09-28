@@ -16,6 +16,7 @@ peewee-db-evolve = "*"
 peewee-async = "*"
 mysqlclient = "*"
 requests = "*"
+confusable_homoglyphs = "*"
 
 [dev-packages]
 autopep8 = "*"
