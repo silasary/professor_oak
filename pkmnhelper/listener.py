@@ -2,6 +2,7 @@ import hashlib
 import os
 import re
 from typing import TYPE_CHECKING, List
+import asyncio
 
 import discord
 import requests
@@ -48,6 +49,7 @@ class Listener(commands.Cog):
                 pass
 
     async def levelup(self, embed: discord.Embed, message: discord.Message) -> None:
+        delete_after_delay(message)
         reg_level = lvlup_title.match(embed.title)
         if reg_level:
             name = reg_level.group(1)
@@ -67,7 +69,6 @@ class Listener(commands.Cog):
         print(f'> {embed}\n title: {repr(embed.title)}\n desc: {embed.description}')
         for f in embed.fields:
             print(f'>> {f.name}={f.value}')
-
 
     async def spawn(self, embed, message):
         md5 = self.get_md5(embed.image.url)
@@ -140,9 +141,16 @@ def setup(bot: commands.Bot) -> None:
 
 def rationalize_characterset(text: str) -> str:
     chars = confusables.is_confusable(text, preferred_aliases=['latin', 'common'], greedy=True)
-    for issue in chars:
-        bad = issue['character']
-        replacement = [c for c in issue['homoglyphs'] if categories.aliases_categories(c['c'])[0] == 'LATIN'][0]
-        print(f"{bad} ({issue['alias']}) -> {replacement['c']} ({replacement['n']})")
-        text = text.replace(bad, replacement['c'])
+    if chars:
+        for issue in chars:
+            bad = issue['character']
+            replacement = [c for c in issue['homoglyphs'] if categories.aliases_categories(c['c'])[0] == 'LATIN'][0]
+            print(f"{bad} ({issue['alias']}) -> {replacement['c']} ({replacement['n']})")
+            text = text.replace(bad, replacement['c'])
     return text
+
+def delete_after_delay(message: discord.Message) -> None:
+    async def delete() -> None:
+        await asyncio.sleep(10)
+        await message.delete()
+    asyncio.ensure_future(delete())
