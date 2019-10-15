@@ -1,8 +1,8 @@
+import asyncio
 import hashlib
 import os
 import re
 from typing import TYPE_CHECKING, List
-import asyncio
 
 import discord
 import requests
@@ -151,6 +151,6 @@ def rationalize_characterset(text: str) -> str:
 
 def delete_after_delay(message: discord.Message) -> None:
     async def delete() -> None:
-        await asyncio.sleep(10)
+        await asyncio.sleep(3)
         await message.delete()
     asyncio.ensure_future(delete())
