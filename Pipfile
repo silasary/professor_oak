@@ -13,10 +13,12 @@ mypy = "*"
 aioredis = "*"
 peewee = "*"
 peewee-db-evolve = "*"
-peewee-async = "*"
 mysqlclient = "*"
 requests = "*"
 confusable_homoglyphs = "*"
 
 [dev-packages]
 autopep8 = "*"
+
+[pipenv]
+allow_prereleases = true

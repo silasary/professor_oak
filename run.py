@@ -1,3 +1,3 @@
-from discordbot import main
+from pkmnhelper import main
 
 main.init()

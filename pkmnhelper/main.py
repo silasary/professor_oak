@@ -26,7 +26,7 @@ class Bot(discord.ext.commands.Bot):
     def __init__(self) -> None:
         self.config = Config()
         super().__init__(command_prefix='~')
-        super().load_extension('pkmnhelper')
+        super().load_extension('pkmnhelper.listener')
         super().load_extension('database')
 
 

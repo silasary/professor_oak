@@ -70,13 +70,11 @@ class Listener(commands.Cog):
         for f in embed.fields:
             print(f'>> {f.name}={f.value}')
 
-    async def spawn(self, embed, message):
+    async def spawn(self, embed: discord.Embed, message: discord.Message) -> None:
         md5 = self.get_md5(embed.image.url)
         await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}', md5)
         with self.get_db() as db:
-            pkmn = db.get_pokemon_by_hash(md5)
-            if not pkmn.name:
-                pkmn.load_name()
+            pkmn = db.get_pokemon_image_by_hash(md5)
 
             if not pkmn.name:
                 await message.channel.send("I don't know this pokemon")
@@ -89,19 +87,19 @@ class Listener(commands.Cog):
                     embed = None
                 await message.channel.send(f'This is a `{pkmn.name}`!', embed=embed)
 
-    async def catch(self, message):
+    async def catch(self, message: discord.Message):
         match = catch_msg.match(message.content)
         player_id = int(match.group(1))
         truename = match.group(2)
         print(f'Caught {truename}!')
         md5 = await self.bot.redis.get(f'pkmn:lastspawn:{message.channel.id}')
         with self.get_db() as db:
-            pkmn = db.get_pokemon_by_hash(md5)
-            if not pkmn.name:
-                pkmn.name = truename
-                pkmn.save()
-            elif pkmn.name != truename:
-                print(f'Caught {truename}, expected {pkmn.name}. Aborting.')
+            img = db.get_pokemon_image_by_hash(md5)
+            if not img.pokemon:
+                img.pokemon = db.get_pokemon_by_name(truename)
+                img.save()
+            elif img.name != truename:
+                print(f'Caught {truename}, expected {img.name}. Aborting.')
                 return
             entry = db.get_pokedex_entry(player_id, truename)
             entry.caught = True
