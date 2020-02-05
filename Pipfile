@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [requires]
-python_version = "3.6"
+python_version = "3.7"
 
 [packages]
 "discord.py" = "*"
@@ -16,6 +16,7 @@ peewee-db-evolve = "*"
 mysqlclient = "*"
 requests = "*"
 confusable_homoglyphs = "*"
+ajani = {git = "https://github.com/silasary/modbot.git"}
 
 [dev-packages]
 autopep8 = "*"

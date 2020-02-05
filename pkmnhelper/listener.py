@@ -87,7 +87,7 @@ class Listener(commands.Cog):
                     embed = None
                 await message.channel.send(f'This is a `{pkmn.name}`!', embed=embed)
 
-    async def catch(self, message: discord.Message):
+    async def catch(self, message: discord.Message) -> None:
         match = catch_msg.match(message.content)
         player_id = int(match.group(1))
         truename = match.group(2)

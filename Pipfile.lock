@@ -1,11 +1,11 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "5b454a5754446649d8f1508d532a3fc337bb54f2ce924a7fedb52c20aba0ed24"
+            "sha256": "658c9bb84154af083ccf7b61bfb7e6508ae85db7371e5f2b9fe3e428f0cf2260"
         },
         "pipfile-spec": 6,
         "requires": {
-            "python_version": "3.6"
+            "python_version": "3.7"
         },
         "sources": [
             {
@@ -40,6 +40,10 @@
             ],
             "index": "pypi",
             "version": "==1.3.1"
+        },
+        "ajani": {
+            "git": "https://github.com/silasary/modbot.git",
+            "ref": "fe5fecdb7d38be357b25f0bca9e21c7e6f174ba0"
         },
         "astroid": {
             "hashes": [
