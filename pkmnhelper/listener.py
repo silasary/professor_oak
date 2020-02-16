@@ -85,6 +85,8 @@ class Listener(commands.Cog):
                     embed.add_field(name=p.display_name, value=entry.checkmark(), inline=False)
                 if len(embed) == 0:
                     embed = None
+                else:
+                    embed.set_footer(text='this is a test')
                 await message.channel.send(f'This is a `{pkmn.name}`!', embed=embed)
 
     async def catch(self, message: discord.Message) -> None:
