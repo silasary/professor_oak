@@ -86,7 +86,7 @@ class Listener(commands.Cog):
                 if len(embed) == 0:
                     embed = None
                 else:
-                    embed.set_footer(text='this is a test')
+                    embed.set_footer(text="When a wild Pokémon appears, it's fair game.")
                 await message.channel.send(f'This is a `{pkmn.name}`!', embed=embed)
 
     async def catch(self, message: discord.Message) -> None:
