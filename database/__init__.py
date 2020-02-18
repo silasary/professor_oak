@@ -1,5 +1,6 @@
 import asyncio
 import json
+import random
 from typing import Dict, Optional
 
 import peewee
@@ -12,6 +13,7 @@ from shared import configuration
 POOL = db_url.connect(configuration.get('db'))
 
 HASHES: Dict[str, str] = {}
+FLAVORS: Dict[str, list] = {}
 HASHES_BY_NAME: Dict[str, str] = {}
 
 
@@ -28,6 +30,19 @@ class Player(BaseModel):
 
 class Pokemon(BaseModel):
     name = peewee.CharField(null=True, unique=True, max_length=32)
+
+    def random_flavor(self) -> None:
+        if not FLAVORS:
+            with open('flavors.json', mode='r') as f:
+                FLAVORS.update(json.load(f))
+        pokemon_flavors = FLAVORS.get(self.name.lower())
+        if pokemon_flavors is None:
+            return None
+        return random.choice(pokemon_flavors)
+
+    @property
+    def flavor(self) -> Optional[str]:
+        return self.random_flavor()
 
 class Image(BaseModel):
     md5 = peewee.CharField(null=False, unique=True, max_length=32)
@@ -66,6 +81,12 @@ class Image(BaseModel):
         if self.pokemon is None:
             return None
         return self.pokemon.name
+
+    @property
+    def flavor(self) -> Optional[str]:
+        if self.pokemon is None:
+            return None
+        return self.pokemon.flavor
 class PokedexEntry(BaseModel):
     pokemon = peewee.ForeignKeyField(Pokemon)
     person = peewee.ForeignKeyField(Player)

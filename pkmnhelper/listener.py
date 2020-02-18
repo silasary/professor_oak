@@ -86,7 +86,10 @@ class Listener(commands.Cog):
                 if len(embed) == 0:
                     embed = None
                 else:
-                    embed.set_footer(text="When a wild Pokémon appears, it's fair game.", icon_url='https://cdn.bulbagarden.net/upload/f/f3/HOME_Grand_Oak.png')
+                    if not pkmn.flavor:
+                        embed.set_footer(text="I don't know what to say about this Pokémon.", icon_url='https://cdn.bulbagarden.net/upload/3/36/479Rotom-Pok%C3%A9dex.png')
+                    else:
+                        embed.set_footer(text=pkmn.flavor, icon_url='https://cdn.bulbagarden.net/upload/3/36/479Rotom-Pok%C3%A9dex.png')
                 await message.channel.send(f'This is a `{pkmn.name}`!', embed=embed)
 
     async def catch(self, message: discord.Message) -> None:
