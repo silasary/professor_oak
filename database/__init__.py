@@ -61,7 +61,6 @@ class Image(BaseModel):
                 pkmn, _ = Pokemon.get_or_create(name=name)
                 self.pokemon = pkmn
             self.pokemon.name = name
-        if self.name:
             self.save()
 
     def load_hash(self) -> None:
