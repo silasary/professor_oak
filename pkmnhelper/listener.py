@@ -16,7 +16,7 @@ Pokecord_id = 365975655608745985
 catch_msg = re.compile(r'Congratulations <@([0-9]+)>! You caught a level \d+ ([\w ]+)!')
 lvlup_title = re.compile(r'^Congratulations ([\w ]+)!$')
 lvlup_desc = re.compile(r'^Your ([\w ]+) is now level \d+!$')
-
+info_title = re.compile(r'^Level \d+ (.+)$')
 
 class Listener(commands.Cog):
     def __init__(self, bot: commands.Bot) -> None:
@@ -38,7 +38,7 @@ class Listener(commands.Cog):
                     elif title.startswith('Congratulations '):
                         await self.levelup(e, message)
                     elif footer.startswith('Selected Pokémon:'):
-                        print('=info call')
+                        await self.info(e)
                     elif footer.startswith("You haven't caught") or footer.startswith("You've caught "):
                         await self.dex_entry(e, message)
                     else:
@@ -52,8 +52,18 @@ class Listener(commands.Cog):
             elif catch_msg.match(message.content):
                 await self.catch(message)
             else:
-                print('> no embed?')
+                print('> no embed')
                 pass
+
+    @commands.Cog.listener()
+    async def on_message_edit(self, before: discord.Message, after: discord.Message) -> None:
+        if after.author.id == Pokecord_id:
+            if after.embeds:
+                for e in after.embeds:
+                    footer = e.footer.text
+                    if footer.startswith('Selected Pokémon:'):
+                        await self.info(e)
+
 
     async def levelup(self, embed: discord.Embed, message: discord.Message) -> None:
         delete_after_delay(message)
@@ -119,7 +129,22 @@ class Listener(commands.Cog):
             entry.caught = True
             entry.save()
 
-    async def dex_entry(self, embed, message) -> None:
+    async def info(self, embed: discord.Embed) -> None:
+        md5 = self.get_md5(embed.image.url)
+        with self.get_db() as db:
+            img = db.get_pokemon_image_by_hash(md5)
+            if not img.pokemon:
+
+                m = info_title.match(embed.title)
+                if m:
+                    truename = m.group(1)
+                    img.pokemon = db.get_pokemon_by_name(truename)
+                    img.save()
+                    print(f'Learned that {md5} is {truename} from Info')
+                else:
+                    print('?')
+
+    async def dex_entry(self, embed: discord.Embed, message: discord.Message) -> None:
         # {'footer': {'text': "You haven't caught this pokémon yet."}, 'image': {'width': 0, 'url': 'https://i.imgur.com/xSpdWqw.png', 'proxy_url': 'https://images-ext-1.discordapp.net/external/E3mzrefqRsMhAICteywWJ1DD3LLh9G7_WSdaq5ESIUw/https/i.imgur.com/xSpdWqw.png', 'height': 0}, 'author': {'name': 'Professor Oak'}, 'fields': [{'value': '**HP:** 45\n**Attack:** 49\n**Defense:** 49\n**Sp. Atk:** 65\n**Sp. Def:** 65\n**Speed:** 45', 'name': 'Base Stats', 'inline': True}, {'value': '0.7m', 'name': 'Height:', 'inline': True}, {'value': '6.9kg', 'name': 'Weight:', 'inline': True}, {'value': 'Grass | Poison', 'name': 'Types:', 'inline': True}, {'value': 'Overgrow\n*Hidden: Chlorophyll*', 'name': 'Abilities:', 'inline': True}, {'value': '87.5% Male\n12.5% Female', 'name': 'Gender:', 'inline': True}], 'color': 6607716, 'type': 'rich', 'description': ':flag_de: Bisasam\n:flag_jp: Fushigidane/フシギダネ/Fushigidane\n:flag_fr: Bulbizarre', 'title': '#1 - Bulbasaur'}
         _, name = embed.title.split('-')
         name = name.strip()
