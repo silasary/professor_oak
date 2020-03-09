@@ -32,16 +32,23 @@ class Listener(commands.Cog):
                 for e in message.embeds:
                     title = e.title.strip('\u200c')
                     title = rationalize_characterset(title) # They're using homographs on us
+                    footer = e.footer.text
                     if title == 'A wild pokémon has appeared!' or title == 'A wild pokémon has appearedǃ':
                         await self.spawn(e, message)
                     elif title.startswith('Congratulations '):
                         await self.levelup(e, message)
+                    elif footer.startswith('Selected Pokémon:'):
+                        print('=info call')
+                    elif footer.startswith("You haven't caught") or footer.startswith("You've caught "):
+                        await self.dex_entry(e, message)
                     else:
                         print('> unknown pokecord message')
                         print(f'> {e}\n title: {repr(title)}\n desc: {e.description}')
                         for f in e.fields:
                             print(f'>> {f.name}={f.value}')
                         print(f'i {e.image.url}')
+                        print('---')
+                        print(e.to_dict())
             elif catch_msg.match(message.content):
                 await self.catch(message)
             else:
@@ -103,12 +110,26 @@ class Listener(commands.Cog):
             if not img.pokemon:
                 img.pokemon = db.get_pokemon_by_name(truename)
                 img.save()
+                print(f'Learned that {md5} is {truename} from Catch')
+
             elif img.name != truename:
                 print(f'Caught {truename}, expected {img.name}. Aborting.')
                 return
             entry = db.get_pokedex_entry(player_id, truename)
             entry.caught = True
             entry.save()
+
+    async def dex_entry(self, embed, message) -> None:
+        # {'footer': {'text': "You haven't caught this pokémon yet."}, 'image': {'width': 0, 'url': 'https://i.imgur.com/xSpdWqw.png', 'proxy_url': 'https://images-ext-1.discordapp.net/external/E3mzrefqRsMhAICteywWJ1DD3LLh9G7_WSdaq5ESIUw/https/i.imgur.com/xSpdWqw.png', 'height': 0}, 'author': {'name': 'Professor Oak'}, 'fields': [{'value': '**HP:** 45\n**Attack:** 49\n**Defense:** 49\n**Sp. Atk:** 65\n**Sp. Def:** 65\n**Speed:** 45', 'name': 'Base Stats', 'inline': True}, {'value': '0.7m', 'name': 'Height:', 'inline': True}, {'value': '6.9kg', 'name': 'Weight:', 'inline': True}, {'value': 'Grass | Poison', 'name': 'Types:', 'inline': True}, {'value': 'Overgrow\n*Hidden: Chlorophyll*', 'name': 'Abilities:', 'inline': True}, {'value': '87.5% Male\n12.5% Female', 'name': 'Gender:', 'inline': True}], 'color': 6607716, 'type': 'rich', 'description': ':flag_de: Bisasam\n:flag_jp: Fushigidane/フシギダネ/Fushigidane\n:flag_fr: Bulbizarre', 'title': '#1 - Bulbasaur'}
+        _, name = embed.title.split('-')
+        name = name.strip()
+        md5 = self.get_md5(embed.image.url)
+        with self.get_db() as db:
+            img = db.get_pokemon_image_by_hash(md5)
+            if not img.pokemon:
+                img.pokemon = db.get_pokemon_by_name(name)
+                img.save()
+                print(f'Learned that {md5} is {name} from Pokedex')
 
     def get_md5(self, url: str) -> str:
         resp = requests.get(url)
@@ -148,7 +169,7 @@ def rationalize_characterset(text: str) -> str:
         for issue in chars:
             bad = issue['character']
             replacement = [c for c in issue['homoglyphs'] if categories.aliases_categories(c['c'])[0] == 'LATIN'][0]
-            print(f"{bad} ({issue['alias']}) -> {replacement['c']} ({replacement['n']})")
+            # print(f"{bad} ({issue['alias']}) -> {replacement['c']} ({replacement['n']})")
             text = text.replace(bad, replacement['c'])
     return text
 

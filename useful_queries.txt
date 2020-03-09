@@ -1,0 +1,5 @@
+SELECT pokemon.id, pokemon.name, md5, COUNT(*) as c from image
+JOIN pokemon ON (pokemon_id = pokemon.id)
+GROUP BY pokemon_id
+ORDER BY `c` DESC;
+
