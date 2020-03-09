@@ -61,7 +61,7 @@ class Listener(commands.Cog):
             if after.embeds:
                 for e in after.embeds:
                     footer = e.footer.text
-                    if footer.startswith('Selected Pokémon:'):
+                    if footer and footer.startswith('Selected Pokémon:'):
                         await self.info(e)
 
 
