@@ -2,6 +2,9 @@ import hashlib
 import subprocess
 import os
 import json
+import yaml
+import PIL
+import imagehash
 
 import database
 
@@ -17,6 +20,7 @@ def discatcher(db: database.Database = None) -> None:
     subprocess.run(['git', 'pull'], check=True)
     os.chdir(owd)
     hashes = {}
+    phashes = {}
     with open('imagehashes.json', mode='r') as f:
         hashes.update({value["hash"]: value["name"] for value in json.load(f)})
     for img in os.scandir(os.path.join(wd, 'pokedex')):
@@ -25,6 +29,11 @@ def discatcher(db: database.Database = None) -> None:
             name = img.name.split('.')[0]
             name = name[0].upper() + name[1:]
             hashes[md5] = name
+        with PIL.Image.open(img.path) as image:
+            phash = str(imagehash.phash(image))
+            phashes[name] = phash
     with open('imagehashes.json', mode='w') as f:
         json.dump([{'name': h[1], 'hash': h[0]} for h in hashes.items()], f, indent=2)
+    with open('phashes.yaml', mode='w') as f:
+        yaml.dump(phashes, f)
 

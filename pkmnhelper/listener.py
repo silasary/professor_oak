@@ -4,6 +4,8 @@ import os
 import re
 from typing import TYPE_CHECKING, List
 
+import PIL
+import imagehash
 import discord
 import requests
 from confusable_homoglyphs import categories, confusables
@@ -88,10 +90,14 @@ class Listener(commands.Cog):
             print(f'>> {f.name}={f.value}')
 
     async def spawn(self, embed: discord.Embed, message: discord.Message) -> None:
-        md5 = self.get_md5(embed.image.url)
+        md5 = get_md5(embed.image.url)
         await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}', md5)
         with self.get_db() as db:
             pkmn = db.get_pokemon_image_by_hash(md5)
+
+            if not pkmn.name:
+                phash = get_phash(embed.image.url)
+                pkmn = db.get_pokemon_image_by_phash(phash)
 
             if not pkmn.name:
                 await message.channel.send("I don't know this pokemon")
@@ -132,7 +138,7 @@ class Listener(commands.Cog):
             entry.save()
 
     async def info(self, embed: discord.Embed) -> None:
-        md5 = self.get_md5(embed.image.url)
+        md5 = get_md5(embed.image.url)
         with self.get_db() as db:
             img = db.get_pokemon_image_by_hash(md5)
             if not img.pokemon:
@@ -150,24 +156,13 @@ class Listener(commands.Cog):
         # {'footer': {'text': "You haven't caught this pokémon yet."}, 'image': {'width': 0, 'url': 'https://i.imgur.com/xSpdWqw.png', 'proxy_url': 'https://images-ext-1.discordapp.net/external/E3mzrefqRsMhAICteywWJ1DD3LLh9G7_WSdaq5ESIUw/https/i.imgur.com/xSpdWqw.png', 'height': 0}, 'author': {'name': 'Professor Oak'}, 'fields': [{'value': '**HP:** 45\n**Attack:** 49\n**Defense:** 49\n**Sp. Atk:** 65\n**Sp. Def:** 65\n**Speed:** 45', 'name': 'Base Stats', 'inline': True}, {'value': '0.7m', 'name': 'Height:', 'inline': True}, {'value': '6.9kg', 'name': 'Weight:', 'inline': True}, {'value': 'Grass | Poison', 'name': 'Types:', 'inline': True}, {'value': 'Overgrow\n*Hidden: Chlorophyll*', 'name': 'Abilities:', 'inline': True}, {'value': '87.5% Male\n12.5% Female', 'name': 'Gender:', 'inline': True}], 'color': 6607716, 'type': 'rich', 'description': ':flag_de: Bisasam\n:flag_jp: Fushigidane/フシギダネ/Fushigidane\n:flag_fr: Bulbizarre', 'title': '#1 - Bulbasaur'}
         _, name = embed.title.split('-')
         name = name.strip()
-        md5 = self.get_md5(embed.image.url)
+        md5 = get_md5(embed.image.url)
         with self.get_db() as db:
             img = db.get_pokemon_image_by_hash(md5)
             if not img.pokemon:
                 img.pokemon = db.get_pokemon_by_name(name)
                 img.save()
                 print(f'Learned that {md5} is {name} from Pokedex')
-
-    def get_md5(self, url: str) -> str:
-        resp = requests.get(url)
-        md5 = hashlib.md5(resp.content).hexdigest()
-        filename = os.path.join('images', md5 + '.jpg')
-        if not os.path.exists(filename):
-            print(f'saving {filename}')
-            with open(filename, 'wb') as fd:
-                for chunk in resp.iter_content(chunk_size=128):
-                    fd.write(chunk)
-        return md5
 
     def active_players(self, guild: discord.Guild) -> List[discord.Member]:
         db = self.get_db()
@@ -205,3 +200,30 @@ def delete_after_delay(message: discord.Message) -> None:
         await asyncio.sleep(3)
         await message.delete()
     asyncio.ensure_future(delete())
+
+
+def get_md5(url: str) -> str:
+    resp = requests.get(url)
+    md5 = hashlib.md5(resp.content).hexdigest()
+    filename = os.path.join('images', md5 + '.jpg')
+    if not os.path.exists(filename):
+        print(f'saving {filename}')
+        with open(filename, 'wb') as fd:
+            for chunk in resp.iter_content(chunk_size=128):
+                fd.write(chunk)
+    return md5
+
+
+def get_phash(url: str) -> str:
+    resp = requests.get(url)
+    md5 = hashlib.md5(resp.content).hexdigest()
+    filename = os.path.join('images', md5 + '.jpg')
+    if not os.path.exists(filename):
+        print(f'saving {filename}')
+        with open(filename, 'wb') as fd:
+            for chunk in resp.iter_content(chunk_size=128):
+                fd.write(chunk)
+    with PIL.Image.open(filename) as image:
+        phash = str(imagehash.phash(image))
+    return phash
+

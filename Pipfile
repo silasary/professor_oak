@@ -17,6 +17,9 @@ mysqlclient = "*"
 requests = "*"
 confusable_homoglyphs = "*"
 ajani = {git = "https://github.com/silasary/modbot.git"}
+pyyaml = "*"
+pillow = "*"
+imagehash = "*"
 
 [dev-packages]
 autopep8 = "*"

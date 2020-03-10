@@ -3,6 +3,7 @@ import json
 import random
 from typing import Dict, Optional
 
+import yaml
 import peewee
 import peeweedbevolve
 from discord.ext.commands import Bot, Cog
@@ -14,10 +15,30 @@ POOL = db_url.connect(configuration.get('db'))
 
 HASHES: Dict[str, str] = {}
 FLAVORS: Dict[str, list] = {}
+PHASHES: Dict[str, str] = {}
 
 class BaseModel(peewee.Model):
     class Meta:
         database = POOL
+
+
+class HashMixin:
+    pokemon = None
+    def load_name(self) -> None:
+        raise NotImplementedError()
+
+    @property
+    def name(self) -> Optional[str]:
+        self.load_name()
+        if self.pokemon is None:
+            return None
+        return self.pokemon.name
+
+    @property
+    def flavor(self) -> Optional[str]:
+        if self.pokemon is None:
+            return None
+        return self.pokemon.flavor
 
 
 class Player(BaseModel):
@@ -42,7 +63,8 @@ class Pokemon(BaseModel):
     def flavor(self) -> Optional[str]:
         return self.random_flavor()
 
-class Image(BaseModel):
+
+class Image(BaseModel, HashMixin):
     md5 = peewee.CharField(null=False, unique=True, max_length=32)
     pokemon = peewee.ForeignKeyField(Pokemon, backref='images', null=True)
 
@@ -61,18 +83,25 @@ class Image(BaseModel):
             self.pokemon.name = name
             self.save()
 
-    @property
-    def name(self) -> Optional[str]:
-        self.load_name()
-        if self.pokemon is None:
-            return None
-        return self.pokemon.name
 
-    @property
-    def flavor(self) -> Optional[str]:
-        if self.pokemon is None:
-            return None
-        return self.pokemon.flavor
+class PHash(BaseModel, HashMixin):
+    phash = peewee.CharField(null=False, unique=True, max_length=32)
+    pokemon = peewee.ForeignKeyField(Pokemon, backref='images', null=True)
+
+    def load_name(self) -> None:
+        if self.pokemon and self.pokemon.name:
+            return
+        if not PHASHES:
+            with open('phashes.yaml', mode='r') as f:
+                PHASHES.update({value[1]: value[0] for value in yaml.safe_load(f).items()})
+        name = PHASHES.get(self.phash)
+        if name is not None:
+            if self.pokemon is None:
+                pkmn, _ = Pokemon.get_or_create(name=name)
+                self.pokemon = pkmn
+            self.pokemon.name = name
+            self.save()
+
 class PokedexEntry(BaseModel):
     pokemon = peewee.ForeignKeyField(Pokemon)
     person = peewee.ForeignKeyField(Player)
@@ -107,6 +136,11 @@ class Database(Cog):
     def get_pokemon_image_by_hash(self, hashstr: str) -> Image:
         pkmn, _ = Image.get_or_create(md5=hashstr)
         return pkmn
+
+    def get_pokemon_image_by_phash(self, hashstr: str) -> PHash:
+        pkmn, _ = PHash.get_or_create(phash=hashstr)
+        return pkmn
+
 
     def get_pokemon_by_name(self, name: str) -> Pokemon:
         pkmn, _ = Pokemon.get_or_create(name=name)
