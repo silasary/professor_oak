@@ -56,6 +56,11 @@ class Listener(commands.Cog):
             else:
                 print('> no embed')
                 pass
+        elif message.channel.type == discord.ChannelType.private:
+            # DMs.
+            if re.match(r'^https://cdn.discordapp.com/attachments/.*/PokecordSpawn.jpg$', message.content):
+                embed = discord.Embed().set_image(url=message.content)
+                await self.spawn(embed, message)
 
     @commands.Cog.listener()
     async def on_message_edit(self, before: discord.Message, after: discord.Message) -> None:
@@ -103,9 +108,13 @@ class Listener(commands.Cog):
                 await message.channel.send("I don't know this pokemon")
             else:
                 embed = discord.Embed()
-                for p in self.active_players(message.guild):
-                    entry = db.get_pokedex_entry(p.id, pkmn.name)
-                    embed.add_field(name=p.display_name, value=entry.checkmark(), inline=False)
+                if message.guild:
+                    for p in self.active_players(message.guild):
+                        entry = db.get_pokedex_entry(p.id, pkmn.name)
+                        embed.add_field(name=p.display_name, value=entry.checkmark(), inline=False)
+                else:
+                    entry = db.get_pokedex_entry(message.author.id, pkmn.name)
+                    embed.add_field(name=message.author.display_name, value=entry.checkmark(), inline=False)
                 if len(embed) == 0:
                     embed = None
                 else:
