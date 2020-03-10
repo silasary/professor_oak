@@ -28,6 +28,8 @@ def discatcher(db: database.Database = None) -> None:
             md5 = hashlib.md5(f.read()).hexdigest()
             name = img.name.split('.')[0]
             name = name[0].upper() + name[1:]
+            if name == 'TypeNull':
+                name = 'Type: Null'
             hashes[md5] = name
         with PIL.Image.open(img.path) as image:
             phash = str(imagehash.phash(image))
