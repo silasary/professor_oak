@@ -112,7 +112,7 @@
     "hash": "4a6bc8cb99cb4e351a71af003fd3b01e"
   },
   {
-    "name": "Nidoran♀",
+    "name": "Nidoran\u2640",
     "hash": "c28ff00c22c02fab65ecf36b31dc2c3d"
   },
   {
@@ -124,7 +124,7 @@
     "hash": "5e526290da7859d31b2d07e551a06394"
   },
   {
-    "name": "Nidoran♂",
+    "name": "Nidoran\u2642",
     "hash": "5725b5b356fb78b0c862c82ad00d3347"
   },
   {
@@ -328,7 +328,7 @@
     "hash": "d81d0c83fe7e5cccd0c2dbf1271498de"
   },
   {
-    "name": "Farfetch’d",
+    "name": "Farfetch\u2019d",
     "hash": "b333d107bdc3bfe2edd66e415503852e"
   },
   {
@@ -3084,7 +3084,7 @@
     "hash": "04c3734728c1285aa9f773d929fbe3b4"
   },
   {
-    "name": "Type: Null",
+    "name": "TypeNull",
     "hash": "97c384ed01f406605fd1f34dfdbaaa40"
   },
   {
@@ -3226,5 +3226,3449 @@
   {
     "name": "Zeraora",
     "hash": "102deb152b48aca54b11598edd6ce015"
+  },
+  {
+    "name": "Abomasnow",
+    "hash": "e1c9b15098a63e47000c09131db18894"
+  },
+  {
+    "name": "Abra",
+    "hash": "0e98362fd2b0a6bcd579b0918c160c68"
+  },
+  {
+    "name": "Absol",
+    "hash": "39eb6266602ab894c040ff9a5abefd12"
+  },
+  {
+    "name": "Accelgor",
+    "hash": "2b429a1598182b415b9fb343799f29e1"
+  },
+  {
+    "name": "Aerodactyl",
+    "hash": "c647ffc193cae72d653464cf49400987"
+  },
+  {
+    "name": "Aggron",
+    "hash": "29e39aaf01d5f70d5addfcd0aa46011a"
+  },
+  {
+    "name": "Aipom",
+    "hash": "e1be90a4f3c56890488089315ba39d4d"
+  },
+  {
+    "name": "Alakazam",
+    "hash": "e1411a251f8b763c4161a924c79c026c"
+  },
+  {
+    "name": "Alcremie",
+    "hash": "f10007a3a6172a24e717331f07f2162b"
+  },
+  {
+    "name": "Alolan Diglett",
+    "hash": "d28929c7f9c6a82a26c3e0550f93bff0"
+  },
+  {
+    "name": "Alolan Dugtrio",
+    "hash": "b02d2f5f67c6457ef17e1c731545cf7a"
+  },
+  {
+    "name": "Alolan Exeggutor",
+    "hash": "f1949284520be1fa5764aac09e38f25c"
+  },
+  {
+    "name": "Alolan Geodude",
+    "hash": "b77615a227094e08bf1bab2602138b56"
+  },
+  {
+    "name": "Alolan Golem",
+    "hash": "d26535ef92e353c0d23a57037b69ebb6"
+  },
+  {
+    "name": "Alolan Graveler",
+    "hash": "12b19ebd87d4bcef9498c86b10492212"
+  },
+  {
+    "name": "Alolan Grimer",
+    "hash": "1adcbac9676732f3cc844bfe992dcb9f"
+  },
+  {
+    "name": "Alolan Marowak",
+    "hash": "9c9ab56d539268cc989d47de7e8a607a"
+  },
+  {
+    "name": "Alolan Meowth",
+    "hash": "bf182ebd65bdad53634fdf11d1d4ce83"
+  },
+  {
+    "name": "Alolan Muk",
+    "hash": "66971035ffb0f02fb15ae4544c3c6e56"
+  },
+  {
+    "name": "Alolan Ninetales",
+    "hash": "56616d3c260fa343eba71e1b297bb3d2"
+  },
+  {
+    "name": "Alolan Persian",
+    "hash": "7e35d9551bfe6a8383ca5b3fb28e83f1"
+  },
+  {
+    "name": "Alolan Raichu",
+    "hash": "6b2cfddb03c06cce35a2f46c97f9c350"
+  },
+  {
+    "name": "Alolan Raticate",
+    "hash": "095cb4ebcf78b789e9f1883d0ab34291"
+  },
+  {
+    "name": "Alolan Rattata",
+    "hash": "a33928f27786a2c2cf91b2311026c34c"
+  },
+  {
+    "name": "Alolan Sandshrew",
+    "hash": "e91c481179d8044c74e083d8920a110c"
+  },
+  {
+    "name": "Alolan Sandslash",
+    "hash": "ccf87743bfb118c31883973d8602d558"
+  },
+  {
+    "name": "Alolan Vulpix",
+    "hash": "27e6502a47bb564fb9b2de50966f9bb5"
+  },
+  {
+    "name": "Alomomola",
+    "hash": "b18fc3d9666e30315531c2f0b75a3710"
+  },
+  {
+    "name": "Altaria",
+    "hash": "bbf6451431b248cccb02d75c43ac883b"
+  },
+  {
+    "name": "Amaura",
+    "hash": "298c8c1559f82af4324702ba08f347d6"
+  },
+  {
+    "name": "Ambipom",
+    "hash": "b6e18b3caf1865ece8b40916c0c84004"
+  },
+  {
+    "name": "Amoonguss",
+    "hash": "b9a90c612b82ef5d15382b4f49a651e6"
+  },
+  {
+    "name": "Ampharos",
+    "hash": "69014bec7c02232872546b7239266d1d"
+  },
+  {
+    "name": "Anorith",
+    "hash": "5f8d081f033efd0489a99575a1151c1e"
+  },
+  {
+    "name": "Appletun",
+    "hash": "d42927a0c8eb6d0005d7cbc370c67849"
+  },
+  {
+    "name": "Applin",
+    "hash": "d067292d0f37a153c5508b34346a01b8"
+  },
+  {
+    "name": "Arbok",
+    "hash": "44ab0aecdfa80c2df6060ff82a6d067b"
+  },
+  {
+    "name": "Arcanine",
+    "hash": "d0a8bc53afc614433949f7ee24f7cd00"
+  },
+  {
+    "name": "Arceus",
+    "hash": "b5b6b57a82136ddaa56196039614b385"
+  },
+  {
+    "name": "Archen",
+    "hash": "ce13e041be8a282e0fb75cbe5c553a22"
+  },
+  {
+    "name": "Archeops",
+    "hash": "1c6c2a922ef6fc36663e447bc6717244"
+  },
+  {
+    "name": "Arctovish",
+    "hash": "47134f326bde7c1ea831458b4979530e"
+  },
+  {
+    "name": "Arctozolt",
+    "hash": "262f1a1a5a8f57668d8bba78b10c6d0d"
+  },
+  {
+    "name": "Ariados",
+    "hash": "934269de60a91fc87dbfc84f04918624"
+  },
+  {
+    "name": "Armaldo",
+    "hash": "470f1bd60a1244051e7891c9f8636a61"
+  },
+  {
+    "name": "Aromatisse",
+    "hash": "b511c42d46a03620d8db3aa85cff2100"
+  },
+  {
+    "name": "Aron",
+    "hash": "d2428890dc96fd1777ecb60d59af7ea1"
+  },
+  {
+    "name": "Arrokuda",
+    "hash": "7a38ebfaa0ddb289cfea12a629245d27"
+  },
+  {
+    "name": "Articuno",
+    "hash": "b02b6fb0a4e42619e6c7290d111a4cb9"
+  },
+  {
+    "name": "Audino",
+    "hash": "75711aba3c1c7cc583e1f911130c84ab"
+  },
+  {
+    "name": "Aurorus",
+    "hash": "87e40a23510e8752035661b54fe2838f"
+  },
+  {
+    "name": "Avalugg",
+    "hash": "907d7c9fea14d0a5470fd6d85c1f6f72"
+  },
+  {
+    "name": "Axew",
+    "hash": "783c1f679aa539e28516779ded3b7803"
+  },
+  {
+    "name": "Azelf",
+    "hash": "e8c4baf5eb21293a664e5333dfd3eb08"
+  },
+  {
+    "name": "Azumarill",
+    "hash": "de11509d4515e382fbe1047ccab8f569"
+  },
+  {
+    "name": "Azurill",
+    "hash": "c53bc836b20a07b41dfed24f552d032e"
+  },
+  {
+    "name": "Bagon",
+    "hash": "ab4b83dd5190871a64476d7b9bc127ce"
+  },
+  {
+    "name": "Baltoy",
+    "hash": "f444503593de764a7d535edc40977119"
+  },
+  {
+    "name": "Banette",
+    "hash": "a6eeaf497b4e523f8f70bdf6e1983245"
+  },
+  {
+    "name": "Barbaracle",
+    "hash": "6ba6caed358412f4a9c3c3696e6b91c7"
+  },
+  {
+    "name": "Barboach",
+    "hash": "e32fccff5b91bc9ad3b01d596892dbb0"
+  },
+  {
+    "name": "Barraskewda",
+    "hash": "289f4f64d4bdf0c275b96c50bf3c7be0"
+  },
+  {
+    "name": "Bastiodon",
+    "hash": "c06f0eeb33b2df3cb2e03f624fe86f50"
+  },
+  {
+    "name": "Bayleef",
+    "hash": "94c6118a9f98fa5cbeeba0c1fbfcb382"
+  },
+  {
+    "name": "Beartic",
+    "hash": "f4667706e2ced9c3e803f5e5c635578f"
+  },
+  {
+    "name": "Beautifly",
+    "hash": "0384943d3ff86947af0695bced211757"
+  },
+  {
+    "name": "Beedrill",
+    "hash": "7fc54db4c58e2e51f4999ce66c12448a"
+  },
+  {
+    "name": "Beheeyem",
+    "hash": "10d82207a68d539d4479df510b1a7fad"
+  },
+  {
+    "name": "Beldum",
+    "hash": "e3d6d4ec412f7a95b8c7aed3a5a75b25"
+  },
+  {
+    "name": "Bellossom",
+    "hash": "688ede993e128e75d454bdddb780cbe5"
+  },
+  {
+    "name": "Bellsprout",
+    "hash": "953f6e72014ac744e54815991075b5e3"
+  },
+  {
+    "name": "Bergmite",
+    "hash": "b4478403a4b0f7fa1c7c43342366721c"
+  },
+  {
+    "name": "Bewear",
+    "hash": "1d2031fe08c989ad9106c1b584cbb789"
+  },
+  {
+    "name": "Bibarel",
+    "hash": "08ac20fe2780e5ebdd14da7af93327db"
+  },
+  {
+    "name": "Bidoof",
+    "hash": "e0349284d6a23f6e63b72b0463360a0d"
+  },
+  {
+    "name": "Binacle",
+    "hash": "abec3a3796a949357797301a4a64315e"
+  },
+  {
+    "name": "Bisharp",
+    "hash": "a13a4200c5d36654279b1f70a48aefc4"
+  },
+  {
+    "name": "Blacephalon",
+    "hash": "388e8892a1b5467a6ee1518dca00fef9"
+  },
+  {
+    "name": "Blastoise",
+    "hash": "14aba60b06ced6ea846ad63b6611f524"
+  },
+  {
+    "name": "Blaziken",
+    "hash": "3d64259c9b25ab059102876c35daf7c8"
+  },
+  {
+    "name": "Blipbug",
+    "hash": "f229098ec37dfdd36a254ab165273988"
+  },
+  {
+    "name": "Blissey",
+    "hash": "ef7647a643736ddab004df8588a027f5"
+  },
+  {
+    "name": "Blitzle",
+    "hash": "342df18ce7991088d465ba72217344f4"
+  },
+  {
+    "name": "Boldore",
+    "hash": "0596782ff98218a6ebcb04257ebcc6f5"
+  },
+  {
+    "name": "Boltund",
+    "hash": "3ca11f96b0c5263c4c61b614db45ffeb"
+  },
+  {
+    "name": "Bonsly",
+    "hash": "d80f31168337dccfa9ed08f7619eae1a"
+  },
+  {
+    "name": "Bouffalant",
+    "hash": "0551fc99b239f9ee78a8b34c2247032c"
+  },
+  {
+    "name": "Bounsweet",
+    "hash": "8dec681ae7253124eae072e3f5672486"
+  },
+  {
+    "name": "Braixen",
+    "hash": "332286f9f57e08af32f67f1fbcf78749"
+  },
+  {
+    "name": "Braviary",
+    "hash": "ceb7abaeefaeac15f860786ed386589b"
+  },
+  {
+    "name": "Breloom",
+    "hash": "81d2df0683fb3dd9f2cfdef316a0c0d0"
+  },
+  {
+    "name": "Brionne",
+    "hash": "611c06120300fefddb839f075fefd41c"
+  },
+  {
+    "name": "Bronzong",
+    "hash": "ce36eb447d519e45057d8a1dd28aba37"
+  },
+  {
+    "name": "Bronzor",
+    "hash": "cac5943bf0528181075325238f1d101d"
+  },
+  {
+    "name": "Bruxish",
+    "hash": "ddb17e5c9a7e8e66809b47a3e95c1df7"
+  },
+  {
+    "name": "Budew",
+    "hash": "607767e032c2804734455d0defc20ef8"
+  },
+  {
+    "name": "Buizel",
+    "hash": "71498194afe6a10e5f03b512c0e1e464"
+  },
+  {
+    "name": "Bulbasaur",
+    "hash": "9ba4d684e64c19af7c99148ac36af46b"
+  },
+  {
+    "name": "Buneary",
+    "hash": "690739b5dbdf0457bf7d2866280fd2dd"
+  },
+  {
+    "name": "Bunnelby",
+    "hash": "870dc2d82a6a572571b9c885d01e5eaf"
+  },
+  {
+    "name": "Burmy",
+    "hash": "712f0523f34c48f1a4b977c711bdad13"
+  },
+  {
+    "name": "Butterfree",
+    "hash": "eb6566a45da0d7770ac2e01025b657bd"
+  },
+  {
+    "name": "Buzzwole",
+    "hash": "41f6a8fae9a7b34bf56f10e8652de84e"
+  },
+  {
+    "name": "Cacnea",
+    "hash": "f95b51558d5fb343efdd0dfdde7a6a7a"
+  },
+  {
+    "name": "Cacturne",
+    "hash": "c22a1065598b185a39c15df38cd74496"
+  },
+  {
+    "name": "Camerupt",
+    "hash": "4846736a90996d3642bda6285197df28"
+  },
+  {
+    "name": "Carbink",
+    "hash": "e4e023d92925ac6623a8faed4436eb44"
+  },
+  {
+    "name": "Carkol",
+    "hash": "4360ede6904d8a687b06bea073dd8870"
+  },
+  {
+    "name": "Carnivine",
+    "hash": "c7d6c150c0b4de6bf7b71a56e7ee8605"
+  },
+  {
+    "name": "Carracosta",
+    "hash": "729c0bd3a2e9e47b2b968f115921d274"
+  },
+  {
+    "name": "Carvanha",
+    "hash": "e08b472945135f2d700a9c3476dda312"
+  },
+  {
+    "name": "Cascoon",
+    "hash": "91b01058ddd0f0c984a99d560ef8a03d"
+  },
+  {
+    "name": "Castform",
+    "hash": "fc26d61976399626726c3d8fdb63f181"
+  },
+  {
+    "name": "Caterpie",
+    "hash": "799de73ed9a4d32ad6c08e7dc8fcfc50"
+  },
+  {
+    "name": "Celebi",
+    "hash": "957ffd15624926e16f25d99296fa350f"
+  },
+  {
+    "name": "Celesteela",
+    "hash": "469915c91e0ee6db262c72f9b03533e2"
+  },
+  {
+    "name": "Centiskorch",
+    "hash": "a5e9d979a891c7e9a454fe6058d507bf"
+  },
+  {
+    "name": "Chandelure",
+    "hash": "27365d1b86ad1732c3df0554595cf8fb"
+  },
+  {
+    "name": "Chansey",
+    "hash": "e2e42b57979d1c86dd0deb9b4bf5ecd5"
+  },
+  {
+    "name": "Charizard",
+    "hash": "2d32cf3c3042861de658c96052673408"
+  },
+  {
+    "name": "Charjabug",
+    "hash": "05be96ac04b5a5d47f7768d6389ae3b4"
+  },
+  {
+    "name": "Charmander",
+    "hash": "9be8f2a81b006e2f8897f1889107d0f7"
+  },
+  {
+    "name": "Charmeleon",
+    "hash": "4e83c7dbbb912257f06b13cc1468f76f"
+  },
+  {
+    "name": "Chatot",
+    "hash": "c013c0da509e148b1160770040cd0a01"
+  },
+  {
+    "name": "Cherrim",
+    "hash": "83791d00a14d376a07591c9cdf96b073"
+  },
+  {
+    "name": "Cherubi",
+    "hash": "5372a202857d844514dc26d404f0c292"
+  },
+  {
+    "name": "Chesnaught",
+    "hash": "870812b33df31236a1f058902c597e95"
+  },
+  {
+    "name": "Chespin",
+    "hash": "0df5dd7f4851503e5ba72212a4694e4b"
+  },
+  {
+    "name": "Chewtle",
+    "hash": "c7a1aa00210bc76f536588fbe6bac0ba"
+  },
+  {
+    "name": "Chikorita",
+    "hash": "d72fd914db8c46376e517b155715d00e"
+  },
+  {
+    "name": "Chimecho",
+    "hash": "8671985706a46193e700dfae44538d84"
+  },
+  {
+    "name": "Chinchou",
+    "hash": "4c8c248ba1bff114b8805788b1b102be"
+  },
+  {
+    "name": "Chingling",
+    "hash": "29eb0ceabd5acef041b3f4f58133f4c8"
+  },
+  {
+    "name": "Cinccino",
+    "hash": "a7a84dab5bfe1b9661a498fcdb95380c"
+  },
+  {
+    "name": "Cinderace",
+    "hash": "f8a3985cbae455ced2f5880ac7f9070b"
+  },
+  {
+    "name": "Clamperl",
+    "hash": "bc2dc1bd8fd6460fce8ffd85b6a8c3af"
+  },
+  {
+    "name": "Clauncher",
+    "hash": "9a1d4de49d8a70fcd3e521a1c6111b2c"
+  },
+  {
+    "name": "Clawitzer",
+    "hash": "ea4192ef463024dfb4e7e3b298409c41"
+  },
+  {
+    "name": "Claydol",
+    "hash": "ce57c29b4fd6ff05afef3a38a496b99d"
+  },
+  {
+    "name": "Clefable",
+    "hash": "57be8deeb5c0ce45b69415b0a333f5aa"
+  },
+  {
+    "name": "Clefairy",
+    "hash": "619637a67aa9ed96927ac7f637e6da29"
+  },
+  {
+    "name": "Cleffa",
+    "hash": "9b9a46047e02335ec81fce9f68e484e5"
+  },
+  {
+    "name": "Clobbopus",
+    "hash": "cb9b74504c5b3575c203b57f7e0fe0f7"
+  },
+  {
+    "name": "Cloyster",
+    "hash": "cbc8e5256e8b2205e1e8940c6c940cb1"
+  },
+  {
+    "name": "Coalossal",
+    "hash": "b1b44140bf4c6075512e41731699ab48"
+  },
+  {
+    "name": "Cobalion",
+    "hash": "c9857730f157c13c67387ca0ad1fc7e8"
+  },
+  {
+    "name": "Cofagrigus",
+    "hash": "2c5f706bcf10eaf0b390c4387cb0e642"
+  },
+  {
+    "name": "Combee",
+    "hash": "a3d0e24bd6793372fe67f8228f60a394"
+  },
+  {
+    "name": "Combusken",
+    "hash": "d67b1d5e2c5d5a65caeaf7c89fdb130d"
+  },
+  {
+    "name": "Comfey",
+    "hash": "13325127184fdbc5112dae603e8c094f"
+  },
+  {
+    "name": "Conkeldurr",
+    "hash": "d2798ca2a0fa0a06a2b69e1867563593"
+  },
+  {
+    "name": "Copperajah",
+    "hash": "be86b5faf4039a65e52b16deda2d30d8"
+  },
+  {
+    "name": "Corphish",
+    "hash": "bb633129193359602e0c566b54742dda"
+  },
+  {
+    "name": "Corsola",
+    "hash": "51078557452899817357c0c07307f706"
+  },
+  {
+    "name": "Corviknight",
+    "hash": "f4218ad57818b38d9413b6da88213f6e"
+  },
+  {
+    "name": "Corvisquire",
+    "hash": "72a430aafe4c1a88f760ee77db55512d"
+  },
+  {
+    "name": "Cosmoem",
+    "hash": "8157bee370fc4e29d51e90c6f7ce0573"
+  },
+  {
+    "name": "Cosmog",
+    "hash": "a06c411d0c3c3a3cd4fbbefd54158c38"
+  },
+  {
+    "name": "Cottonee",
+    "hash": "56216e004b0ffbd27e54e2a44aa815b9"
+  },
+  {
+    "name": "Crabominable",
+    "hash": "cdb46b08aa1103e45a317f26690f7064"
+  },
+  {
+    "name": "Crabrawler",
+    "hash": "4b746ad5c02aa2554ee30114edafb5a0"
+  },
+  {
+    "name": "Cradily",
+    "hash": "ea68144b62010d17c32efa8d8e851748"
+  },
+  {
+    "name": "Cramorant",
+    "hash": "c258671a333c5b583e41511d3cbef500"
+  },
+  {
+    "name": "Cranidos",
+    "hash": "0a549519841a8d30404de9ad17ebdb4c"
+  },
+  {
+    "name": "Crawdaunt",
+    "hash": "7fca13b2c6baa9e9864ba0a16b6b4dff"
+  },
+  {
+    "name": "Cresselia",
+    "hash": "57c521a342c690294e52098382861b9b"
+  },
+  {
+    "name": "Croagunk",
+    "hash": "d0be87a7084910f37686f573b7d25878"
+  },
+  {
+    "name": "Crobat",
+    "hash": "25d8f31db5a03071b0f652f32961b165"
+  },
+  {
+    "name": "Croconaw",
+    "hash": "9f88579b4c2e6df09a94ad2f2f838139"
+  },
+  {
+    "name": "Crustle",
+    "hash": "47ce39f4ba9df8bfb9db76ce49698d3f"
+  },
+  {
+    "name": "Cryogonal",
+    "hash": "d39bafa310cfae0270dae9132d6d1854"
+  },
+  {
+    "name": "Cubchoo",
+    "hash": "55451523148dfaba2ce33e616b0b44e7"
+  },
+  {
+    "name": "Cubone",
+    "hash": "799e0e87dae2c7a9985990b2424a5b82"
+  },
+  {
+    "name": "Cufant",
+    "hash": "c3bb6b6d8b3df72c18f909c3441a5a3d"
+  },
+  {
+    "name": "Cursola",
+    "hash": "beb776c6c0194bbf2b573115140a0855"
+  },
+  {
+    "name": "Cutiefly",
+    "hash": "0d93a44fe35b15f712a9154415589956"
+  },
+  {
+    "name": "Cyndaquil",
+    "hash": "6970370201b70f06ca7e9749e5343492"
+  },
+  {
+    "name": "Darkrai",
+    "hash": "d40c89ac55ea9ffc2c75f5a416e215d6"
+  },
+  {
+    "name": "Darmanitan",
+    "hash": "b44fd5116da8fbdb9734d2dffe6eebdf"
+  },
+  {
+    "name": "Dartrix",
+    "hash": "f51c88a483608e4539211d2067e068db"
+  },
+  {
+    "name": "Darumaka",
+    "hash": "4e709e08765f263b11761a6b31859298"
+  },
+  {
+    "name": "Decidueye",
+    "hash": "fc971c7c1493840f5deca5ac855d0558"
+  },
+  {
+    "name": "Dedenne",
+    "hash": "100a6dafa137c0aa0e8b4bba6317d5f2"
+  },
+  {
+    "name": "Deerling",
+    "hash": "c8b48325f5c2126e64bf489dbd3260fc"
+  },
+  {
+    "name": "Deino",
+    "hash": "6a0ef47d687f2a683198971c48193716"
+  },
+  {
+    "name": "Delcatty",
+    "hash": "b753d5c08c74535a2b7e46e37cc7ec1d"
+  },
+  {
+    "name": "Delibird",
+    "hash": "d03bb9d505b0c5e83f69a4475483daf5"
+  },
+  {
+    "name": "Delphox",
+    "hash": "154aa10d64577651c246c74cb35a2699"
+  },
+  {
+    "name": "Deoxys",
+    "hash": "592247710b1cb300c101b03c7a0794cc"
+  },
+  {
+    "name": "Dewgong",
+    "hash": "ed7636bcb364608428ef281aabc82f6b"
+  },
+  {
+    "name": "Dewott",
+    "hash": "e3afb60e75fbf6da9dd907aa7d795cbb"
+  },
+  {
+    "name": "Dialga",
+    "hash": "8585cafd0bbf8beca7a493932e094a14"
+  },
+  {
+    "name": "Diancie",
+    "hash": "daaaba8d9e5f182b1a8e8aed1157e63c"
+  },
+  {
+    "name": "Diggersby",
+    "hash": "d48f878b5ef5795a728098045085813b"
+  },
+  {
+    "name": "Diglett",
+    "hash": "b40049947859e633e0467c7c0cfe9f92"
+  },
+  {
+    "name": "Ditto",
+    "hash": "c42a37de31627293cc79ef00f34fffa5"
+  },
+  {
+    "name": "Dodrio",
+    "hash": "102284a9735e8a04624565a6336aded1"
+  },
+  {
+    "name": "Doduo",
+    "hash": "ca4490e0f73f2c5e011013ba82e5d998"
+  },
+  {
+    "name": "Donphan",
+    "hash": "52f6b1a6925cdbbe19bbd17ed40bb169"
+  },
+  {
+    "name": "Dottler",
+    "hash": "4ecce5ae5f60d85d27979c3eb8a1df71"
+  },
+  {
+    "name": "Doublade",
+    "hash": "e1f2684209ac32fc29806bc554c99291"
+  },
+  {
+    "name": "Dracovish",
+    "hash": "712c07fe85a5393577b95a4dbd5d800a"
+  },
+  {
+    "name": "Dracozolt",
+    "hash": "f50d999e7614ef48db144a99e15d2e44"
+  },
+  {
+    "name": "Dragalge",
+    "hash": "177c680a25c8cf0c0484046bb936c066"
+  },
+  {
+    "name": "Dragapult",
+    "hash": "37820e42e0150a4417f55e71bc3868a5"
+  },
+  {
+    "name": "Dragonair",
+    "hash": "bde38f317d9bd8512ef74d27629d0895"
+  },
+  {
+    "name": "Dragonite",
+    "hash": "d6330a9d746c7a66f2eb27cec182ea43"
+  },
+  {
+    "name": "Drakloak",
+    "hash": "420cf89f1f613c566de0b45c69c60eba"
+  },
+  {
+    "name": "Drampa",
+    "hash": "6572a257e2494328080dd9bfabfc1e7f"
+  },
+  {
+    "name": "Drapion",
+    "hash": "b1b63b5ab393effab9d2eba12f8e2c7a"
+  },
+  {
+    "name": "Dratini",
+    "hash": "c19cc8010f6d040d7fc4a076a9504733"
+  },
+  {
+    "name": "Drednaw",
+    "hash": "de7e7a0ce5777c2365c99312ef67fee6"
+  },
+  {
+    "name": "Dreepy",
+    "hash": "02326e683e71475168797bd2e3f04181"
+  },
+  {
+    "name": "Drifblim",
+    "hash": "78135b91aefcffbbf1b6792716d1b888"
+  },
+  {
+    "name": "Drifloon",
+    "hash": "3adca9135e08e3cc875d63471bef1035"
+  },
+  {
+    "name": "Drilbur",
+    "hash": "9f3a150c22ee05e20b311a50af51f6be"
+  },
+  {
+    "name": "Drizzile",
+    "hash": "39af4e0305035fae8f63c9c61b9de156"
+  },
+  {
+    "name": "Drowzee",
+    "hash": "b0ea7aa75d764ac22d0f8d0acff33d1d"
+  },
+  {
+    "name": "Druddigon",
+    "hash": "c07df07c826e2098058e52f5376c4ffe"
+  },
+  {
+    "name": "Dubwool",
+    "hash": "a685ac4c6b0b90de32be0e002aa4a00a"
+  },
+  {
+    "name": "Ducklett",
+    "hash": "bfc7a446b5dc616a5044625dfbd5bfc0"
+  },
+  {
+    "name": "Dugtrio",
+    "hash": "579886eaef7bfcfd21add70d3bd04bc2"
+  },
+  {
+    "name": "Dunsparce",
+    "hash": "279d137dc45aa9017e89e4b2586c197d"
+  },
+  {
+    "name": "Duosion",
+    "hash": "9994c519ddee621e3df32af58b53856c"
+  },
+  {
+    "name": "Duraludon",
+    "hash": "ddea6a8fe59f56e9a37c8f3bd2c44fa1"
+  },
+  {
+    "name": "Durant",
+    "hash": "2a499c97cee68f1ef489e7c48b8961e8"
+  },
+  {
+    "name": "Dusclops",
+    "hash": "0d10c0d9667bb005e90795abed0e435f"
+  },
+  {
+    "name": "Dusknoir",
+    "hash": "1bbde9049bbcf55be893bf8d49483aa5"
+  },
+  {
+    "name": "Duskull",
+    "hash": "a5ffcad83fffe87ff78cfce7748354cd"
+  },
+  {
+    "name": "Dustox",
+    "hash": "d939c431d4a2803df32eaf409e43ff87"
+  },
+  {
+    "name": "Dwebble",
+    "hash": "38cb6e49f69ec9b066253896f930d31d"
+  },
+  {
+    "name": "Eelektrik",
+    "hash": "d67f04d1673a12a929993f080ec25c77"
+  },
+  {
+    "name": "Eelektross",
+    "hash": "9a4ceb9e7053813470c3ed61abb24630"
+  },
+  {
+    "name": "Eevee",
+    "hash": "c157545ab985be295c9566b427102231"
+  },
+  {
+    "name": "Eiscue",
+    "hash": "172dc794f476d74ee0f951160de44807"
+  },
+  {
+    "name": "Ekans",
+    "hash": "bd66b4f62115f19d42302758677525b8"
+  },
+  {
+    "name": "Eldegoss",
+    "hash": "cf4a42989ab795ec840b69b65765d3de"
+  },
+  {
+    "name": "Electabuzz",
+    "hash": "c62be78fed3312f7adca8c79b0b6613f"
+  },
+  {
+    "name": "Electivire",
+    "hash": "da128fa6addc767be8166dce2203fa43"
+  },
+  {
+    "name": "Electrike",
+    "hash": "d2b5edf262af8573bb2063626f020775"
+  },
+  {
+    "name": "Electrode",
+    "hash": "c8abfb856da2fb4a3fd5f771018dac4c"
+  },
+  {
+    "name": "Elekid",
+    "hash": "14830cdc196d62bb67b29370bdead46a"
+  },
+  {
+    "name": "Elgyem",
+    "hash": "ffe39770f78253994bf4a4db7e8d6d7b"
+  },
+  {
+    "name": "Emboar",
+    "hash": "1a47e24505c2128f41aa2de5f55447dc"
+  },
+  {
+    "name": "Emolga",
+    "hash": "16fd7b08379a5a05059622fcb017e44f"
+  },
+  {
+    "name": "Empoleon",
+    "hash": "9970b75a47552a0221b88ff841a3edd0"
+  },
+  {
+    "name": "Entei",
+    "hash": "3ddf059015005fa7166eb31ee3f9293b"
+  },
+  {
+    "name": "Escavalier",
+    "hash": "22009999fb2fea1ffa7101c34bc1aea4"
+  },
+  {
+    "name": "Espeon",
+    "hash": "1b04b000a9fe5d65a48244eecd9fc634"
+  },
+  {
+    "name": "Espurr",
+    "hash": "1f35e40de3517a34d852a8cae30fb781"
+  },
+  {
+    "name": "Eternatus",
+    "hash": "3f838b0b07e2d9282c8be88b0b4508ef"
+  },
+  {
+    "name": "Excadrill",
+    "hash": "2b64b2dc843ce1369266f6efa74b124c"
+  },
+  {
+    "name": "Exeggcute",
+    "hash": "cd4d13f4b37d9772a6f3f560cc574a5b"
+  },
+  {
+    "name": "Exeggutor",
+    "hash": "7b70047162d7031484cca88794d97195"
+  },
+  {
+    "name": "Exploud",
+    "hash": "9aee51ddd406147c076b825bf56cd242"
+  },
+  {
+    "name": "Falinks",
+    "hash": "4abfa4f0f1f6d7e522e13240c57438c5"
+  },
+  {
+    "name": "Farfetch'd",
+    "hash": "092b05f340e628fad04495edd691923a"
+  },
+  {
+    "name": "Fearow",
+    "hash": "2640107a291d1d0b1700a42273c467f8"
+  },
+  {
+    "name": "Feebas",
+    "hash": "4fa283457d5d0605706926de0359261e"
+  },
+  {
+    "name": "Fennekin",
+    "hash": "133b5ed4027acd4212cc2fe0420b8437"
+  },
+  {
+    "name": "Feraligatr",
+    "hash": "16414036398387fb67e8988b0d98f106"
+  },
+  {
+    "name": "Ferroseed",
+    "hash": "2478ed3a3c7a61b97522c1a1f4e74c79"
+  },
+  {
+    "name": "Ferrothorn",
+    "hash": "e4c2326de476a4d3d977dbfbf2aeb428"
+  },
+  {
+    "name": "Finneon",
+    "hash": "1120e61d178245368d0bfe515bcd2031"
+  },
+  {
+    "name": "Flaaffy",
+    "hash": "a06ef33423693472054e635ecce34732"
+  },
+  {
+    "name": "Flab\u00e9b\u00e9",
+    "hash": "f8fe16d5632654cb3a31cebb1dd6c341"
+  },
+  {
+    "name": "Flapple",
+    "hash": "3bd3d2333f65a683f3f21427626491d4"
+  },
+  {
+    "name": "Flareon",
+    "hash": "6a60d22641e7452be7bcc4461a3a6e5f"
+  },
+  {
+    "name": "Fletchinder",
+    "hash": "d70a6bae32aaa196a52e2eaaac0d2569"
+  },
+  {
+    "name": "Fletchling",
+    "hash": "8a2e1a1c0534414a39977cdc6002dbf3"
+  },
+  {
+    "name": "Floatzel",
+    "hash": "1d628493d4b4085c41209ba748b1eec8"
+  },
+  {
+    "name": "Floette",
+    "hash": "184b16c7b562a764fa5a52f412621f4b"
+  },
+  {
+    "name": "Florges",
+    "hash": "989c4b27f4ff9206b67d718d39aa1888"
+  },
+  {
+    "name": "Flygon",
+    "hash": "3cd3f009a21f710fccda27dbd1611b44"
+  },
+  {
+    "name": "Foongus",
+    "hash": "92e3a087073ee87b35380d8510765e7f"
+  },
+  {
+    "name": "Forretress",
+    "hash": "0a720064e4e365a11a5bdd12ce3de186"
+  },
+  {
+    "name": "Fraxure",
+    "hash": "c3edfaf7d65a827b2adef379d9e64426"
+  },
+  {
+    "name": "Froakie",
+    "hash": "29a694a77d40aea385ac6b13853bbd9e"
+  },
+  {
+    "name": "Frogadier",
+    "hash": "d145f3b70f0b69920001b393fd084e73"
+  },
+  {
+    "name": "Froslass",
+    "hash": "dd345e4ba149aa2c4d5a9ed8bf24953d"
+  },
+  {
+    "name": "Frosmoth",
+    "hash": "b2a6bfe1993fe2e822581eaec8d8c188"
+  },
+  {
+    "name": "Furfrou",
+    "hash": "788c3bd8da6ac0901c504665fac2ce20"
+  },
+  {
+    "name": "Furret",
+    "hash": "a6380a9f0cad0ed7ce652b8afdfa2f9e"
+  },
+  {
+    "name": "Gabite",
+    "hash": "7d004f549b86841dfd3ded94b98bdc8e"
+  },
+  {
+    "name": "Gallade",
+    "hash": "549059d0ba1a066aa6df60b3a428c804"
+  },
+  {
+    "name": "Galvantula",
+    "hash": "bee27785b29618a89424e5e8025f1416"
+  },
+  {
+    "name": "Garbodor",
+    "hash": "c034a01100f605f88d4b1f474a7373d0"
+  },
+  {
+    "name": "Garchomp",
+    "hash": "2a3ea71f4f857dff5dd5930803b9480e"
+  },
+  {
+    "name": "Gardevoir",
+    "hash": "a1def3de6c459f2e4e9ee0944de646a6"
+  },
+  {
+    "name": "Gastly",
+    "hash": "0d5af8ce19ba2617f00148668746f6da"
+  },
+  {
+    "name": "Genesect",
+    "hash": "29fea10081e95bed8ce2592d8cc0ea46"
+  },
+  {
+    "name": "Gengar",
+    "hash": "8a2c3ce0cfd5c38bb0ebd086f3a48741"
+  },
+  {
+    "name": "Geodude",
+    "hash": "e29b28dba4748a0c4a448bf51bfdd91d"
+  },
+  {
+    "name": "Gible",
+    "hash": "570f6fe63d55bc65eb46db6ea5037743"
+  },
+  {
+    "name": "Gigalith",
+    "hash": "28c9dba4a5a7caff860594660262651c"
+  },
+  {
+    "name": "Girafarig",
+    "hash": "57eb4e2cb1138bbad1d178d51ff4370a"
+  },
+  {
+    "name": "Glaceon",
+    "hash": "59970fc12c96ed09f30785f90e55e7e7"
+  },
+  {
+    "name": "Glalie",
+    "hash": "556584f34a9cb983885931b943acb2d1"
+  },
+  {
+    "name": "Glameow",
+    "hash": "a39124763e84fdc28bddf08cbbaa9b44"
+  },
+  {
+    "name": "Gligar",
+    "hash": "e997870a0cb0f30437c253daf1b752c6"
+  },
+  {
+    "name": "Gliscor",
+    "hash": "92117dc0870f6d3c205706c4aa8114dd"
+  },
+  {
+    "name": "Gloom",
+    "hash": "558b0d33be00f6fbd605191427d5b632"
+  },
+  {
+    "name": "Gogoat",
+    "hash": "7e04fd1b191e9c267a8ced5a5f366682"
+  },
+  {
+    "name": "Golbat",
+    "hash": "eace8e96fc0edf4fe3f48e80b20e08e3"
+  },
+  {
+    "name": "Goldeen",
+    "hash": "e7271a2a85d55b3e7aa46ed0a05a070f"
+  },
+  {
+    "name": "Golduck",
+    "hash": "fade82558a72615ae6ff1b617fec91f5"
+  },
+  {
+    "name": "Golem",
+    "hash": "8663515eec70748e291f7f60a5f27fac"
+  },
+  {
+    "name": "Golett",
+    "hash": "6c51524119808656a353df93099bc783"
+  },
+  {
+    "name": "Golurk",
+    "hash": "e6a521fbe587576a58b2bde0cce4692b"
+  },
+  {
+    "name": "Goodra",
+    "hash": "7d8d00ef46a069f305a7b4dbcf5ee342"
+  },
+  {
+    "name": "Goomy",
+    "hash": "da11dbfda9931fe878c95e04e2b06b2d"
+  },
+  {
+    "name": "Gorebyss",
+    "hash": "fd803bd3cd4a6bdbe3147a7443447cbf"
+  },
+  {
+    "name": "Gossifleur",
+    "hash": "c29b2fc7a91df1ff0e005071aec07b29"
+  },
+  {
+    "name": "Gothita",
+    "hash": "f818bed7a2937713773cf3bc0895c5dd"
+  },
+  {
+    "name": "Gothitelle",
+    "hash": "2642ae40a161b158c9396f4e9fec51a0"
+  },
+  {
+    "name": "Gothorita",
+    "hash": "1bf1fc87702519bfe85861b3d300ef25"
+  },
+  {
+    "name": "Gourgeist",
+    "hash": "80e675046a33e4168b4c54fd6a7648dc"
+  },
+  {
+    "name": "Granbull",
+    "hash": "8d173e58ab0552c1deb5a9cc8d3f6a03"
+  },
+  {
+    "name": "Grapploct",
+    "hash": "76598a994276d34faf5526ff04eca625"
+  },
+  {
+    "name": "Graveler",
+    "hash": "930d2143ea662bc6f8808fab76265d76"
+  },
+  {
+    "name": "Greedent",
+    "hash": "00c9f7a34faa7fbbf98b80d0a9f0b2cc"
+  },
+  {
+    "name": "Greninja",
+    "hash": "ab5503744cd82411b89d68fcf78dc9ba"
+  },
+  {
+    "name": "Grimer",
+    "hash": "07e555e711e2d26e9d55719c3b54b3a2"
+  },
+  {
+    "name": "Grimmsnarl",
+    "hash": "85bd60d44c7cc6553901938aaa3625dd"
+  },
+  {
+    "name": "Grookey",
+    "hash": "fd4f8a214a98df0cfd0c1ef6cb7a4f44"
+  },
+  {
+    "name": "Grotle",
+    "hash": "a3dd3f3869a58a8adc9ca41e634548c1"
+  },
+  {
+    "name": "Groudon",
+    "hash": "01b886052d606e85dfbfbbe6c5afb94e"
+  },
+  {
+    "name": "Grovyle",
+    "hash": "2aa5c0c597301a1aef23185e98b033f1"
+  },
+  {
+    "name": "Growlithe",
+    "hash": "2b7a20d6b3d7e5688c6034e0401ead59"
+  },
+  {
+    "name": "Grubbin",
+    "hash": "29eda4bc6250563090fd25f10867eea1"
+  },
+  {
+    "name": "Grumpig",
+    "hash": "aefa86610b21b881817ef8ee92f47077"
+  },
+  {
+    "name": "Gulpin",
+    "hash": "d34f212e410cdc978340fe700f43bb86"
+  },
+  {
+    "name": "Gurdurr",
+    "hash": "2b9a3d4abb569fe2705f1e65ca2f37e3"
+  },
+  {
+    "name": "Guzzlord",
+    "hash": "8e8f08ed37b3eaacadf6b8cbdef423c1"
+  },
+  {
+    "name": "Gyarados",
+    "hash": "55afe49b42cd5f780ba9cc707cde8264"
+  },
+  {
+    "name": "Happiny",
+    "hash": "78b945e7ee0e2ddf6cf42b8476dcf6e0"
+  },
+  {
+    "name": "Hariyama",
+    "hash": "5ab9f47fc2e40354828347bc5ba9e544"
+  },
+  {
+    "name": "Hatenna",
+    "hash": "866b74576aac607d6adb2792b885da18"
+  },
+  {
+    "name": "Hatterene",
+    "hash": "b5afe8672965a423e50f73d29f007fe8"
+  },
+  {
+    "name": "Hattrem",
+    "hash": "3f694a070ac67c04325aaa4970b6fdee"
+  },
+  {
+    "name": "Haunter",
+    "hash": "b93f8448e088707daaa6647976baa9c8"
+  },
+  {
+    "name": "Hawlucha",
+    "hash": "e9d083e19155a693efa108f4bb32fde8"
+  },
+  {
+    "name": "Haxorus",
+    "hash": "0e3bcebea1f28d9d58a92bd068d3eb0a"
+  },
+  {
+    "name": "Heatmor",
+    "hash": "233f5b407455fcb70a220014f15adaf4"
+  },
+  {
+    "name": "Heatran",
+    "hash": "26f6dee6677cb24239c18d2be2ba81a6"
+  },
+  {
+    "name": "Heliolisk",
+    "hash": "c10c3fe65c4c81cffbae14598f39ae66"
+  },
+  {
+    "name": "Helioptile",
+    "hash": "a9f82d1390d27c02d7ebd972fec4e465"
+  },
+  {
+    "name": "Heracross",
+    "hash": "3e1e5a431bbb5fd6b82865e01d522018"
+  },
+  {
+    "name": "Herdier",
+    "hash": "cf09fc49bee5266e1428044770a06baf"
+  },
+  {
+    "name": "Hippopotas",
+    "hash": "27bf7aa521171f9b8bd1e156cf3111b2"
+  },
+  {
+    "name": "Hippowdon",
+    "hash": "0cf2d6af176c6d578130878874c89f56"
+  },
+  {
+    "name": "Hitmonchan",
+    "hash": "8fb72d6ec729d3029eddde4ed1a3b2c9"
+  },
+  {
+    "name": "Hitmonlee",
+    "hash": "0fabb4e0eb95aa1c9e129ef79e380e02"
+  },
+  {
+    "name": "Hitmontop",
+    "hash": "af2cfb01fb1c0c99cffc19bcdb34bac0"
+  },
+  {
+    "name": "Ho-Oh",
+    "hash": "991f8d901590ac1f4b9fedcf8f030bb5"
+  },
+  {
+    "name": "Honchkrow",
+    "hash": "1c9bdc8003caefbb71e1cf0a4328420b"
+  },
+  {
+    "name": "Honedge",
+    "hash": "c9e01c524a3c9bd6196ce798293e197e"
+  },
+  {
+    "name": "Hoopa",
+    "hash": "4928cd4579ff77eb0cabef8d3b96dc7a"
+  },
+  {
+    "name": "Hoothoot",
+    "hash": "6c951bf972c1f5a56864e48a2f81c1f0"
+  },
+  {
+    "name": "Hoppip",
+    "hash": "70fd81a33547b748c298405807fd9fda"
+  },
+  {
+    "name": "Horsea",
+    "hash": "a69ccfde7b7be6a0f85ae4cfb6a2af36"
+  },
+  {
+    "name": "Houndoom",
+    "hash": "5f22ca7d42abe52c22cb9f61a037f005"
+  },
+  {
+    "name": "Houndour",
+    "hash": "10b0425b186dba2a35df60a89fb63535"
+  },
+  {
+    "name": "Huntail",
+    "hash": "0c977ccbdd6c81af64eb4f79291971a3"
+  },
+  {
+    "name": "Hydreigon",
+    "hash": "65fd2b78bcbf34889ab4eb4c9331d8db"
+  },
+  {
+    "name": "Hypno",
+    "hash": "3dc48878b556cf8a1f882a4dbf4a2d26"
+  },
+  {
+    "name": "Igglybuff",
+    "hash": "00484bb59dd53af00e2465fee96733bb"
+  },
+  {
+    "name": "Illumise",
+    "hash": "0f71f618ce6a090b4ed06382979ce210"
+  },
+  {
+    "name": "Impidimp",
+    "hash": "92743c5bfb74a2caa6992fda0a46f357"
+  },
+  {
+    "name": "Incineroar",
+    "hash": "213a84371f66ae852a0346af6519cc63"
+  },
+  {
+    "name": "Indeedee",
+    "hash": "15047a392c88db5f131033a37d17cb45"
+  },
+  {
+    "name": "Infernape",
+    "hash": "e116e2a369c10438e70555220b49850a"
+  },
+  {
+    "name": "Inkay",
+    "hash": "3df6a71e2afb3aa13b9b8c83f67e6a01"
+  },
+  {
+    "name": "Inteleon",
+    "hash": "e9ed5a7a3f638c906d954808dd0b7ffc"
+  },
+  {
+    "name": "Ivysaur",
+    "hash": "28cc8e884bbbf08ac3b44b4013a3d5db"
+  },
+  {
+    "name": "Jangmo-o",
+    "hash": "bab043de0c9fa89771ca04c230895040"
+  },
+  {
+    "name": "Jigglypuff",
+    "hash": "4f8fa587026cd74989c10629fdbb1cd1"
+  },
+  {
+    "name": "Jirachi",
+    "hash": "b108c99c78c482d7b027b48c09c06180"
+  },
+  {
+    "name": "Jolteon",
+    "hash": "e0737bed91857347aa412c9a0fde3a22"
+  },
+  {
+    "name": "Joltik",
+    "hash": "2c17c7ce506fbb712440a63dbf81e674"
+  },
+  {
+    "name": "Jumpluff",
+    "hash": "df364b3458c25a3ca6fdbff9aa51c560"
+  },
+  {
+    "name": "Jynx",
+    "hash": "a6b627161126139aa65b82f4d9eac8e8"
+  },
+  {
+    "name": "Kabuto",
+    "hash": "c2fa95eb186566e2ee20c07bdf60a7a2"
+  },
+  {
+    "name": "Kabutops",
+    "hash": "09084f207ff41bdfb5984fbd57752361"
+  },
+  {
+    "name": "Kadabra",
+    "hash": "fbc1ef4fed7b60445004d25f93ac5878"
+  },
+  {
+    "name": "Kakuna",
+    "hash": "06d3055f204c544a79f3ce6e9103a4dc"
+  },
+  {
+    "name": "Kangaskhan",
+    "hash": "a33dca666e6aa7a1f4f3963b0097d461"
+  },
+  {
+    "name": "Karrablast",
+    "hash": "cd0ae59adb436cad5951a9b5f3380ce4"
+  },
+  {
+    "name": "Kartana",
+    "hash": "957e851c0a243e4de9a9b18c12be43fd"
+  },
+  {
+    "name": "Kecleon",
+    "hash": "1d6e989e4f5939128dff1541fcecd7b8"
+  },
+  {
+    "name": "Keldeo",
+    "hash": "a07f9884cf93056b109e54ac79b797b0"
+  },
+  {
+    "name": "Kingdra",
+    "hash": "e011cd9c882bdb88f765bbaadb87542b"
+  },
+  {
+    "name": "Kingler",
+    "hash": "0797b23782d8c26eb1c642f2c1cdeb61"
+  },
+  {
+    "name": "Kirlia",
+    "hash": "03a3c20a48557dfb67c6ebb9078973fb"
+  },
+  {
+    "name": "Klang",
+    "hash": "351764897085572ff5b2702d4141da1f"
+  },
+  {
+    "name": "Klink",
+    "hash": "c2e8257553baf1b3c81b5fdd5aecc351"
+  },
+  {
+    "name": "Klinklang",
+    "hash": "3d09483c7c0426070aab33603e7e346e"
+  },
+  {
+    "name": "Koffing",
+    "hash": "9773bf20bfa2d64e04b5367c4171f7fb"
+  },
+  {
+    "name": "Komala",
+    "hash": "a508966d7c56765911d4a371db923b76"
+  },
+  {
+    "name": "Krabby",
+    "hash": "4923be70a6a7a8a1fe0e45926e60157f"
+  },
+  {
+    "name": "Kricketot",
+    "hash": "d380e61a4032cdf3e8ef05cc72db5db8"
+  },
+  {
+    "name": "Kricketune",
+    "hash": "505ecfe5b04611d2fe68c3c4219af258"
+  },
+  {
+    "name": "Krokorok",
+    "hash": "6bc728fb75cda1b0c03ccd0cf837ac9b"
+  },
+  {
+    "name": "Krookodile",
+    "hash": "a67cab397473282295c3caf1e88ee9a5"
+  },
+  {
+    "name": "Kyogre",
+    "hash": "2a9f3ac281250a48ef6fa21178f93ba2"
+  },
+  {
+    "name": "Kyurem",
+    "hash": "fa3ba1ed2daf8bf1cb2eab8d7bd22b7a"
+  },
+  {
+    "name": "Lairon",
+    "hash": "77574756ba01a5fe195f067db435c088"
+  },
+  {
+    "name": "Lampent",
+    "hash": "2527dd6d2171ddd177f41da06cb006c5"
+  },
+  {
+    "name": "Landorus",
+    "hash": "04adc7ea7a03650e51538c062830d58d"
+  },
+  {
+    "name": "Lanturn",
+    "hash": "b97891aa425a22c97fca36f5df279d2f"
+  },
+  {
+    "name": "Lapras",
+    "hash": "f26ee6048a5f85e804cdc9c0a2e12e06"
+  },
+  {
+    "name": "Larvesta",
+    "hash": "567a9a3d6414119e27088074b58e834f"
+  },
+  {
+    "name": "Larvitar",
+    "hash": "b7b95d10edf206e1f4c8c4bdcee922fa"
+  },
+  {
+    "name": "Latias",
+    "hash": "fd780040b7e24d400c8d2fda0dbe3f74"
+  },
+  {
+    "name": "Latios",
+    "hash": "4b037d6ee92ee22516eb070ae4229667"
+  },
+  {
+    "name": "Leafeon",
+    "hash": "dfb92803e12f05f121f53291814c8ec6"
+  },
+  {
+    "name": "Leavanny",
+    "hash": "73f9e7802601c00f6ee70e6e38d85017"
+  },
+  {
+    "name": "Ledian",
+    "hash": "46a35fbcd83049a57724e58072d1499e"
+  },
+  {
+    "name": "Ledyba",
+    "hash": "d37ef8db72af11679fa4a75564299371"
+  },
+  {
+    "name": "Lickilicky",
+    "hash": "87bf967386b10ca3bc5ee340bfb1c6f4"
+  },
+  {
+    "name": "Lickitung",
+    "hash": "df1ee9be9e884858698fe55a297c3eb8"
+  },
+  {
+    "name": "Liepard",
+    "hash": "17260aa5bdbbc247a694fd6ef92d2785"
+  },
+  {
+    "name": "Lileep",
+    "hash": "09709df9f47fbfb6e799e64b8b84c057"
+  },
+  {
+    "name": "Lilligant",
+    "hash": "8faf29ffcd3c24209be0ff3cef60afb6"
+  },
+  {
+    "name": "Lillipup",
+    "hash": "d3cc5a855efe32c3f57de8ff3c6a5834"
+  },
+  {
+    "name": "Linoone",
+    "hash": "6d307362143afdfcd1ec31b5252ca8be"
+  },
+  {
+    "name": "Litleo",
+    "hash": "062021ffbc74d44f98d2c0fdfe4fb75a"
+  },
+  {
+    "name": "Litten",
+    "hash": "f213befe7804ac6b04349b0e81d542c0"
+  },
+  {
+    "name": "Litwick",
+    "hash": "8257f5e22bfa07d467d353cff272b43e"
+  },
+  {
+    "name": "Lombre",
+    "hash": "526968f420353435dac00af1016cb9d6"
+  },
+  {
+    "name": "Lopunny",
+    "hash": "468e8a1b588f81d1e5b14527f9b07d65"
+  },
+  {
+    "name": "Lotad",
+    "hash": "970e5b7045768b32a67d565e986ce59b"
+  },
+  {
+    "name": "Loudred",
+    "hash": "4c1b1b84d4dd911f6161ba42c046a04f"
+  },
+  {
+    "name": "Lucario",
+    "hash": "1687086d65656cff882d4b67b2253564"
+  },
+  {
+    "name": "Ludicolo",
+    "hash": "33ec7b264957ec0f6033b90226fbcd84"
+  },
+  {
+    "name": "Lugia",
+    "hash": "236a63ebb87ce89f1436a2e9d6f03528"
+  },
+  {
+    "name": "Lumineon",
+    "hash": "7f49cad941fcf97a73345a1a0dff642a"
+  },
+  {
+    "name": "Lunala",
+    "hash": "fcf0b6f2f1e73150565fe6e0b5283841"
+  },
+  {
+    "name": "Lunatone",
+    "hash": "3e741c72417077d9accd3d407299db83"
+  },
+  {
+    "name": "Lurantis",
+    "hash": "ba471def626cc3d67c18b8e257d00f57"
+  },
+  {
+    "name": "Luvdisc",
+    "hash": "88177ff9639c1f4cd10c4a51649aac81"
+  },
+  {
+    "name": "Luxio",
+    "hash": "ac24c923237c80d30cb4c361f7a65d1f"
+  },
+  {
+    "name": "Luxray",
+    "hash": "2b765a06d99a52b0f293d7073dd63c9c"
+  },
+  {
+    "name": "Lycanroc",
+    "hash": "2ea49ead23cd235f4982fe9b3fb5d8bd"
+  },
+  {
+    "name": "Machamp",
+    "hash": "77f1134854221805101f4caf12f81f62"
+  },
+  {
+    "name": "Machoke",
+    "hash": "c561388bf7d7f6c4312a85edde46323b"
+  },
+  {
+    "name": "Machop",
+    "hash": "793aacf3d223746732373b145bb803e4"
+  },
+  {
+    "name": "Magby",
+    "hash": "dfa436deb78935f33660846db966fcf0"
+  },
+  {
+    "name": "Magcargo",
+    "hash": "c96f9f58581bd1458ce0f33c40e77e65"
+  },
+  {
+    "name": "Magearna",
+    "hash": "3832fb8676ef5374a7a9ab86a9e2381f"
+  },
+  {
+    "name": "Magikarp",
+    "hash": "dbc8364834950405f52eb2cb24887023"
+  },
+  {
+    "name": "Magmar",
+    "hash": "f0509a75aa98389d22eb9011f54d9465"
+  },
+  {
+    "name": "Magmortar",
+    "hash": "1511fa7e3568a88c426404f8ad1733ac"
+  },
+  {
+    "name": "Magnemite",
+    "hash": "18e3d1efa4d60d6e853a7ccad9a6d5f5"
+  },
+  {
+    "name": "Magneton",
+    "hash": "69c97d23845bacd4df5585badf337718"
+  },
+  {
+    "name": "Magnezone",
+    "hash": "1f3c8bdc424406a8516e38b31eab4b9b"
+  },
+  {
+    "name": "Makuhita",
+    "hash": "57a2a6e299bb7ba351339b11314ec1e9"
+  },
+  {
+    "name": "Malamar",
+    "hash": "8c3ae72c844096077a199e06e1ebf5de"
+  },
+  {
+    "name": "Mamoswine",
+    "hash": "99ad17612345fc6987522812b77bd9b1"
+  },
+  {
+    "name": "Manaphy",
+    "hash": "541023bfd1bbbf6b95f8ee51d332fcdf"
+  },
+  {
+    "name": "Mandibuzz",
+    "hash": "3c2dc3f29b086a9d016f733d292bf0f6"
+  },
+  {
+    "name": "Manectric",
+    "hash": "2bebc329510354aa3b9a645dc8339e65"
+  },
+  {
+    "name": "Mankey",
+    "hash": "42682daef44bc439c3464dec5eafa673"
+  },
+  {
+    "name": "Mantine",
+    "hash": "1a563b242144fbbbd12777dd5af60eab"
+  },
+  {
+    "name": "Mantyke",
+    "hash": "c35e00dfae4a9670e01de645f8848111"
+  },
+  {
+    "name": "Maractus",
+    "hash": "ae68d3febdf4f62d3378e2fa0e9c6f4e"
+  },
+  {
+    "name": "Mareanie",
+    "hash": "0bddbede866d9d5dea5e44baecb0b625"
+  },
+  {
+    "name": "Mareep",
+    "hash": "b79349bbc02c7496ebf4329c5599da93"
+  },
+  {
+    "name": "Marill",
+    "hash": "226b3c986c0c428d50f7d8fec9f4e0fe"
+  },
+  {
+    "name": "Marowak",
+    "hash": "f16f37aba434c99c46675e041e8447d0"
+  },
+  {
+    "name": "Marshadow",
+    "hash": "11768cdeae0be090f2b7c847a275aea5"
+  },
+  {
+    "name": "Marshtomp",
+    "hash": "8e77347a0d9a57d579032abcc028c057"
+  },
+  {
+    "name": "Masquerain",
+    "hash": "6d301716ca25e18fd5195fc2996406db"
+  },
+  {
+    "name": "Mawile",
+    "hash": "2d75ce19a776f793b0571ae1620b8e2a"
+  },
+  {
+    "name": "Medicham",
+    "hash": "afd510f92d09088f94cf17f3add160ce"
+  },
+  {
+    "name": "Meditite",
+    "hash": "103edcaf5e4b0899d2d21e08d6b750f5"
+  },
+  {
+    "name": "Meganium",
+    "hash": "4420a61b9233ab81aedbcb400142f654"
+  },
+  {
+    "name": "Melmetal",
+    "hash": "8441eade22df9d00fc9723bb96e05dc5"
+  },
+  {
+    "name": "Meloetta",
+    "hash": "a82d7449e6ecb16f4cec3f2614b889c4"
+  },
+  {
+    "name": "Meltan",
+    "hash": "eea87af16bc0a0f7065cc998e5d6a287"
+  },
+  {
+    "name": "Meowth",
+    "hash": "9a42388be590ee046cc5cd0e57f9aa46"
+  },
+  {
+    "name": "Mesprit",
+    "hash": "9b899e799d8044127140e5d0768e962b"
+  },
+  {
+    "name": "Metagross",
+    "hash": "82536fd3063dfdedd8f79ee1221fe3f1"
+  },
+  {
+    "name": "Metang",
+    "hash": "449a5acc36765ebdd277ec9a669d70bf"
+  },
+  {
+    "name": "Metapod",
+    "hash": "5bc90ea068bdd1162f0bf10a64326fe2"
+  },
+  {
+    "name": "Mew",
+    "hash": "19c9ebf329bfa43488ebf2f930e42284"
+  },
+  {
+    "name": "Mewtwo",
+    "hash": "0c7aa137c662e4a53500eefd342f8968"
+  },
+  {
+    "name": "Mienfoo",
+    "hash": "2cf314ffc36967d99ad77a183959aa35"
+  },
+  {
+    "name": "Mienshao",
+    "hash": "552ff570f7652b84f6a4010fcedebfab"
+  },
+  {
+    "name": "Mightyena",
+    "hash": "fd195673e2a8ae2c3d16ab3ed29d1582"
+  },
+  {
+    "name": "Milcery",
+    "hash": "0fb4dcb39456f2e3364f1775381c471c"
+  },
+  {
+    "name": "Milotic",
+    "hash": "36b70056d8f54ce1d7a7811201da8c44"
+  },
+  {
+    "name": "Miltank",
+    "hash": "f6ddc3fe861199e4a1aee3b6927bb53c"
+  },
+  {
+    "name": "Mime Jr",
+    "hash": "aac6ef9bbcc7da5d1a6371cb7cda90af"
+  },
+  {
+    "name": "Mimikyu",
+    "hash": "5e4696935eb98e81bb043b214b2852ab"
+  },
+  {
+    "name": "Minccino",
+    "hash": "9d550775beb7176d6f292b31b7dae224"
+  },
+  {
+    "name": "Minior",
+    "hash": "41373b34f866dfc4d683a2dff0bc6fdc"
+  },
+  {
+    "name": "Minun",
+    "hash": "9503dcd36de2a60a37ca2cc75bbd5013"
+  },
+  {
+    "name": "Misdreavus",
+    "hash": "755070d2a1eb96bc0b22ed86a7ebfd21"
+  },
+  {
+    "name": "Mismagius",
+    "hash": "c204075aef02b7db9568d5112269cd24"
+  },
+  {
+    "name": "Moltres",
+    "hash": "7e64338e570d1ee01674ec61d66b1663"
+  },
+  {
+    "name": "Monferno",
+    "hash": "216fd090e91fa8c56167b430ebe1deb9"
+  },
+  {
+    "name": "Morgrem",
+    "hash": "7653b20807b8bc73b8ba3bca1de0f646"
+  },
+  {
+    "name": "Morpeko",
+    "hash": "d5dacd52f7163f9997b255d8c4da156b"
+  },
+  {
+    "name": "Mothim",
+    "hash": "2729fd1bea43733e2a40ac604feec5c1"
+  },
+  {
+    "name": "Mr",
+    "hash": "ee3250d4532dbf48b84ac537a774b592"
+  },
+  {
+    "name": "Mudbray",
+    "hash": "4120100c4d56eb885fd88571b2940e5f"
+  },
+  {
+    "name": "Mudsdale",
+    "hash": "519052d80d24e3b1111222fb5ca958f7"
+  },
+  {
+    "name": "Muk",
+    "hash": "e5033856e70724dbda5a11303b908abd"
+  },
+  {
+    "name": "Munchlax",
+    "hash": "220aaac9848ca087b44980c1407ce33e"
+  },
+  {
+    "name": "Munna",
+    "hash": "28e857c897e4e0577228caf19ad19371"
+  },
+  {
+    "name": "Murkrow",
+    "hash": "cf536e1f2dfbc8c646be97d77290f464"
+  },
+  {
+    "name": "Musharna",
+    "hash": "fb270951449bacfe095a03dff13a0113"
+  },
+  {
+    "name": "Naganadel",
+    "hash": "76961e97430c9532336e4628c2cade3e"
+  },
+  {
+    "name": "Natu",
+    "hash": "7791e7dce5476992a1d707971333128e"
+  },
+  {
+    "name": "Necrozma",
+    "hash": "893026a9a4430e6fa849c97fe40d7ea8"
+  },
+  {
+    "name": "Nickit",
+    "hash": "c49e03328047a4c1e0ebb0a8e16031b0"
+  },
+  {
+    "name": "Nidoking",
+    "hash": "9f683fa0a3c6bfd182cea5d44a142d20"
+  },
+  {
+    "name": "Nidoqueen",
+    "hash": "f1daccbfc13564b867137042466f8d49"
+  },
+  {
+    "name": "Nidoran\u2640",
+    "hash": "52f72fbcca315b01a0a8ad447a45b719"
+  },
+  {
+    "name": "Nidoran\u2642",
+    "hash": "f7af82c96ad43f4ea9dc0fedb945a6fd"
+  },
+  {
+    "name": "Nidorina",
+    "hash": "9445ac8fb36bd9ceea8359d9fe1f2a50"
+  },
+  {
+    "name": "Nidorino",
+    "hash": "8ed9ee720a67b8e8254662b0d6f2638a"
+  },
+  {
+    "name": "Nihilego",
+    "hash": "58eb1cfa1cd90069a84edd747d2f4309"
+  },
+  {
+    "name": "Nincada",
+    "hash": "ece3bae861e4a16a7331e6cb35e060df"
+  },
+  {
+    "name": "Ninetales",
+    "hash": "4e358ab74348b29e931c36756d9fe5c4"
+  },
+  {
+    "name": "Ninjask",
+    "hash": "6f8ee6d40b180dc6d80bc3fee181eca6"
+  },
+  {
+    "name": "Noctowl",
+    "hash": "e268016600661224b7c55cee5d0fbabe"
+  },
+  {
+    "name": "Noibat",
+    "hash": "fb1fa2f5afa697539b209f2022f92678"
+  },
+  {
+    "name": "Noivern",
+    "hash": "8ff6063503d8e83fde59ce5e18137bad"
+  },
+  {
+    "name": "Nosepass",
+    "hash": "ee392fe17d4b94a97ca17a15d276fe6b"
+  },
+  {
+    "name": "Numel",
+    "hash": "30f46f2873244f009b301fb38e6dee3c"
+  },
+  {
+    "name": "Nuzleaf",
+    "hash": "bd9cc8dd983cc7cd67df92ed18757e0a"
+  },
+  {
+    "name": "Obstagoon",
+    "hash": "a04b55bf134fb4b39a8bb82c6a8132c2"
+  },
+  {
+    "name": "Octillery",
+    "hash": "a2054b3cfbe04641336011efb1d568c5"
+  },
+  {
+    "name": "Oddish",
+    "hash": "86123ef18e1f6c91fd15d92fe000e679"
+  },
+  {
+    "name": "Omanyte",
+    "hash": "bea5ba6c71117de971d9fad5a084aa7d"
+  },
+  {
+    "name": "Omastar",
+    "hash": "188ec81e1eda42517e1171f0136f9941"
+  },
+  {
+    "name": "Onix",
+    "hash": "781e3c879c64d8fcaa42254c14e90601"
+  },
+  {
+    "name": "Oranguru",
+    "hash": "525024d42d7efd3ba380d9ecf4c1e01a"
+  },
+  {
+    "name": "Orbeetle",
+    "hash": "616ce73b3daebb5bd4af26e2824d43f7"
+  },
+  {
+    "name": "Oricorio",
+    "hash": "c3a7cd0300cbcc57fc152687fac455a6"
+  },
+  {
+    "name": "Pachirisu",
+    "hash": "e4b99c10a46a84ac0f02e4dd9a98d887"
+  },
+  {
+    "name": "Palkia",
+    "hash": "a904e3a4884a97ed06c4120236929d75"
+  },
+  {
+    "name": "Palossand",
+    "hash": "683383a59e3fb11354144831d6c5a341"
+  },
+  {
+    "name": "Palpitoad",
+    "hash": "26712712677ea4dd1317687f9d908864"
+  },
+  {
+    "name": "Pancham",
+    "hash": "2cf94996162e2aec32ecdf314397c5ae"
+  },
+  {
+    "name": "Pangoro",
+    "hash": "44614105111812330e656a625d0ad2fe"
+  },
+  {
+    "name": "Panpour",
+    "hash": "f81c6f54a88bb016eef75eb1b02ae78d"
+  },
+  {
+    "name": "Pansage",
+    "hash": "8622930b0e7c66e9de14305bd7005889"
+  },
+  {
+    "name": "Pansear",
+    "hash": "752244cfee5a6ce2f275f40dc000391f"
+  },
+  {
+    "name": "Paras",
+    "hash": "2a48e7e33f03146e7a4aef9884b63dcd"
+  },
+  {
+    "name": "Parasect",
+    "hash": "0874103da2816f92bdc29a4c36939b90"
+  },
+  {
+    "name": "Patrat",
+    "hash": "00301be443af81bb0301f8b89e9ea5a6"
+  },
+  {
+    "name": "Pawniard",
+    "hash": "c47a9855e417c9d07ff71420ac2ce4ae"
+  },
+  {
+    "name": "Pelipper",
+    "hash": "289067b0ae8e1442566c873da94a674f"
+  },
+  {
+    "name": "Perrserker",
+    "hash": "2012a1d75875254d7e8315f46b68d2db"
+  },
+  {
+    "name": "Persian",
+    "hash": "04b6fcae171eeddec445c20f30e51d05"
+  },
+  {
+    "name": "Petilil",
+    "hash": "9b740c75a356987d4cbc1c5341ed3b2d"
+  },
+  {
+    "name": "Phanpy",
+    "hash": "44f756099c15474ec644eb76b9b03c2a"
+  },
+  {
+    "name": "Phantump",
+    "hash": "c7a10d7fd00cb69dd8f80628f230c3db"
+  },
+  {
+    "name": "Pheromosa",
+    "hash": "9e94f6667d618dbffd69c532e0f5bab1"
+  },
+  {
+    "name": "Phione",
+    "hash": "1adefb511705d7a653e8f64dd94d4139"
+  },
+  {
+    "name": "Pichu",
+    "hash": "5fadf5778089e515ce84cb195a13f995"
+  },
+  {
+    "name": "Pidgeot",
+    "hash": "b33fccccc3c38657fbf66bda12a7ca90"
+  },
+  {
+    "name": "Pidgeotto",
+    "hash": "f1972cf117fbc7544f798e0fec399414"
+  },
+  {
+    "name": "Pidgey",
+    "hash": "15ca3e1cc06bcdbc380662f2432008ee"
+  },
+  {
+    "name": "Pidove",
+    "hash": "cd34de98b385f1775e3e85161b75d813"
+  },
+  {
+    "name": "Pignite",
+    "hash": "38636145e38a78341814e6ad90a7398f"
+  },
+  {
+    "name": "Pikachu",
+    "hash": "53dbfd304766b5858ee6e139646713c7"
+  },
+  {
+    "name": "Pikipek",
+    "hash": "f0b312f3ec0e2612bac1b25f4440a48c"
+  },
+  {
+    "name": "Piloswine",
+    "hash": "f2513c0f89b009044f6e9f180c492a2d"
+  },
+  {
+    "name": "Pincurchin",
+    "hash": "35774669025ddbeddc475d9be65525a3"
+  },
+  {
+    "name": "Pineco",
+    "hash": "f395e0928bdae28b5a9969c4a44cd03e"
+  },
+  {
+    "name": "Pinsir",
+    "hash": "c93c75e1afa25fc5da06e767e7ca3720"
+  },
+  {
+    "name": "Plusle",
+    "hash": "b90b2f9385442cb77d61e65f32d30bcd"
+  },
+  {
+    "name": "Politoed",
+    "hash": "d42ad0e925f76ea575eecb27575bce49"
+  },
+  {
+    "name": "Poliwag",
+    "hash": "aca3182e4777a94bba85e4a477dc79ad"
+  },
+  {
+    "name": "Poliwhirl",
+    "hash": "46121bfde76640535a7ebc4b6d828815"
+  },
+  {
+    "name": "Poliwrath",
+    "hash": "4ca6f0c317d81a76599b884ee844a9f6"
+  },
+  {
+    "name": "Polteageist",
+    "hash": "e866f0c5a7e40378da7f28cacfc3bf3b"
+  },
+  {
+    "name": "Ponyta",
+    "hash": "68f56a019e897f1514ca7ef17e191b38"
+  },
+  {
+    "name": "Poochyena",
+    "hash": "dca49a3990cddbd215d5e9565d3c8b30"
+  },
+  {
+    "name": "Popplio",
+    "hash": "ded71e4bc5da9895e21cc277b9cf8fab"
+  },
+  {
+    "name": "Porygon-Z",
+    "hash": "208cce0dda09b8721064fdb6e00950a1"
+  },
+  {
+    "name": "Porygon",
+    "hash": "b4871fb5081babaaf682d548a7218065"
+  },
+  {
+    "name": "Porygon2",
+    "hash": "513ef9128fb41071837dfcd724599bed"
+  },
+  {
+    "name": "Primarina",
+    "hash": "7d5c0fadc6b0dcfe9ee89e811974df7a"
+  },
+  {
+    "name": "Primeape",
+    "hash": "61e7ab0512af6a444c8413c20eccfc85"
+  },
+  {
+    "name": "Prinplup",
+    "hash": "a0884102c96e479fc4412ce7acc3f13d"
+  },
+  {
+    "name": "Probopass",
+    "hash": "79a0050430ca4e7f572edf7ebe98d5d1"
+  },
+  {
+    "name": "Psyduck",
+    "hash": "7146ce8a6a916650e3a8b0e8d0e4b9c6"
+  },
+  {
+    "name": "Pumpkaboo",
+    "hash": "70c0425b21ee05541fb91c625ae4050f"
+  },
+  {
+    "name": "Pupitar",
+    "hash": "4b6a039da1be37f82811e3858b79af6f"
+  },
+  {
+    "name": "Purrloin",
+    "hash": "f300d2936aa061bfefda805e8b325127"
+  },
+  {
+    "name": "Purugly",
+    "hash": "e04a72bc545d04ef9074b0e8493b5c54"
+  },
+  {
+    "name": "Pyukumuku",
+    "hash": "c177de9202cecc451e57f8802a79e718"
+  },
+  {
+    "name": "Quagsire",
+    "hash": "c67780b8bc0407e6f44abc256187919b"
+  },
+  {
+    "name": "Quilava",
+    "hash": "7eadab62a270f405339faf369fc8187c"
+  },
+  {
+    "name": "Quilladin",
+    "hash": "4ec23d4bc172b26718382e88d3e86c9b"
+  },
+  {
+    "name": "Qwilfish",
+    "hash": "9820bb97494c308734c4c3584087b0d1"
+  },
+  {
+    "name": "Raboot",
+    "hash": "a50e8e18041012802d7ccd6d5de236df"
+  },
+  {
+    "name": "Raichu",
+    "hash": "f3e7b764831b656de7bdb1be1445e766"
+  },
+  {
+    "name": "Raikou",
+    "hash": "b10640e446d15becc7f1d53e01f87fa9"
+  },
+  {
+    "name": "Ralts",
+    "hash": "1ba70d7c208bf578498ec84d30ce4511"
+  },
+  {
+    "name": "Rampardos",
+    "hash": "9d0342fdeb140a012429c8b814c52c9e"
+  },
+  {
+    "name": "Rapidash",
+    "hash": "333ba14a7324fe83e8db4d864f26a7c3"
+  },
+  {
+    "name": "Raticate",
+    "hash": "5a34e7eeebc70b99bd4d5f7694edb452"
+  },
+  {
+    "name": "Rattata",
+    "hash": "d21d04d8488e11ee9a04a9d8b3e6573a"
+  },
+  {
+    "name": "Regice",
+    "hash": "34fa0eea5291ee1c06e1d8f06344259e"
+  },
+  {
+    "name": "Regigigas",
+    "hash": "d9cf640d7430ed5e7747e80ec94a28c6"
+  },
+  {
+    "name": "Regirock",
+    "hash": "9353e9a40c89bb3bf82a22f090911c10"
+  },
+  {
+    "name": "Registeel",
+    "hash": "26329513ff6c238a0520a1d553e6452b"
+  },
+  {
+    "name": "Relicanth",
+    "hash": "eaf6fc7d7858ecfc191a73f2d0448472"
+  },
+  {
+    "name": "Remoraid",
+    "hash": "549f973dfaabe75bdf5dfe21e2fd05a9"
+  },
+  {
+    "name": "Reshiram",
+    "hash": "dcc2f7d23e5322d5174dff737349e7ca"
+  },
+  {
+    "name": "Reuniclus",
+    "hash": "4937e15b8f0015090c2e30896a76c54b"
+  },
+  {
+    "name": "Rhydon",
+    "hash": "58abe48f497dbff64dcdb39c2d42d207"
+  },
+  {
+    "name": "Rhyhorn",
+    "hash": "81dd809541ff661c5d75f928354d5382"
+  },
+  {
+    "name": "Rhyperior",
+    "hash": "4a229b90e3b04611671e1148cf2b1cfb"
+  },
+  {
+    "name": "Ribombee",
+    "hash": "1d5159d6d521ec7cf4e2e376ae4b3b74"
+  },
+  {
+    "name": "Rillaboom",
+    "hash": "7887156cd8d4502fd52cc2ec72495e5b"
+  },
+  {
+    "name": "Riolu",
+    "hash": "be0322ef2dc67bdcd5943d8901cf6e17"
+  },
+  {
+    "name": "Rockruff",
+    "hash": "ad2f5bd4a4bf4d8b4d908f2bd1bd32b6"
+  },
+  {
+    "name": "Roggenrola",
+    "hash": "33fb9acd2a1b508a392961000ed98708"
+  },
+  {
+    "name": "Rolycoly",
+    "hash": "d3f0ef15e016a1285cbbe33757b43a82"
+  },
+  {
+    "name": "Rookidee",
+    "hash": "d430b4db5ec0508f4b65a9d8d9e4838a"
+  },
+  {
+    "name": "Roselia",
+    "hash": "f6564ba0d119b0cfb32cd55c6519c114"
+  },
+  {
+    "name": "Roserade",
+    "hash": "5055e96facf1c7a5b705fa84d5311aef"
+  },
+  {
+    "name": "Rotom",
+    "hash": "27d50e4a6f2c2e463146bb2a4e1a790a"
+  },
+  {
+    "name": "Rowlet",
+    "hash": "5686054cc0951262c9ce72d829926c39"
+  },
+  {
+    "name": "Rufflet",
+    "hash": "8b6fe1b6b003c2483bfc1d0de03ec4ae"
+  },
+  {
+    "name": "Runerigus",
+    "hash": "9063d24c6170b7eadb9dcd8fc867b877"
+  },
+  {
+    "name": "Sableye",
+    "hash": "58e87e7b35ef2019ef51de96178a8839"
+  },
+  {
+    "name": "Salamence",
+    "hash": "e1bf15bc9f80b0edfc30a86dade3b8e4"
+  },
+  {
+    "name": "Salazzle",
+    "hash": "020e8d50e7bb2de89cda1ff96e5bb70c"
+  },
+  {
+    "name": "Samurott",
+    "hash": "303ebf008ee26283881c5f977f19f4f8"
+  },
+  {
+    "name": "Sandaconda",
+    "hash": "f8e8817c67ee2979a5ed5d6fd905417b"
+  },
+  {
+    "name": "Sandile",
+    "hash": "b80832f6a70a6c527e1995a2aea4941d"
+  },
+  {
+    "name": "Sandshrew",
+    "hash": "2c4cebbd67505ea15634b3a81a291b1c"
+  },
+  {
+    "name": "Sandslash",
+    "hash": "e4e761082a8714e94d3f077f68789712"
+  },
+  {
+    "name": "Sandygast",
+    "hash": "cb51039c0c590a35f7eeb9344008bf11"
+  },
+  {
+    "name": "Sawk",
+    "hash": "d14a721beb6fedd27fba0c340abaeca2"
+  },
+  {
+    "name": "Scatterbug",
+    "hash": "69e17a41c727f8bebd1d074628eacc97"
+  },
+  {
+    "name": "Sceptile",
+    "hash": "a71c84be094e4fc4778ae450e45cb748"
+  },
+  {
+    "name": "Scizor",
+    "hash": "f0c0b7258e3b201da3136e6c6ad9b12f"
+  },
+  {
+    "name": "Scolipede",
+    "hash": "6dc3d21abca4294d586d38d818dc59c4"
+  },
+  {
+    "name": "Scorbunny",
+    "hash": "ccc09f1c9e617bdb4acfec99af919790"
+  },
+  {
+    "name": "Scrafty",
+    "hash": "348c39f1412a689cfe4dd7c46cd0f76e"
+  },
+  {
+    "name": "Scraggy",
+    "hash": "885eda3a4b913839bc35d6afa08386cd"
+  },
+  {
+    "name": "Scyther",
+    "hash": "a1aca2ec6703b2dbedd4158c8d7f5931"
+  },
+  {
+    "name": "Seadra",
+    "hash": "4e643b87406dd9264e7e0e21352abaf2"
+  },
+  {
+    "name": "Seaking",
+    "hash": "a56ed3e40e6a592824f12b26dc844d55"
+  },
+  {
+    "name": "Sealeo",
+    "hash": "a7888dd8b0459e2568d39c539933123c"
+  },
+  {
+    "name": "Seedot",
+    "hash": "0068122c636899528aaf1591e1b407fe"
+  },
+  {
+    "name": "Seel",
+    "hash": "f677130996bc20f061388f985cd72117"
+  },
+  {
+    "name": "Seismitoad",
+    "hash": "e2d009fb5593db8f3438cf66ae30cda6"
+  },
+  {
+    "name": "Sentret",
+    "hash": "dd429cf5d7541b200f4998c986993c3d"
+  },
+  {
+    "name": "Serperior",
+    "hash": "2e5b61ebd33b748f69f0797a9a899f20"
+  },
+  {
+    "name": "Servine",
+    "hash": "25caf40bd8047158594d632f5f7838b6"
+  },
+  {
+    "name": "Seviper",
+    "hash": "4db2bbdeb064a04eafaf8ae69ab23013"
+  },
+  {
+    "name": "Sewaddle",
+    "hash": "3e2256829feab794a1a0ea439d1b3cf0"
+  },
+  {
+    "name": "Sharpedo",
+    "hash": "3a25cb39d054347730dca7ec5af58ca5"
+  },
+  {
+    "name": "Shaymin",
+    "hash": "f59c009725f57a92b2b94aa8beb96bf7"
+  },
+  {
+    "name": "Shedinja",
+    "hash": "b42c9a80d9d5fb6a2776f17a83741749"
+  },
+  {
+    "name": "Shelgon",
+    "hash": "45e0081a461ce24ae1d6275d17aca145"
+  },
+  {
+    "name": "Shellder",
+    "hash": "221c435f654b9580227ed8f1c1b89f6e"
+  },
+  {
+    "name": "Shelmet",
+    "hash": "cc1205daac61533d8dbebc0b8807b912"
+  },
+  {
+    "name": "Shieldon",
+    "hash": "15f840796c38e338222bd80a8a07c631"
+  },
+  {
+    "name": "Shiftry",
+    "hash": "ee85dc3821f861c1c4a6170f277b68fe"
+  },
+  {
+    "name": "Shinx",
+    "hash": "025904b1f00710cd4e55b8a8eb4c2f5d"
+  },
+  {
+    "name": "Shroomish",
+    "hash": "e38741ba6410a7244d1531b1252ed481"
+  },
+  {
+    "name": "Shuckle",
+    "hash": "fced55d85d0ccae16d1d96ee20ba0579"
+  },
+  {
+    "name": "Shuppet",
+    "hash": "389b420389d3100049efd54d3d06180c"
+  },
+  {
+    "name": "Sigilyph",
+    "hash": "8980c6305f573aed0672f89cf2e5b3d4"
+  },
+  {
+    "name": "Silcoon",
+    "hash": "5d0565b245969803766edcdb7f8aca79"
+  },
+  {
+    "name": "Silicobra",
+    "hash": "9140974a9b8d01dbe9384265554f1c8f"
+  },
+  {
+    "name": "Silvally",
+    "hash": "c2abb5baff430dcf386ad8b6778f5311"
+  },
+  {
+    "name": "Simipour",
+    "hash": "4dc65671c79bb8dea6cdb64179604eef"
+  },
+  {
+    "name": "Simisage",
+    "hash": "1c4643fd38a47df7063871a41d8b8b87"
+  },
+  {
+    "name": "Simisear",
+    "hash": "6202284b6978f2fb3f7380aad11966a3"
+  },
+  {
+    "name": "Sinistea",
+    "hash": "e10f2989fb337518e230fb1cafe47162"
+  },
+  {
+    "name": "Sirfetch'd",
+    "hash": "c9a40864944236c5ba1238a4cbb722d8"
+  },
+  {
+    "name": "Sizzlipede",
+    "hash": "01390ace9752534920611ce59b04aa9f"
+  },
+  {
+    "name": "Skarmory",
+    "hash": "42ed4e970aafac9dd0abbe5c5d344ad9"
+  },
+  {
+    "name": "Skiddo",
+    "hash": "2be5a3fc3892b3a86c85a954643b4354"
+  },
+  {
+    "name": "Skiploom",
+    "hash": "995be3f1995e09cc53b48a67b44e05bb"
+  },
+  {
+    "name": "Skitty",
+    "hash": "7a754de43fd648614ac03ae84e324715"
+  },
+  {
+    "name": "Skorupi",
+    "hash": "dc98546cf5156bae03c5038118f70aaa"
+  },
+  {
+    "name": "Skrelp",
+    "hash": "bc1046fe329c8fbfe558ad0b83af5cfd"
+  },
+  {
+    "name": "Skuntank",
+    "hash": "6ba0141c811140a1333318414e34b635"
+  },
+  {
+    "name": "Skwovet",
+    "hash": "55496d6790569cea8d62d421e6513c78"
+  },
+  {
+    "name": "Slaking",
+    "hash": "ebb74ecf3f8d3c1bcee42dbe08e1bc0b"
+  },
+  {
+    "name": "Slakoth",
+    "hash": "13ab6a8d02867e15f6a6be3fa3b5bf93"
+  },
+  {
+    "name": "Sliggoo",
+    "hash": "a4ea658af5f52805501d881f3d0f74cb"
+  },
+  {
+    "name": "Slowbro",
+    "hash": "2c164a7f6efa6214e0ca2c9c06d32d6b"
+  },
+  {
+    "name": "Slowking",
+    "hash": "73879e90560cd7f40fca0979261f36fb"
+  },
+  {
+    "name": "Slowpoke",
+    "hash": "5bd4b88f3d184bfe81e793870f87b7a5"
+  },
+  {
+    "name": "Slugma",
+    "hash": "365bf99c1001e490ecfa141f11effd33"
+  },
+  {
+    "name": "Slurpuff",
+    "hash": "3e8bf0f107ea98f1102f8ec7b0495038"
+  },
+  {
+    "name": "Smeargle",
+    "hash": "bc23cb684d47a865744104e3acf9c1c5"
+  },
+  {
+    "name": "Smoochum",
+    "hash": "dd27f781179006266d7f81a49026354f"
+  },
+  {
+    "name": "Sneasel",
+    "hash": "477d919d71893950771ea0c5422f22d8"
+  },
+  {
+    "name": "Snom",
+    "hash": "ef759be9f3cef87e7b01c87ab4b89b6f"
+  },
+  {
+    "name": "Snorlax",
+    "hash": "7c3efbfeea61505167b89cac5640a3c3"
+  },
+  {
+    "name": "Snorunt",
+    "hash": "3390af730f741d3a40205f3cb9297fbd"
+  },
+  {
+    "name": "Snover",
+    "hash": "384c50f4ee249f4862d5e2ab473f1c4c"
+  },
+  {
+    "name": "Snubbull",
+    "hash": "e2585599506524e22d65a97e5aec9427"
+  },
+  {
+    "name": "Sobble",
+    "hash": "10902dcb858415945711d11d4fc7a1c1"
+  },
+  {
+    "name": "Solgaleo",
+    "hash": "6e8898c16b3881d56b103dc681834bbe"
+  },
+  {
+    "name": "Solosis",
+    "hash": "08f9bc6ab1ef48c26e2442e711af4f8d"
+  },
+  {
+    "name": "Solrock",
+    "hash": "bbddbbc74a7b9098af7a9e9cf2788b74"
+  },
+  {
+    "name": "Spearow",
+    "hash": "f993baa8707a5cc7638c8434b3d8f9e4"
+  },
+  {
+    "name": "Spewpa",
+    "hash": "3405cd6d85646c5fa44c681080159368"
+  },
+  {
+    "name": "Spheal",
+    "hash": "7ea06294c8907a9fc9a275c2277711be"
+  },
+  {
+    "name": "Spinarak",
+    "hash": "53790d1de3f785a1ca0a06b2287058ba"
+  },
+  {
+    "name": "Spinda",
+    "hash": "ba1e38d3991c6565df3ec03820716110"
+  },
+  {
+    "name": "Spiritomb",
+    "hash": "d6b238fe5f4519c4c1b3d2dfd67157ac"
+  },
+  {
+    "name": "Spoink",
+    "hash": "48cfb46a87fbbb005a0657804482cac9"
+  },
+  {
+    "name": "Spritzee",
+    "hash": "2aa612abae84c18cb5a8fd4a3e0245d4"
+  },
+  {
+    "name": "Squirtle",
+    "hash": "7b9ddf692c6df64d86bbe4e96ef46a83"
+  },
+  {
+    "name": "Stantler",
+    "hash": "55c68f2f4e7ec4e5425bfe3ae626a347"
+  },
+  {
+    "name": "Staraptor",
+    "hash": "5de05b6c1e43ee6972b7ae5f343fa4d1"
+  },
+  {
+    "name": "Staravia",
+    "hash": "b63fe5165ce77be045c74b42373d1231"
+  },
+  {
+    "name": "Starly",
+    "hash": "663d6482b6a6efc0943eacf49bd795cf"
+  },
+  {
+    "name": "Starmie",
+    "hash": "60bb4d45cf34b3be8b3e5f02a93720d4"
+  },
+  {
+    "name": "Staryu",
+    "hash": "bed11b75b421a7a4222770606a7acf1a"
+  },
+  {
+    "name": "Steelix",
+    "hash": "eb4391a1bc42f8ddc4b010e5fe9546af"
+  },
+  {
+    "name": "Steenee",
+    "hash": "92ad260d610313d71a929567305f8838"
+  },
+  {
+    "name": "Stonjourner",
+    "hash": "268b1cb8b5bd86ed4e7dd8115a281938"
+  },
+  {
+    "name": "Stoutland",
+    "hash": "61fe5b9dbe3b63b52f819cc8625e89cc"
+  },
+  {
+    "name": "Stufful",
+    "hash": "4c9c4e0eebd2ef98e9c7a821a3844328"
+  },
+  {
+    "name": "Stunfisk",
+    "hash": "11d46934c54693cd881f1e2bb4426361"
+  },
+  {
+    "name": "Stunky",
+    "hash": "695692a0dfa97af060f10eeaa85865a1"
+  },
+  {
+    "name": "Sudowoodo",
+    "hash": "7bc6f7f90c8a85f458d568bc93a2e4e4"
+  },
+  {
+    "name": "Suicune",
+    "hash": "6ac7aa9e12d3889c26b35d929133d61b"
+  },
+  {
+    "name": "Sunflora",
+    "hash": "8549fbb47bbf3c870c7d6867e0f01f94"
+  },
+  {
+    "name": "Sunkern",
+    "hash": "cafa2801210a279c44949f3474247ea3"
+  },
+  {
+    "name": "Surskit",
+    "hash": "047752991c607ee38ce8d6551a002f1a"
+  },
+  {
+    "name": "Swablu",
+    "hash": "fed62046a83e59401a9af1873d9083df"
+  },
+  {
+    "name": "Swadloon",
+    "hash": "f4e36a504909b7b8207de85f7615373f"
+  },
+  {
+    "name": "Swalot",
+    "hash": "0fe0a9120d175342f2edfc5c9e814a73"
+  },
+  {
+    "name": "Swampert",
+    "hash": "a70f9cfcb70607cc2bb029a696f74367"
+  },
+  {
+    "name": "Swanna",
+    "hash": "b363f8c1c01b420d52320a0823e3669a"
+  },
+  {
+    "name": "Swellow",
+    "hash": "ccda3443410ca1fe99b542511e2eb311"
+  },
+  {
+    "name": "Swinub",
+    "hash": "8e1603bde45f76b7f3fc15fd47ed2a1f"
+  },
+  {
+    "name": "Swirlix",
+    "hash": "e1dfb0ff6bfd8e943aef482e9bb5aef2"
+  },
+  {
+    "name": "Swoobat",
+    "hash": "6c5c95987513eece35cad9f4deaa7791"
+  },
+  {
+    "name": "Sylveon",
+    "hash": "1c7a8999499e7c126a1222673c4def28"
+  },
+  {
+    "name": "Taillow",
+    "hash": "fe8fa997f09f196b4f6e3f932b976d53"
+  },
+  {
+    "name": "Talonflame",
+    "hash": "21ed742cf7788d767ea0d311ab8776e1"
+  },
+  {
+    "name": "Tangela",
+    "hash": "ce22d1c75349cc44fc8b6392f7b5d2b8"
+  },
+  {
+    "name": "Tangrowth",
+    "hash": "b4cf71e196099571fd2debcdf798ae74"
+  },
+  {
+    "name": "Tapu Bulu",
+    "hash": "fc9cab58b0552ef9acda3d94085dcfaf"
+  },
+  {
+    "name": "Tapu Fini",
+    "hash": "a59f67ea5f12c409190858b0d9b062d7"
+  },
+  {
+    "name": "Tapu Koko",
+    "hash": "01489e383285843213d0a5517f0de2de"
+  },
+  {
+    "name": "Tapu Lele",
+    "hash": "6a0348899aa811f171d1e0fe1eac6e2d"
+  },
+  {
+    "name": "Tauros",
+    "hash": "837881a436eabbd8bdb308f825bd6df5"
+  },
+  {
+    "name": "Teddiursa",
+    "hash": "3789e9acadea1d65d26c2efdeabd3708"
+  },
+  {
+    "name": "Tentacool",
+    "hash": "ce9fd51f046cae707f95a2614f873028"
+  },
+  {
+    "name": "Tentacruel",
+    "hash": "5e3c3ef7382339f1e41a69513b41ba73"
+  },
+  {
+    "name": "Terrakion",
+    "hash": "fd453876748418791ae9723eb5e81d98"
+  },
+  {
+    "name": "Thievul",
+    "hash": "d5874d2a799dd1de068051e575896c8d"
+  },
+  {
+    "name": "Throh",
+    "hash": "7a735a1c8a2253bff835026a6b1dd1a9"
+  },
+  {
+    "name": "Thundurus",
+    "hash": "93efdb98bac288d91936a32324e6a999"
+  },
+  {
+    "name": "Thwackey",
+    "hash": "a568b5e9d47ebe247277fbc006439053"
+  },
+  {
+    "name": "Timburr",
+    "hash": "51a22b586d920942bcd4b263e6a953e2"
+  },
+  {
+    "name": "Tirtouga",
+    "hash": "87df6acbd138b3c8477f8becc58498a4"
+  },
+  {
+    "name": "Togedemaru",
+    "hash": "514a5cc1b3266d8f350e6df2c4710043"
+  },
+  {
+    "name": "Togekiss",
+    "hash": "2273fff95b9c31dc6dbf5b59e1eb9654"
+  },
+  {
+    "name": "Togepi",
+    "hash": "e9b146b9e51cd567cfc5c09dcadf95da"
+  },
+  {
+    "name": "Togetic",
+    "hash": "fc34aeb2b1e1e9276e7af7f97aad8cef"
+  },
+  {
+    "name": "Torkoal",
+    "hash": "4375ef1d2b1af5a576e37b1140e56e94"
+  },
+  {
+    "name": "Tornadus",
+    "hash": "ee29109b1c97d6d25cd418487ba47c82"
+  },
+  {
+    "name": "Torracat",
+    "hash": "fcf522a39eb942d711e923480d915dc5"
+  },
+  {
+    "name": "Torterra",
+    "hash": "5a14fb9aaae2a67927dd64b738bfa256"
+  },
+  {
+    "name": "Totodile",
+    "hash": "1b04c3e4baf2805e335b275603860bcc"
+  },
+  {
+    "name": "Toxapex",
+    "hash": "5078098754e8bacb198df54bc6db829d"
+  },
+  {
+    "name": "Toxel",
+    "hash": "31836027d6d8c3fdae50f73e49fa9a5a"
+  },
+  {
+    "name": "Toxicroak",
+    "hash": "1a48299040330ae278094279a150d5d2"
+  },
+  {
+    "name": "Toxtricity",
+    "hash": "f136f97fb302f5c24157ee50c53dafab"
+  },
+  {
+    "name": "Tranquill",
+    "hash": "91154293a470074333c7e74a9e2a5003"
+  },
+  {
+    "name": "Trapinch",
+    "hash": "58d42a577f31b556c1f2d6071079f347"
+  },
+  {
+    "name": "Trevenant",
+    "hash": "7993bba7c70055e0e7952174ae39f4bb"
+  },
+  {
+    "name": "Tropius",
+    "hash": "85a06bdb5efd0ab256a39915b5c5fe15"
+  },
+  {
+    "name": "Trubbish",
+    "hash": "b99740020396c97859b572ad17896ffd"
+  },
+  {
+    "name": "Turtonator",
+    "hash": "ac1cdd0d3ab7438cf8a981fd7c9dd250"
+  },
+  {
+    "name": "Tympole",
+    "hash": "b42062802db95f90ee3b433714aac960"
+  },
+  {
+    "name": "Tynamo",
+    "hash": "d702bb449c7849a1516a29ba618e5421"
+  },
+  {
+    "name": "Typhlosion",
+    "hash": "15216f9da7e4f180a271a71502c98a2a"
+  },
+  {
+    "name": "Tyranitar",
+    "hash": "d81e20c590810389a54f30946b7403cc"
+  },
+  {
+    "name": "Tyrantrum",
+    "hash": "870286708c3aa4594d955e0cb8fac46c"
+  },
+  {
+    "name": "Tyrogue",
+    "hash": "01734ef39224b5b5d3dfc4a19af90ebe"
+  },
+  {
+    "name": "Tyrunt",
+    "hash": "c0720f415cfb532581b937024faf836e"
+  },
+  {
+    "name": "Umbreon",
+    "hash": "f5e5026cbf7d52839ff580d13c5600e8"
+  },
+  {
+    "name": "Ursaring",
+    "hash": "8e3d9ca200ef8e230fe71c117f0cfefa"
+  },
+  {
+    "name": "Uxie",
+    "hash": "8e444fae0b488223471a0ed2804d97d2"
+  },
+  {
+    "name": "Vanillish",
+    "hash": "7cbf0937c02a7dcdc5e06f79a489c6ea"
+  },
+  {
+    "name": "Vanillite",
+    "hash": "44dd830c3b97014c113c1dfbbe6f7fef"
+  },
+  {
+    "name": "Vanilluxe",
+    "hash": "a001962dea80592402e50bc65d142441"
+  },
+  {
+    "name": "Vaporeon",
+    "hash": "57d04bfe5867fc0a8e2b55000e7e5ee4"
+  },
+  {
+    "name": "Venipede",
+    "hash": "afe985666121e1f903269b68f40ec4d5"
+  },
+  {
+    "name": "Venomoth",
+    "hash": "15dab15b58aa9922321379fa00bd2b3f"
+  },
+  {
+    "name": "Venonat",
+    "hash": "1ccce677bb4980ce2c3e48830120aa69"
+  },
+  {
+    "name": "Venusaur",
+    "hash": "8c37e2ae54a20df159b6706ef5663ff9"
+  },
+  {
+    "name": "Vespiquen",
+    "hash": "45d3530bd2415d220fc466a7d946a734"
+  },
+  {
+    "name": "Vibrava",
+    "hash": "f2fa3a07699bf3367f40a7122cdc1ef8"
+  },
+  {
+    "name": "Victini",
+    "hash": "8e719482a5ae5b30474b52d5ee9472a2"
+  },
+  {
+    "name": "Victreebel",
+    "hash": "3d883ce072ae49f3dcaad96ac1032fdb"
+  },
+  {
+    "name": "Vigoroth",
+    "hash": "d2c0224d8b5cd59ea270ed8b73fc73af"
+  },
+  {
+    "name": "Vileplume",
+    "hash": "409c6f4963b8731bce34411d14595421"
+  },
+  {
+    "name": "Virizion",
+    "hash": "d42247c40cb0ed1eebe7615c937505cb"
+  },
+  {
+    "name": "Vivillon",
+    "hash": "136ce3f82b538834431c6a688ddd7462"
+  },
+  {
+    "name": "Volbeat",
+    "hash": "b43c84e1c6f5ed6528210198b4d0754e"
+  },
+  {
+    "name": "Volcanion",
+    "hash": "486b4ce7817fa4d2c607d25ef7d181aa"
+  },
+  {
+    "name": "Volcarona",
+    "hash": "0ac7c7d17e15628ddc470831d08ba54a"
+  },
+  {
+    "name": "Voltorb",
+    "hash": "028f6bd806ae14844a778a944c2435a8"
+  },
+  {
+    "name": "Vullaby",
+    "hash": "fcd3298e825ae9a6f6da47dda6ad048a"
+  },
+  {
+    "name": "Vulpix",
+    "hash": "486cbfa6a683a20b33de46403b220d64"
+  },
+  {
+    "name": "Wailmer",
+    "hash": "d86e9288cda8515a5889326fdb64494a"
+  },
+  {
+    "name": "Wailord",
+    "hash": "10c7f34c5fc2be7d805a2562ad05c321"
+  },
+  {
+    "name": "Walrein",
+    "hash": "91b76b76504785fbb9fe6f74bd871626"
+  },
+  {
+    "name": "Wartortle",
+    "hash": "04cfac8634923b57a079cc4381035686"
+  },
+  {
+    "name": "Watchog",
+    "hash": "a5f01c68ec58e9d0bdd2a2171d9fda5c"
+  },
+  {
+    "name": "Weavile",
+    "hash": "4693fe2542f6b330b8c8abf9bcba2c27"
+  },
+  {
+    "name": "Weedle",
+    "hash": "a36e71da6ec97bf184a71883476152b0"
+  },
+  {
+    "name": "Weepinbell",
+    "hash": "8b080e5620605a08d19b3506c4121dff"
+  },
+  {
+    "name": "Weezing",
+    "hash": "c30088fc328818b6888550be1f1fc36f"
+  },
+  {
+    "name": "Whimsicott",
+    "hash": "23bd382c8e4fcd24f5c81178af828931"
+  },
+  {
+    "name": "Whirlipede",
+    "hash": "983109a63752c49eb30753709ead4720"
+  },
+  {
+    "name": "Whiscash",
+    "hash": "018b1de91218a5555cfac651c0555620"
+  },
+  {
+    "name": "Whismur",
+    "hash": "21ca89641b538a57e9c4033f9988941a"
+  },
+  {
+    "name": "Wigglytuff",
+    "hash": "be829108ec350dca18453fec91f7f85f"
+  },
+  {
+    "name": "Wingull",
+    "hash": "e44d747e42e66be5db642b762013e462"
+  },
+  {
+    "name": "Wobbuffet",
+    "hash": "0f421cd75ceef510f1d9ed4701e44c76"
+  },
+  {
+    "name": "Woobat",
+    "hash": "572e7e562c2c63d2a02c2d18b7c16c7d"
+  },
+  {
+    "name": "Wooloo",
+    "hash": "a20950ff9d6a0302ea7592dd6152ca9a"
+  },
+  {
+    "name": "Wooper",
+    "hash": "d21e534ceaaa3ba0ef7ce0a7d2540afa"
+  },
+  {
+    "name": "Wormadam",
+    "hash": "b241128fd335d32db9e9a7fd46a0b320"
+  },
+  {
+    "name": "Wurmple",
+    "hash": "4d5a8fc7f7b0fd6752c501cade63869a"
+  },
+  {
+    "name": "Wynaut",
+    "hash": "ee797764ad393d8140fc042737acf427"
+  },
+  {
+    "name": "Xatu",
+    "hash": "11524c5601ef6f9908aede4cceb82f00"
+  },
+  {
+    "name": "Xerneas",
+    "hash": "d9bb613b1f4e4356c9707d95d2ad86ab"
+  },
+  {
+    "name": "Xurkitree",
+    "hash": "7845386642ee5d285e8969f5eae1e3ca"
+  },
+  {
+    "name": "Yamask",
+    "hash": "ea3374ee9500896cdf79b3427bd6960a"
+  },
+  {
+    "name": "Yamper",
+    "hash": "70d34968559d39a5c151aa739bf299eb"
+  },
+  {
+    "name": "Yanma",
+    "hash": "95cab994bc06cc72cb46d905b4b76a0f"
+  },
+  {
+    "name": "Yanmega",
+    "hash": "0dd7c328c39e836cc0b4a487027ebafc"
+  },
+  {
+    "name": "Yveltal",
+    "hash": "aed09406ebe9354df72fb98f12b6e8c7"
+  },
+  {
+    "name": "Zacian",
+    "hash": "607089ce52bbd7bf8e253aea7a5f7a23"
+  },
+  {
+    "name": "Zamazenta",
+    "hash": "3d58335b9afa1af49700ef6f4e9d6cf2"
+  },
+  {
+    "name": "Zangoose",
+    "hash": "ddab0e26d6c46732daafb0b8a495862c"
+  },
+  {
+    "name": "Zapdos",
+    "hash": "39effe4839775eb7f586078a03bc2aa3"
+  },
+  {
+    "name": "Zekrom",
+    "hash": "75633887270085f11ba66a40d0f68782"
+  },
+  {
+    "name": "Zeraora",
+    "hash": "0ad8e56e41da760b9aa7d07f72633b74"
+  },
+  {
+    "name": "Zigzagoon",
+    "hash": "d39bb558094dff7dfd45ecf9ed936f0e"
+  },
+  {
+    "name": "Zoroark",
+    "hash": "9a12b79429dc143d4e4c1ada48728542"
+  },
+  {
+    "name": "Zorua",
+    "hash": "ac900f562792f34b51bacc4850ba61e3"
+  },
+  {
+    "name": "Zubat",
+    "hash": "04bad30757cc64a63f352077c1c38e98"
+  },
+  {
+    "name": "Zweilous",
+    "hash": "30f67cb595cbf2376da284896d8ef219"
+  },
+  {
+    "name": "Zygarde",
+    "hash": "3566bf27954eddd2740722fa51aaf30c"
   }
 ]

@@ -123,7 +123,9 @@ class Listener(commands.Cog):
                 print(f'Learned that {md5} is {truename} from Catch')
 
             elif img.name != truename:
-                print(f'Caught {truename}, expected {img.name}. Aborting.')
+                print(f'Caught {truename}, expected {img.name}. Updating')
+                img.pokemon = db.get_pokemon_by_name(truename)
+                img.save()
                 return
             entry = db.get_pokedex_entry(player_id, truename)
             entry.caught = True

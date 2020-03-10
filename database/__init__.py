@@ -14,8 +14,6 @@ POOL = db_url.connect(configuration.get('db'))
 
 HASHES: Dict[str, str] = {}
 FLAVORS: Dict[str, list] = {}
-HASHES_BY_NAME: Dict[str, str] = {}
-
 
 class BaseModel(peewee.Model):
     class Meta:
@@ -63,17 +61,6 @@ class Image(BaseModel):
             self.pokemon.name = name
             self.save()
 
-    def load_hash(self) -> None:
-        if self.md5:
-            return
-        if not HASHES_BY_NAME:
-            with open('imagehashes.json', mode='r') as f:
-                HASHES_BY_NAME.update(
-                    {value["name"]: value["hash"] for value in json.load(f)})
-        self.md5 = HASHES_BY_NAME.get(self.pokemon.name)
-        if self.md5:
-            self.save()
-
     @property
     def name(self) -> Optional[str]:
         self.load_name()
@@ -103,7 +90,8 @@ class Database(Cog):
     def __init__(self, bot: Bot):
         self.bot = bot
         self.pool = POOL
-        bot.pool = self.pool
+        if bot is not None:
+            bot.pool = self.pool
 
     def get_player(self, discord_id: int) -> Player:
         user, _ = Player.get_or_create(discord_id=discord_id)

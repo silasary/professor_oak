@@ -20,6 +20,7 @@ ajani = {git = "https://github.com/silasary/modbot.git"}
 
 [dev-packages]
 autopep8 = "*"
+rope = "*"
 
 [pipenv]
 allow_prereleases = true
