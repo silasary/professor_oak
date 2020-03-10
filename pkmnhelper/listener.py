@@ -73,7 +73,8 @@ class Listener(commands.Cog):
 
 
     async def levelup(self, embed: discord.Embed, message: discord.Message) -> None:
-        delete_after_delay(message)
+        if message.guild.me.permissions_in(message.channel).manage_messages:
+            delete_after_delay(message)
         reg_level = lvlup_title.match(embed.title)
         if reg_level:
             name = reg_level.group(1)
