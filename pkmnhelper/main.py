@@ -49,6 +49,9 @@ class Bot(discord.ext.commands.Bot):
 
     @discord.ext.tasks.loop(minutes=5.0)
     async def update(self) -> None:
+        if not self.commit_id:
+            self.update.stop()
+            return
         subprocess.check_output(['git', 'fetch']).decode()
         commit_id = subprocess.check_output(['git', 'rev-parse', f'origin/{self.branch}']).decode().strip()
         if commit_id != self.commit_id:
@@ -61,6 +64,12 @@ class Bot(discord.ext.commands.Bot):
         self.commit_id = subprocess.check_output(['git', 'rev-parse', 'HEAD']).decode().strip()
         self.branch = subprocess.check_output(['git', 'rev-parse', '--abbrev-ref', 'HEAD']).strip().decode()
         print(f'Currently running {self.commit_id} on {self.branch}')
+        upstream = subprocess.check_output(['git', 'rev-parse', f'origin/{self.branch}']).decode().strip()
+        if upstream != self.commit_id:
+            print(f'Upstream at {upstream}. Auto-reboot disabled.')
+            self.update.stop()
+            self.commit_id = None
+
 
 def init() -> None:
     client = Bot()
