@@ -51,8 +51,8 @@ class Bot(discord.ext.commands.Bot):
     async def update(self) -> None:
         subprocess.check_output(['git', 'fetch']).decode()
         commit_id = subprocess.check_output(['git', 'rev-parse', f'origin/{self.branch}']).decode().strip()
-        print(f'origin/{self.branch} at {commit_id}')
         if commit_id != self.commit_id:
+            print(f'origin/{self.branch} at {commit_id}')
             print('Update found, shutting down')
             await self.close()
 
