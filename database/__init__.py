@@ -161,7 +161,7 @@ class Database(Cog):
         self.pool.close()
 
 
-POOL.evolve(interactive=False)
+POOL.evolve(interactive=False, ignore_tables=['BaseModel'])
 
 
 def setup(bot: Bot) -> None:
