@@ -186,12 +186,17 @@ class Listener(commands.Cog):
         if not invokation.split()[0].endswith(b'dex'):
             return
         with self.get_db() as db:
+            player = db.get_player(player_id)
+            p_name = str(self.bot.get_user(player_id))
+            if player.name != p_name:
+                player.name = p_name
+                player.save()
             for f in embed.fields:
                 truename = f.name.split('#')[0].strip()
                 caught = '✅' in f.value
                 entry = db.get_pokedex_entry(player_id, truename)
                 if entry.caught != caught:
-                    print(f'>> {truename}={caught}')
+                    print(f'{p_name} >> {truename}={caught}')
                     entry.caught = caught
                     entry.save()
 
