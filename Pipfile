@@ -8,8 +8,6 @@ python_version = "3.7"
 
 [packages]
 "discord.py" = "*"
-pylint = "*"
-mypy = "*"
 aioredis = "*"
 peewee = "*"
 peewee-db-evolve = "*"
@@ -24,6 +22,8 @@ imagehash = "*"
 [dev-packages]
 autopep8 = "*"
 rope = "*"
+pylint = "*"
+mypy = "*"
 
 [pipenv]
 allow_prereleases = true

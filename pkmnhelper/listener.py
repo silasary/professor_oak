@@ -43,6 +43,8 @@ class Listener(commands.Cog):
                         await self.info(e)
                     elif footer.startswith("You haven't caught") or footer.startswith("You've caught "):
                         await self.dex_entry(e, message)
+                    elif title == 'Pokédex':
+                        await self.dex_list(e, message)
                     else:
                         print('> unknown pokecord message')
                         print(f'> {e}\n title: {repr(title)}\n desc: {e.description}')
@@ -61,6 +63,10 @@ class Listener(commands.Cog):
             if re.match(r'^https://cdn.discordapp.com/attachments/.*/PokecordSpawn.jpg$', message.content):
                 embed = discord.Embed().set_image(url=message.content)
                 await self.spawn(embed, message)
+        else:
+            await self.bot.redis.set(f'pkmn:last:{message.channel.id}:author', message.author.id)
+            await self.bot.redis.set(f'pkmn:last:{message.channel.id}:content', message.content)
+
 
     @commands.Cog.listener()
     async def on_message_edit(self, before: discord.Message, after: discord.Message) -> None:
@@ -173,6 +179,21 @@ class Listener(commands.Cog):
                 img.pokemon = db.get_pokemon_by_name(name)
                 img.save()
                 print(f'Learned that {md5} is {name} from Pokedex')
+
+    async def dex_list(self, embed: discord.Embed, message: discord.Message) -> None:
+        player_id = int(await self.bot.redis.get(f'pkmn:last:{message.channel.id}:author'))
+        invokation: bytes = await self.bot.redis.get(f'pkmn:last:{message.channel.id}:content')
+        if not invokation.split()[0].endswith(b'dex'):
+            return
+        with self.get_db() as db:
+            for f in embed.fields:
+                truename = f.name.split('#')[0].strip()
+                caught = '✅' in f.value
+                entry = db.get_pokedex_entry(player_id, truename)
+                if entry.caught != caught:
+                    print(f'>> {truename}={caught}')
+                    entry.caught = caught
+                    entry.save()
 
     def active_players(self, guild: discord.Guild) -> List[discord.Member]:
         db = self.get_db()

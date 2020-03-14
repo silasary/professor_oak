@@ -35,7 +35,7 @@ class Bot(discord.ext.commands.Bot):
         super().__init__(command_prefix='~')
         super().load_extension('pkmnhelper.listener')
         super().load_extension('database')
-
+        super().load_extension('discordbot.owner')
 
     def init(self) -> None:
         self.update.start()
