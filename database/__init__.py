@@ -112,7 +112,7 @@ class PokedexEntry(BaseModel):
             return '❓'
         elif self.caught:
             return '✅'
-        return '❎'
+        return '❌'
 
 
 class Database(Cog):
