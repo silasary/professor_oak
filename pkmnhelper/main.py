@@ -34,6 +34,7 @@ class Bot(discord.ext.commands.Bot):
         self.config = Config()
         super().__init__(command_prefix='~')
         super().load_extension('pkmnhelper.listener')
+        super().load_extension('pkmnhelper.recommendations')
         super().load_extension('database')
         super().load_extension('discordbot.owner')
 
