@@ -1,7 +1,7 @@
 import asyncio
 import json
 import random
-from typing import Dict, Optional
+from typing import Dict, Optional, List
 
 import yaml
 import peewee
@@ -49,8 +49,9 @@ class Player(BaseModel):
 
 class Pokemon(BaseModel):
     name = peewee.CharField(null=True, unique=True, max_length=32)
+    dex_page = peewee.IntegerField(null=True, unique=False)
 
-    def random_flavor(self) -> None:
+    def random_flavor(self) -> Optional[str]:
         if not FLAVORS:
             with open('flavors.json', mode='r') as f:
                 FLAVORS.update(json.load(f))
@@ -141,7 +142,6 @@ class Database(Cog):
         pkmn, _ = PHash.get_or_create(phash=hashstr)
         return pkmn
 
-
     def get_pokemon_by_name(self, name: str) -> Pokemon:
         pkmn, _ = Pokemon.get_or_create(name=name)
         return pkmn
@@ -152,6 +152,9 @@ class Database(Cog):
         entry, _ = PokedexEntry.get_or_create(pokemon=pkmn, person=player)
         return entry
 
+    def get_all_pokemon(self) -> List[Pokemon]:
+        return list(Pokemon.select())
+
     def __enter__(self) -> 'Database':
         if self.pool.is_closed():
             self.pool.connect()
@@ -159,6 +162,7 @@ class Database(Cog):
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.pool.close()
+
 
 
 POOL.evolve(interactive=False, ignore_tables=['BaseModel'])

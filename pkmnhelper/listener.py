@@ -183,8 +183,14 @@ class Listener(commands.Cog):
     async def dex_list(self, embed: discord.Embed, message: discord.Message) -> None:
         player_id = int(await self.bot.redis.get(f'pkmn:last:{message.channel.id}:author'))
         invokation: bytes = await self.bot.redis.get(f'pkmn:last:{message.channel.id}:content')
-        if not invokation.split()[0].endswith(b'dex'):
+        words = invokation.split()
+        if not words[0].endswith(b'dex'):
             return
+        if len(words) == 1:
+            dex_page = 1
+        else:
+            dex_page = int(words[1])
+        
         with self.get_db() as db:
             player = db.get_player(player_id)
             p_name = str(self.bot.get_user(player_id))
@@ -193,6 +199,10 @@ class Listener(commands.Cog):
                 player.save()
             for f in embed.fields:
                 truename = f.name.split('#')[0].strip()
+                pkmn = db.get_pokemon_by_name(truename)
+                if pkmn.dex_page != dex_page:
+                    pkmn.dex_page = dex_page
+                    pkmn.save()
                 caught = '✅' in f.value
                 entry = db.get_pokedex_entry(player_id, truename)
                 if entry.caught != caught:
