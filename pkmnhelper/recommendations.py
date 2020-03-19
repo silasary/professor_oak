@@ -19,7 +19,7 @@ class Recommendations(commands.Cog):
                     entry = db.get_pokedex_entry(ctx.author.id, pkmn.name)
 
                     if entry.caught == None:
-                        missing_pages.add(str(pkmn.dex_page))
+                        missing_pages.add(pkmn.dex_page)
                     else:
                         seen_pages.add(pkmn.dex_page)
                     if pkmn.dex_page > highest_page_seen:
@@ -27,14 +27,17 @@ class Recommendations(commands.Cog):
 
             for page in range(1, highest_page_seen):
                 if page not in seen_pages:
-                    missing_pages.add(str(page))
+                    missing_pages.add(page)
 
             if missing_pages:
-                pages = ', '.join(list(missing_pages)[0:5])
+                missing_list = list(missing_pages)
+                missing_list.sort()
+
+                pages = ', '.join([str(i) for i in missing_list[0:5]])
                 await ctx.send(f'Show me pokedex pages {pages}')
                 return
 
-            await ctx.send('I don\'t have any recommendations for you at this time')
+            await ctx.send("I don't have any recommendations for you at this time")
 
     def get_db(self) -> 'database.Database':
         return self.bot.get_cog('Database')

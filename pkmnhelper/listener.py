@@ -89,6 +89,9 @@ class Listener(commands.Cog):
                 print(f"I don't know who {name} is!")
                 return
             reg_desc = lvlup_desc.match(embed.description)
+            if reg_desc is None:
+                print('level up description malformed')
+                return
             print(f'{member}->{reg_desc.group(1)}')
             with self.get_db() as db:
                 entry = db.get_pokedex_entry(member.id, reg_desc.group(1))
@@ -133,6 +136,8 @@ class Listener(commands.Cog):
 
     async def catch(self, message: discord.Message) -> None:
         match = catch_msg.match(message.content)
+        if match is None:
+            return
         player_id = int(match.group(1))
         truename = match.group(2)
         print(f'Caught {truename}!')
