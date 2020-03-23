@@ -105,7 +105,7 @@ class Listener(commands.Cog):
 
     async def spawn(self, embed: discord.Embed, message: discord.Message) -> None:
         md5 = get_md5(embed.image.url)
-        await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}', md5)
+        await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:md5', md5)
         with self.get_db() as db:
             pkmn = db.get_pokemon_image_by_hash(md5)
 
@@ -131,7 +131,9 @@ class Listener(commands.Cog):
                         embed.set_footer(text="I don't know what to say about this Pokémon.", icon_url='https://cdn.bulbagarden.net/upload/3/36/479Rotom-Pok%C3%A9dex.png')
                     else:
                         embed.set_footer(text=pkmn.flavor, icon_url='https://cdn.bulbagarden.net/upload/3/36/479Rotom-Pok%C3%A9dex.png')
-                await message.channel.send(f'This is a `{pkmn.name}`!', embed=embed)
+                reponse: discord.Message = await message.channel.send(f'This is a `{pkmn.name}`!', embed=embed)
+                await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:response', reponse.id)
+
 
     async def catch(self, message: discord.Message) -> None:
         match = catch_msg.match(message.content)
@@ -140,7 +142,7 @@ class Listener(commands.Cog):
         player_id = int(match.group(1))
         truename = match.group(2)
         print(f'Caught {truename}!')
-        md5 = await self.bot.redis.get(f'pkmn:lastspawn:{message.channel.id}')
+        md5 = await self.bot.redis.get(f'pkmn:lastspawn:{message.channel.id}:md5')
         with self.get_db() as db:
             img = db.get_pokemon_image_by_hash(md5)
             if not img.pokemon:
@@ -156,6 +158,14 @@ class Listener(commands.Cog):
             entry = db.get_pokedex_entry(player_id, truename)
             entry.caught = True
             entry.save()
+        rid = int(await self.bot.redis.get(f'pkmn:lastspawn:{message.channel.id}:response'))
+        response: discord.Message = discord.utils.get(self.bot.cached_messages, id=rid)
+        if response:
+            embed: discord.Embed = response.embeds[0]
+            for _ in embed.fields:
+                embed.remove_field(0)
+            await response.edit(embed=embed)
+
 
     async def info(self, embed: discord.Embed) -> None:
         md5 = get_md5(embed.image.url)

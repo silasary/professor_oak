@@ -110,7 +110,7 @@ class PokedexEntry(BaseModel):
     def checkmark(self) -> str:
         if self.caught is None:
             return '❓'
-        elif self.caught:
+        if self.caught:
             return '✅'
         return '❌'
 
