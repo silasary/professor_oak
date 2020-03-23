@@ -1,0 +1,6 @@
+language: python
+install:
+  - pip install pipenv
+  - pipenv install --dev
+script:
+  - mypy --ignore-missing-imports --follow-imports=silent .

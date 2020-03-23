@@ -1,3 +1,4 @@
 from pkmnhelper import populate
 
-populate.discatcher(None)
+populate.discatcher()
+populate.hash2phash()

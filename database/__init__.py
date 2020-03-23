@@ -1,14 +1,13 @@
 import asyncio
 import json
 import random
-from typing import Dict, Optional, List
+from typing import Dict, List, Optional
 
-import yaml
 import peewee
 import peeweedbevolve
+import yaml
 from discord.ext.commands import Bot, Cog
 from playhouse import db_url
-
 from shared import configuration
 
 POOL = db_url.connect(configuration.get('db'))

@@ -4,9 +4,9 @@ import os
 import re
 from typing import TYPE_CHECKING, List
 
-import PIL
-import imagehash
 import discord
+import imagehash
+import PIL
 import requests
 from confusable_homoglyphs import categories, confusables
 from discord.ext import commands
@@ -57,7 +57,6 @@ class Listener(commands.Cog):
                 await self.catch(message)
             else:
                 print('> no embed')
-                pass
         elif message.channel.type == discord.ChannelType.private:
             # DMs.
             if re.match(r'^https://cdn.discordapp.com/attachments/.*/PokecordSpawn.jpg$', message.content):
@@ -69,7 +68,7 @@ class Listener(commands.Cog):
 
 
     @commands.Cog.listener()
-    async def on_message_edit(self, before: discord.Message, after: discord.Message) -> None:
+    async def on_message_edit(self, _: discord.Message, after: discord.Message) -> None:
         if after.author.id == Pokecord_id:
             if after.embeds:
                 for e in after.embeds:
@@ -84,7 +83,7 @@ class Listener(commands.Cog):
         reg_level = lvlup_title.match(embed.title)
         if reg_level:
             name = reg_level.group(1)
-            member = self.get_user(message.guild, name)
+            member = find_user(message.guild, name)
             if member is None:
                 print(f"I don't know who {name} is!")
                 return
@@ -95,7 +94,7 @@ class Listener(commands.Cog):
             print(f'{member}->{reg_desc.group(1)}')
             with self.get_db() as db:
                 entry = db.get_pokedex_entry(member.id, reg_desc.group(1))
-                if entry.caught != True:
+                if not entry.caught:
                     entry.caught = True
                     entry.save()
             return
@@ -195,7 +194,7 @@ class Listener(commands.Cog):
             dex_page = 1
         else:
             dex_page = int(words[1])
-        
+
         with self.get_db() as db:
             player = db.get_player(player_id)
             p_name = str(self.bot.get_user(player_id))
@@ -223,14 +222,15 @@ class Listener(commands.Cog):
                 players.append(m)
         return players
 
-    def get_user(self, guild: discord.Guild, name: str) -> discord.Member:
-        for m in guild.members:
-            if m.display_name == name:
-                return m
-        return None
 
     def get_db(self) -> 'database.Database':
         return self.bot.get_cog('Database')
+
+def find_user(guild: discord.Guild, name: str) -> discord.Member:
+    for m in guild.members:
+        if m.display_name == name:
+            return m
+    return None
 
 def setup(bot: commands.Bot) -> None:
     bot.add_cog(Listener(bot))
@@ -277,4 +277,3 @@ def get_phash(url: str) -> str:
     with PIL.Image.open(filename) as image:
         phash = str(imagehash.phash(image))
     return phash
-
