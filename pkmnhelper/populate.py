@@ -34,7 +34,7 @@ def discatcher() -> None:
             hashes[md5] = name
         with PIL.Image.open(img.path) as image:
             phash = str(imagehash.phash(image))
-            phashes[name] = phash
+            phashes[phash] = name
 
     with open('imagehashes.json', mode='w') as f:
         json.dump([{'name': h[1], 'hash': h[0]} for h in hashes.items()], f, indent=2)
@@ -56,7 +56,7 @@ def hash2phash() -> None:
         with PIL.Image.open(img.path) as image:
             phash = str(imagehash.phash(image))
             if pkmn.name:
-                phashes[pkmn.name] = phash
+                phashes[phash] = pkmn.name
 
     with open('phashes.yaml', mode='w') as f:
         yaml.dump(phashes, f)

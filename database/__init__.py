@@ -52,7 +52,7 @@ class Pokemon(BaseModel):
 
     def random_flavor(self) -> Optional[str]:
         if not FLAVORS:
-            with open('flavors.json', mode='r') as f:
+            with open('flavors.json', mode='r', encoding='utf-8') as f:
                 FLAVORS.update(json.load(f))
         pokemon_flavors = FLAVORS.get(self.name.lower())
         if pokemon_flavors is None:
@@ -93,7 +93,7 @@ class PHash(BaseModel, HashMixin):
             return
         if not PHASHES:
             with open('phashes.yaml', mode='r') as f:
-                PHASHES.update({value[1]: value[0] for value in yaml.safe_load(f).items()})
+                PHASHES.update(yaml.safe_load(f))
         name = PHASHES.get(self.phash)
         if name is not None:
             if self.pokemon is None:
