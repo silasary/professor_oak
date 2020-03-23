@@ -43,7 +43,7 @@
         },
         "ajani": {
             "git": "https://github.com/silasary/modbot.git",
-            "ref": "fe5fecdb7d38be357b25f0bca9e21c7e6f174ba0"
+            "ref": "787b90ef5a282c9fb976f7cbef59debd546018bc"
         },
         "async-timeout": {
             "hashes": [
@@ -410,6 +410,13 @@
             ],
             "index": "pypi",
             "version": "==1.5"
+        },
+        "colorama": {
+            "hashes": [
+                "sha256:7d73d2a99753107a36ac6b455ee49046802e59d9d076ef8e47b61499fa29afff",
+                "sha256:e96da0d330793e2cb9485e9ddfd918d456036c7149416295932478192f4436a1"
+            ],
+            "version": "==0.4.3"
         },
         "isort": {
             "hashes": [

@@ -13,7 +13,7 @@ from shared import configuration
 POOL = db_url.connect(configuration.get('db'))
 
 HASHES: Dict[str, str] = {}
-FLAVORS: Dict[str, list] = {}
+FLAVORS: Dict[str, List[str]] = {}
 PHASHES: Dict[str, str] = {}
 
 class BaseModel(peewee.Model):
