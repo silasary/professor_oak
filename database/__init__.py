@@ -22,7 +22,7 @@ class BaseModel(peewee.Model):
 
 
 class HashMixin:
-    pokemon = None
+    pokemon: 'Pokemon' = None
     def load_name(self) -> None:
         raise NotImplementedError()
 
@@ -115,6 +115,7 @@ class PokedexEntry(BaseModel):
         return '❌'
 
 
+# pylint: disable=no-self-use
 class Database(Cog):
     def __init__(self, bot: Bot):
         self.bot = bot
@@ -164,7 +165,7 @@ class Database(Cog):
 
 
 
-POOL.evolve(interactive=False, ignore_tables=['BaseModel'])
+POOL.evolve(interactive=False, ignore_tables=['basemodel'])
 
 
 def setup(bot: Bot) -> None:

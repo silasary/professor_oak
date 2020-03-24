@@ -10,7 +10,7 @@ class Recommendations(commands.Cog):
     @commands.command()
     async def recommend(self, ctx: commands.Context) -> None:
         missing_pages = set()
-        highest_page_seen = 1
+        highest_page_seen = 47 # Eternatus is currently highest
         seen_pages = set()
         with self.get_db() as db:
             for pkmn in db.get_all_pokemon():

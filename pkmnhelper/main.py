@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, cast
 
 import aioredis
 import discord
@@ -18,7 +18,11 @@ class Config():
 
     @property
     def owners(self) -> List[str]:
-        return configuration.get('owners')
+        return cast(List[str], configuration.get('owners'))
+
+    @property
+    def token(self) -> str:
+        return cast(str, configuration.get('token'))
 
 class Bot(discord.ext.commands.Bot):
     def __init__(self) -> None:
@@ -32,7 +36,7 @@ class Bot(discord.ext.commands.Bot):
         self.redis: aioredis.Redis = None
 
     def init(self) -> None:
-        self.run(configuration.get('token'))
+        self.run(self.config.token)
 
     async def on_ready(self) -> None:
         self.redis = await aioredis.create_redis_pool("redis://localhost", minsize=5, maxsize=10)
