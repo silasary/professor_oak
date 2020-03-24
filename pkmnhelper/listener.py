@@ -2,7 +2,7 @@ import asyncio
 import hashlib
 import os
 import re
-from typing import TYPE_CHECKING, List
+from typing import TYPE_CHECKING, List, Optional
 
 import discord
 import imagehash
@@ -76,7 +76,6 @@ class Listener(commands.Cog):
                     if footer and footer.startswith('Selected Pokémon:'):
                         await self.info(e)
 
-
     async def levelup(self, embed: discord.Embed, message: discord.Message) -> None:
         if message.guild.me.permissions_in(message.channel).manage_messages:
             delete_after_delay(message)
@@ -116,24 +115,10 @@ class Listener(commands.Cog):
             if not pkmn.name:
                 await message.channel.send("I don't know this pokemon")
             else:
-                embed = discord.Embed()
-                if message.guild:
-                    for p in self.active_players(message.guild):
-                        entry = db.get_pokedex_entry(p.id, pkmn.name)
-                        embed.add_field(name=p.display_name, value=entry.checkmark(), inline=False)
-                else:
-                    entry = db.get_pokedex_entry(message.author.id, pkmn.name)
-                    embed.add_field(name=message.author.display_name, value=entry.checkmark(), inline=False)
-                if len(embed) == 0:
-                    embed = None
-                else:
-                    if not pkmn.flavor:
-                        embed.set_footer(text="I don't know what to say about this Pokémon.", icon_url='https://cdn.bulbagarden.net/upload/3/36/479Rotom-Pok%C3%A9dex.png')
-                    else:
-                        embed.set_footer(text=pkmn.flavor, icon_url='https://cdn.bulbagarden.net/upload/3/36/479Rotom-Pok%C3%A9dex.png')
+                active_players = self.active_players(message.guild)
+                embed = self.generate_embed(message, active_players, pkmn)
                 reponse: discord.Message = await message.channel.send(f'This is a `{pkmn.name}`!', embed=embed)
                 await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:response', reponse.id)
-
 
     async def catch(self, message: discord.Message) -> None:
         match = catch_msg.match(message.content)
@@ -224,7 +209,29 @@ class Listener(commands.Cog):
                     entry.caught = caught
                     entry.save()
 
-    def active_players(self, guild: discord.Guild) -> List[discord.Member]:
+    def generate_embed(self, message: discord.Message, active_players: List[discord.User], pkmn: 'database.HashMixin') -> discord.Embed:
+        if pkmn is None or pkmn.name is None:
+            return None
+        db = self.get_db()
+        embed = discord.Embed()
+        if message.guild:
+            for p in active_players:
+                entry = db.get_pokedex_entry(p.id, pkmn.name)
+                embed.add_field(name=p.display_name, value=entry.checkmark(), inline=False)
+        else:
+            entry = db.get_pokedex_entry(message.author.id, pkmn.name)
+            embed.add_field(name=message.author.display_name, value=entry.checkmark(), inline=False)
+        if len(embed) == 0:
+            return None
+        if not pkmn.flavor:
+            embed.set_footer(text="I don't know what to say about this Pokémon.", icon_url='https://cdn.bulbagarden.net/upload/3/36/479Rotom-Pok%C3%A9dex.png')
+        else:
+            embed.set_footer(text=pkmn.flavor, icon_url='https://cdn.bulbagarden.net/upload/3/36/479Rotom-Pok%C3%A9dex.png')
+        return embed
+
+    def active_players(self, guild: Optional[discord.Guild]) -> List[discord.Member]:
+        if guild is None:
+            return []
         db = self.get_db()
         players = []
         for m in guild.members:
