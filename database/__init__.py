@@ -22,7 +22,7 @@ class BaseModel(peewee.Model):
 
 
 class HashMixin:
-    pokemon: 'Pokemon' = None
+    pokemon: 'Pokemon'
     def load_name(self) -> None:
         raise NotImplementedError()
 
