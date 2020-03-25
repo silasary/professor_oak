@@ -76,6 +76,24 @@ class Listener(commands.Cog):
                     if footer and footer.startswith('Selected Pokémon:'):
                         await self.info(e)
 
+    @commands.Cog.listener()
+    async def on_typing(self, channel: discord.TextChannel, user: discord.User, _: int) -> None:
+        rid = await self.bot.redis.get(f'pkmn:lastspawn:{channel.id}:response')
+        #print(f'rid:{rid}')
+        if rid is None:
+            return
+        response: discord.Message = discord.utils.get(self.bot.cached_messages, id=int(rid))
+        with self.get_db() as db:
+            #print(f'response: {response}\nresponse.embeds: {response.embeds}\ndb.check_player(user.id): {db.check_player(user.id)}')
+            if response and response.embeds and db.check_player(user.id):
+                entry = db.get_pokedex_entry(user.id, await self.bot.redis.get(f'pkmn:lastspawn:{channel.id}:name'))
+                embed = response.embeds[0]
+                for field in embed.fields:
+                    if field.name == user.display_name:
+                        return
+                embed.add_field(name=user.display_name, value=entry.checkmark(), inline=False)
+                await response.edit(embed=embed)
+
     async def levelup(self, embed: discord.Embed, message: discord.Message) -> None:
         if message.guild.me.permissions_in(message.channel).manage_messages:
             delete_after_delay(message)
@@ -119,6 +137,7 @@ class Listener(commands.Cog):
                 embed = self.generate_embed(message, active_players, pkmn)
                 reponse: discord.Message = await message.channel.send(f'This is a `{pkmn.name}`!', embed=embed)
                 await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:response', reponse.id)
+                await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:name', pkmn.name)
 
     async def catch(self, message: discord.Message) -> None:
         match = catch_msg.match(message.content)
@@ -150,6 +169,7 @@ class Listener(commands.Cog):
             for _ in embed.fields:
                 embed.remove_field(0)
             await response.edit(embed=embed)
+            await self.bot.redis.delete(f'pkmn:lastspawn:{message.channel.id}:response')
 
 
     async def info(self, embed: discord.Embed) -> None:
@@ -221,8 +241,6 @@ class Listener(commands.Cog):
         else:
             entry = db.get_pokedex_entry(message.author.id, pkmn.name)
             embed.add_field(name=message.author.display_name, value=entry.checkmark(), inline=False)
-        if len(embed) == 0:
-            return None
         if not pkmn.flavor:
             embed.set_footer(text="I don't know what to say about this Pokémon.", icon_url='https://cdn.bulbagarden.net/upload/3/36/479Rotom-Pok%C3%A9dex.png')
         else:
