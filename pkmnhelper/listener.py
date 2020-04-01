@@ -79,12 +79,10 @@ class Listener(commands.Cog):
     @commands.Cog.listener()
     async def on_typing(self, channel: discord.TextChannel, user: discord.User, _: int) -> None:
         rid = await self.bot.redis.get(f'pkmn:lastspawn:{channel.id}:response')
-        #print(f'rid:{rid}')
         if rid is None:
             return
         response: discord.Message = discord.utils.get(self.bot.cached_messages, id=int(rid))
         with self.get_db() as db:
-            #print(f'response: {response}\nresponse.embeds: {response.embeds}\ndb.check_player(user.id): {db.check_player(user.id)}')
             if response and response.embeds and db.check_player(user.id):
                 entry = db.get_pokedex_entry(user.id, await self.bot.redis.get(f'pkmn:lastspawn:{channel.id}:name'))
                 embed = response.embeds[0]
@@ -122,6 +120,7 @@ class Listener(commands.Cog):
 
     async def spawn(self, embed: discord.Embed, message: discord.Message) -> None:
         md5 = get_md5(embed.image.url)
+
         await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:md5', md5)
         with self.get_db() as db:
             pkmn = db.get_pokemon_image_by_hash(md5)
@@ -136,6 +135,9 @@ class Listener(commands.Cog):
                 active_players = self.active_players(message.guild)
                 embed = self.generate_embed(message, active_players, pkmn)
                 reponse: discord.Message = await message.channel.send(f'This is a `{pkmn.name}`!', embed=embed)
+
+                await self.clean_last_message(message)
+
                 await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:response', reponse.id)
                 await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:name', pkmn.name)
 
@@ -162,6 +164,9 @@ class Listener(commands.Cog):
             entry = db.get_pokedex_entry(player_id, truename)
             entry.caught = True
             entry.save()
+        await self.clean_last_message(message)
+
+    async def clean_last_message(self, message: discord.Message) -> None:
         rid = int(await self.bot.redis.get(f'pkmn:lastspawn:{message.channel.id}:response'))
         response: discord.Message = discord.utils.get(self.bot.cached_messages, id=rid)
         if response:
