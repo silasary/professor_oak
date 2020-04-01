@@ -136,7 +136,7 @@ class Listener(commands.Cog):
                 embed = self.generate_embed(message, active_players, pkmn)
                 reponse: discord.Message = await message.channel.send(f'This is a `{pkmn.name}`!', embed=embed)
 
-                await self.clean_last_message(message)
+                await self.clean_last_message(message.channel.id)
 
                 await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:response', reponse.id)
                 await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:name', pkmn.name)
@@ -164,17 +164,17 @@ class Listener(commands.Cog):
             entry = db.get_pokedex_entry(player_id, truename)
             entry.caught = True
             entry.save()
-        await self.clean_last_message(message)
+        await self.clean_last_message(message.channel.id)
 
-    async def clean_last_message(self, message: discord.Message) -> None:
-        rid = int(await self.bot.redis.get(f'pkmn:lastspawn:{message.channel.id}:response'))
+    async def clean_last_message(self, channel_id: int) -> None:
+        rid = int(await self.bot.redis.get(f'pkmn:lastspawn:{channel_id}:response'))
         response: discord.Message = discord.utils.get(self.bot.cached_messages, id=rid)
         if response:
             embed: discord.Embed = response.embeds[0]
             for _ in embed.fields:
                 embed.remove_field(0)
             await response.edit(embed=embed)
-            await self.bot.redis.delete(f'pkmn:lastspawn:{message.channel.id}:response')
+            await self.bot.redis.delete(f'pkmn:lastspawn:{channel_id}:response')
 
 
     async def info(self, embed: discord.Embed) -> None:
