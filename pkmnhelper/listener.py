@@ -167,8 +167,10 @@ class Listener(commands.Cog):
         await self.clean_last_message(message.channel.id)
 
     async def clean_last_message(self, channel_id: int) -> None:
-        rid = int(await self.bot.redis.get(f'pkmn:lastspawn:{channel_id}:response'))
-        response: discord.Message = discord.utils.get(self.bot.cached_messages, id=rid)
+        rid = await self.bot.redis.get(f'pkmn:lastspawn:{channel_id}:response')
+        if not rid:
+            return
+        response: discord.Message = discord.utils.get(self.bot.cached_messages, id=int(rid))
         if response:
             embed: discord.Embed = response.embeds[0]
             for _ in embed.fields:

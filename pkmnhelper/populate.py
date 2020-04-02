@@ -3,6 +3,7 @@ import json
 import os
 import subprocess
 from typing import Dict
+import requests
 
 import imagehash
 import PIL
@@ -20,9 +21,11 @@ def discatcher() -> None:
     subprocess.run(['git', 'pull'], check=True)
     os.chdir(owd)
     hashes = {}
-    phashes = {}
+    phashes: Dict[str, str] = {}
     with open('imagehashes.json', mode='r') as f:
         hashes.update({value["hash"]: value["name"] for value in json.load(f)})
+    with open('phashes.yaml', mode='r') as f:
+        phashes.update(yaml.safe_load(f))
 
     for img in os.scandir(os.path.join(wd, 'pokedex')):
         with open(img.path, mode='rb') as imgfile:
@@ -60,3 +63,20 @@ def hash2phash() -> None:
 
     with open('phashes.yaml', mode='w') as f:
         yaml.dump(phashes, f)
+
+def evolutions() -> None:
+    req = requests.get('https://docs.google.com/spreadsheets/d/1OGNmAax8ncek4VIb9TaeDTnyGKH808MoTHX9x_CwC_U/export?format=tsv&id=1OGNmAax8ncek4VIb9TaeDTnyGKH808MoTHX9x_CwC_U&gid=0')
+    sheet = req.content.decode('utf-8').splitlines(False)
+    data = []
+    columns = sheet[0].split('\t')
+    columns[1] = 'First Stage ' + columns[1]
+    columns[3] = 'Second Stage ' + columns[3]
+
+    for line in sheet[1:]:
+        row = line.split('\t')
+        d = {}
+        for i in range(len(row)):
+            d[columns[i]] = row[i]
+        data.append(d)
+    with open('evos.yaml', mode='w') as f:
+        yaml.dump(data, f)
