@@ -33,6 +33,7 @@ class Bot(discord.ext.commands.Bot):
         super().load_extension('pkmnhelper.updater')
         super().load_extension('database')
         super().load_extension('discordbot.owner')
+        super().load_extension('discordbot.errors')
         self.redis: aioredis.Redis = None
 
     def init(self) -> None:

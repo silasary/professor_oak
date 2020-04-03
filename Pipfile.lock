@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "10bad5b737c3813aef41bf950d9febd2b961cd081c0ef2e9afb3ed3815965e36"
+            "sha256": "f5dcf2d661ee39b0d6d3541a953a1c313977ea553a52973860f9f9a651768b0b"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -43,7 +43,7 @@
         },
         "ajani": {
             "git": "https://github.com/silasary/modbot.git",
-            "ref": "787b90ef5a282c9fb976f7cbef59debd546018bc"
+            "ref": "605e0b34015f9a0b90eec3bb99a70d7ed14a9437"
         },
         "async-timeout": {
             "hashes": [
@@ -332,6 +332,14 @@
             ],
             "version": "==1.4.1"
         },
+        "sentry-sdk": {
+            "hashes": [
+                "sha256:23808d571d2461a4ce3784ec12bbee5bdb8c026c143fe79d36cef8a6d653e71f",
+                "sha256:bb90a4e19c7233a580715fc986cc44be2c48fc10b31e71580a2037e1c94b6950"
+            ],
+            "index": "pypi",
+            "version": "==0.14.3"
+        },
         "six": {
             "hashes": [
                 "sha256:236bdbdce46e6e6a3d61a337c0f8b763ca1e8717c03b369e87a7ec7ce1319c0a",
@@ -410,6 +418,13 @@
             ],
             "index": "pypi",
             "version": "==1.5"
+        },
+        "colorama": {
+            "hashes": [
+                "sha256:7d73d2a99753107a36ac6b455ee49046802e59d9d076ef8e47b61499fa29afff",
+                "sha256:e96da0d330793e2cb9485e9ddfd918d456036c7149416295932478192f4436a1"
+            ],
+            "version": "==0.4.3"
         },
         "isort": {
             "hashes": [

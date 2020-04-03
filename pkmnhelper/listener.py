@@ -76,15 +76,29 @@ class Listener(commands.Cog):
                     if footer and footer.startswith('Selected Pokémon:'):
                         await self.info(e)
 
+
+    @commands.Cog.listener()
+    async def on_member_update(self, before: discord.Member, after: discord.Member) -> None:
+        offline = [discord.Status.offline, discord.Status.dnd, discord.Status.idle, discord.Status.do_not_disturb]
+        online = discord.Status.online
+        if before.status in offline:
+            print('was offline')
+            if after.status == online:
+                channel_id = int(await self.bot.redis.get(f'pkmn:lastspawn:{after.guild.id}:channel'))
+                await self.update_last_message(after, channel_id)
+
     @commands.Cog.listener()
     async def on_typing(self, channel: discord.TextChannel, user: discord.User, _: int) -> None:
-        rid = await self.bot.redis.get(f'pkmn:lastspawn:{channel.id}:response')
+        await self.update_last_message(user, channel.id)
+
+    async def update_last_message(self, user: discord.User, channel_id: int):
+        rid = await self.bot.redis.get(f'pkmn:lastspawn:{channel_id}:response')
         if rid is None:
             return
         response: discord.Message = discord.utils.get(self.bot.cached_messages, id=int(rid))
         with self.get_db() as db:
             if response and response.embeds and db.check_player(user.id):
-                entry = db.get_pokedex_entry(user.id, await self.bot.redis.get(f'pkmn:lastspawn:{channel.id}:name'))
+                entry = db.get_pokedex_entry(user.id, await self.bot.redis.get(f'pkmn:lastspawn:{channel_id}:name'))
                 embed = response.embeds[0]
                 for field in embed.fields:
                     if field.name == user.display_name:
@@ -140,6 +154,8 @@ class Listener(commands.Cog):
 
                 await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:response', reponse.id)
                 await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:name', pkmn.name)
+                await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.guild.id}:channel', message.channel.id)
+                print(f'set last message location in server \'{message.channel.guild.id}\' to {message.channel.id}')
 
     async def catch(self, message: discord.Message) -> None:
         match = catch_msg.match(message.content)

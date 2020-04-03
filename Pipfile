@@ -18,6 +18,7 @@ ajani = {git = "https://github.com/silasary/modbot.git"}
 pyyaml = "*"
 pillow = "*"
 imagehash = "*"
+sentry-sdk = "*"
 
 [dev-packages]
 autopep8 = "*"
