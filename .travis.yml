@@ -3,4 +3,4 @@ install:
   - pip install pipenv
   - pipenv install --dev
 script:
-  - mypy --ignore-missing-imports --follow-imports=silent .
+  - mypy --ignore-missing-imports --follow-imports=silent --check-untyped-defs --disallow-incomplete-defs .

@@ -57,11 +57,9 @@ class Listener(commands.Cog):
                 await self.catch(message)
             else:
                 print('> no embed')
-        elif message.channel.type == discord.ChannelType.private:
-            # DMs.
-            if re.match(r'^https://cdn.discordapp.com/attachments/.*/PokecordSpawn.jpg$', message.content):
-                embed = discord.Embed().set_image(url=message.content)
-                await self.spawn(embed, message)
+        elif re.match(r'^https://cdn.discordapp.com/attachments/.*/PokecordSpawn.jpg$', message.content):
+            embed = discord.Embed().set_image(url=message.content)
+            await self.spawn(embed, message)
         else:
             await self.bot.redis.set(f'pkmn:last:{message.channel.id}:author', message.author.id)
             await self.bot.redis.set(f'pkmn:last:{message.channel.id}:content', message.content)
@@ -82,23 +80,22 @@ class Listener(commands.Cog):
         offline = [discord.Status.offline, discord.Status.dnd, discord.Status.idle, discord.Status.do_not_disturb]
         online = discord.Status.online
         if before.status in offline:
-            print('was offline')
             if after.status == online:
-                channel_id = int(await self.bot.redis.get(f'pkmn:lastspawn:{after.guild.id}:channel'))
-                await self.update_last_message(after, channel_id)
+                for channel in after.guild.text_channels:
+                    await self.update_last_message(after, channel)
 
     @commands.Cog.listener()
     async def on_typing(self, channel: discord.TextChannel, user: discord.User, _: int) -> None:
-        await self.update_last_message(user, channel.id)
+        await self.update_last_message(user, channel)
 
-    async def update_last_message(self, user: discord.User, channel_id: int):
-        rid = await self.bot.redis.get(f'pkmn:lastspawn:{channel_id}:response')
+    async def update_last_message(self, user: discord.User, channel: discord.TextChannel) -> None:
+        rid = await self.bot.redis.get(f'pkmn:lastspawn:{channel.id}:response')
         if rid is None:
             return
         response: discord.Message = discord.utils.get(self.bot.cached_messages, id=int(rid))
         with self.get_db() as db:
             if response and response.embeds and db.check_player(user.id):
-                entry = db.get_pokedex_entry(user.id, await self.bot.redis.get(f'pkmn:lastspawn:{channel_id}:name'))
+                entry = db.get_pokedex_entry(user.id, await self.bot.redis.get(f'pkmn:lastspawn:{channel.id}:name'))
                 embed = response.embeds[0]
                 for field in embed.fields:
                     if field.name == user.display_name:
@@ -150,12 +147,11 @@ class Listener(commands.Cog):
                 embed = self.generate_embed(message, active_players, pkmn)
                 reponse: discord.Message = await message.channel.send(f'This is a `{pkmn.name}`!', embed=embed)
 
-                await self.clean_last_message(message.channel.id)
+                await self.clean_last_message(message.channel)
 
                 await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:response', reponse.id)
                 await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:name', pkmn.name)
-                await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.guild.id}:channel', message.channel.id)
-                print(f'set last message location in server \'{message.channel.guild.id}\' to {message.channel.id}')
+
 
     async def catch(self, message: discord.Message) -> None:
         match = catch_msg.match(message.content)
@@ -180,10 +176,10 @@ class Listener(commands.Cog):
             entry = db.get_pokedex_entry(player_id, truename)
             entry.caught = True
             entry.save()
-        await self.clean_last_message(message.channel.id)
+        await self.clean_last_message(message.channel)
 
-    async def clean_last_message(self, channel_id: int) -> None:
-        rid = await self.bot.redis.get(f'pkmn:lastspawn:{channel_id}:response')
+    async def clean_last_message(self, channel: discord.TextChannel) -> None:
+        rid = await self.bot.redis.get(f'pkmn:lastspawn:{channel.id}:response')
         if not rid:
             return
         response: discord.Message = discord.utils.get(self.bot.cached_messages, id=int(rid))
@@ -192,7 +188,7 @@ class Listener(commands.Cog):
             for _ in embed.fields:
                 embed.remove_field(0)
             await response.edit(embed=embed)
-            await self.bot.redis.delete(f'pkmn:lastspawn:{channel_id}:response')
+            await self.bot.redis.delete(f'pkmn:lastspawn:{channel.id}:response')
 
 
     async def info(self, embed: discord.Embed) -> None:
@@ -280,7 +276,6 @@ class Listener(commands.Cog):
                 players.append(m)
         return players
 
-
     def get_db(self) -> 'database.Database':
         return self.bot.get_cog('Database')
 
@@ -292,7 +287,6 @@ def find_user(guild: discord.Guild, name: str) -> discord.Member:
 
 def setup(bot: commands.Bot) -> None:
     bot.add_cog(Listener(bot))
-
 
 def rationalize_characterset(text: str) -> str:
     chars = confusables.is_confusable(text, preferred_aliases=['latin', 'common'], greedy=True)
