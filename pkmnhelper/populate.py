@@ -3,10 +3,10 @@ import json
 import os
 import subprocess
 from typing import Dict, List
-import requests
 
 import imagehash
 import PIL
+import requests
 import yaml
 
 import database

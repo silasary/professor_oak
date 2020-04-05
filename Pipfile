@@ -25,6 +25,7 @@ autopep8 = "*"
 rope = "*"
 pylint = "*"
 mypy = "*"
+pre-commit = "*"
 
 [pipenv]
 allow_prereleases = true
