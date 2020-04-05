@@ -2,7 +2,7 @@ import hashlib
 import json
 import os
 import subprocess
-from typing import Dict
+from typing import Dict, List
 import requests
 
 import imagehash
@@ -11,6 +11,11 @@ import yaml
 
 import database
 
+NAMEFIXES = {
+    'Mime Jr': 'Mime Jr.',
+    'TypeNull': 'Type: Null',
+    'Flabebe': 'Flab\xE9b\xE9'
+}
 
 def discatcher() -> None:
     owd = os.getcwd()
@@ -32,8 +37,7 @@ def discatcher() -> None:
             md5 = hashlib.md5(imgfile.read()).hexdigest()
             name = img.name.split('.')[0]
             name = name[0].upper() + name[1:]
-            if name == 'TypeNull':
-                name = 'Type: Null'
+            name = NAMEFIXES.get(name, name)
             hashes[md5] = name
         with PIL.Image.open(img.path) as image:
             phash = str(imagehash.phash(image))
@@ -71,12 +75,29 @@ def evolutions() -> None:
     columns = sheet[0].split('\t')
     columns[1] = 'First Stage ' + columns[1]
     columns[3] = 'Second Stage ' + columns[3]
+    row: List[str] = []
+    prevrow: List[str] = []
+    def insert(i: int) -> None:
+        if not row[i + 1]: # empty
+            return
+        if row[i + 1] == 'None': # Doesn't evolve
+            return
+        if row[i] == '∟' and row[i + 2] == '→': # same as previous row, usually because second evolution diverges (eg Oddish)
+            return
+        if row[i] == '→': # As above
+            row[i] = prevrow[i]
+        if not row[i]: # First evolution diverges. See slowpoke/eevee
+            row[i] = prevrow[i]
+        d = {}
+        d['base'] = row[i].strip()
+        d['method'] = row[i + 1].strip()
+        d['into'] = row[i + 2].strip()
+        data.append(d)
 
     for line in sheet[1:]:
         row = line.split('\t')
-        d = {}
-        for i in range(len(row)):
-            d[columns[i]] = row[i]
-        data.append(d)
+        insert(0)
+        insert(2)
+        prevrow = row
     with open('evos.yaml', mode='w') as f:
         yaml.dump(data, f)

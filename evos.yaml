@@ -1,3559 +1,1343 @@
-- First Stage/Baby: Bulbasaur
-  First StageEvolves through ->: lvl 16
-  KEY: Gender-Based, not applicable
-  Notes (Some evos still being tested): verified
-  Second Stage: Ivysaur
-  Second StageEvolves through ->: lvl 32
-  Third Stage: Venusaur
-- First Stage/Baby: Charmander
-  First StageEvolves through ->: lvl 16
-  KEY: Learn Move
-  Notes (Some evos still being tested): verified
-  Second Stage: Charmeleon
-  Second StageEvolves through ->: lvl 36
-  Third Stage: Charizard
-- First Stage/Baby: Squirtle
-  First StageEvolves through ->: lvl 16
-  KEY: '"Gimmicky"; likely not implemented'
-  Notes (Some evos still being tested): verified
-  Second Stage: Wartortle
-  Second StageEvolves through ->: lvl 36
-  Third Stage: Blastoise
-- First Stage/Baby: Caterpie
-  First StageEvolves through ->: lvl 7
-  KEY: Has a Mega Evo (blue outline)
-  Notes (Some evos still being tested): verified
-  Second Stage: Metapod
-  Second StageEvolves through ->: lvl 10
-  Third Stage: Butterfree
-- First Stage/Baby: Weedle
-  First StageEvolves through ->: lvl 7
-  KEY: 'Quick search: Ctrl + F'
-  Notes (Some evos still being tested): verified
-  Second Stage: Kakuna
-  Second StageEvolves through ->: lvl 10
-  Third Stage: Beedrill
-- First Stage/Baby: Pidgey
-  First StageEvolves through ->: lvl 18
-  KEY: Other than Alolans, forms are not
-  Notes (Some evos still being tested): verified
-  Second Stage: Pidgeotto
-  Second StageEvolves through ->: lvl 36
-  Third Stage: Pidgeot
-- First Stage/Baby: Rattata
-  First StageEvolves through ->: lvl 20
-  KEY: on the bot. Things like Ash Greninja
-  Notes (Some evos still being tested): verified
-  Second Stage: Raticate
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Alolan Rattata
-  First StageEvolves through ->: lvl 20. Night channel
-  KEY: '& Lycanroc Dusk were event-exclusive'
-  Notes (Some evos still being tested): verified
-  Second Stage: Alolan Raticate
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Spearow
-  First StageEvolves through ->: lvl 20
-  KEY: in the game and might not be added.
-  Notes (Some evos still being tested): verified
-  Second Stage: Fearow
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Ekans
-  First StageEvolves through ->: lvl 22
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Arbok
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Pichu
-  First StageEvolves through ->: Friendship Bracelet
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Pikachu
-  Second StageEvolves through ->: Thunder Stone
-  Third Stage: Raichu
-- First Stage/Baby: "\u221F"
-  First StageEvolves through ->: "\u2014"
-  KEY: ''
-  Notes (Some evos still being tested): Does not evolve; Not implemented
-  Second Stage: "\u2192"
-  Second StageEvolves through ->: Thunder Stone in Alola
-  Third Stage: Alolan Raichu
-- First Stage/Baby: ''
-  First StageEvolves through ->: ''
-  KEY: ''
-  Notes (Some evos still being tested): Limited time availability; market
-  Second Stage: Detective Pikachu
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Sandshrew
-  First StageEvolves through ->: Lvl 22
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Sandslash
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Alolan Sandshrew
-  First StageEvolves through ->: Ice Stone
-  KEY: ''
-  Notes (Some evos still being tested): VERIFIED
-  Second Stage: Alolan Sandslash
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: "Nidoran\u2640"
-  First StageEvolves through ->: lvl 16
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Nidorina
-  Second StageEvolves through ->: Moon Stone
-  Third Stage: Nidoqueen
-- First Stage/Baby: "Nidoran\u2642"
-  First StageEvolves through ->: lvl 16
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Nidorino
-  Second StageEvolves through ->: Moon Stone
-  Third Stage: Nidoking
-- First Stage/Baby: Cleffa
-  First StageEvolves through ->: Friendship Bracelet
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Clefairy
-  Second StageEvolves through ->: Moon Stone
-  Third Stage: Clefable
-- First Stage/Baby: Vulpix
-  First StageEvolves through ->: Fire Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Ninetales
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Alolan Vulpix
-  First StageEvolves through ->: Ice Stone
-  KEY: ''
-  Notes (Some evos still being tested): VERIFIED
-  Second Stage: Alolan Ninetales
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Igglybuff
-  First StageEvolves through ->: Friendship Bracelet
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Jigglypuff
-  Second StageEvolves through ->: Moon Stone
-  Third Stage: Wigglytuff
-- First Stage/Baby: Zubat
-  First StageEvolves through ->: lvl 22
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Golbat
-  Second StageEvolves through ->: Friendship Bracelet
-  Third Stage: Crobat
-- First Stage/Baby: Oddish
-  First StageEvolves through ->: lvl 21
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Gloom
-  Second StageEvolves through ->: Leaf Stone
-  Third Stage: Vileplume
-- First Stage/Baby: "\u221F"
-  First StageEvolves through ->: "\u2014"
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: "\u2192"
-  Second StageEvolves through ->: Sun Stone
-  Third Stage: Bellossom
-- First Stage/Baby: Paras
-  First StageEvolves through ->: lvl 24
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Parasect
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Venonat
-  First StageEvolves through ->: lvl 31
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Venomoth
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: 'Diglett '
-  First StageEvolves through ->: lvl 26
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Dugtrio
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Alolan Diglett
-  First StageEvolves through ->: lvl 26
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Alolan Dugtrio
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Meowth
-  First StageEvolves through ->: lvl 28
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Persian
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Alolan Meowth
-  First StageEvolves through ->: Friendship Bracelet
-  KEY: ''
-  Notes (Some evos still being tested): VERIFIED
-  Second Stage: Alolan Persian
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Galarian Meowth
-  First StageEvolves through ->: lvl 28
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Perrserker
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Psyduck
-  First StageEvolves through ->: lvl 33
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Golduck
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Mankey
-  First StageEvolves through ->: lvl 28
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Primeape
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Growlithe
-  First StageEvolves through ->: Fire Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Arcanine
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Poliwag
-  First StageEvolves through ->: lvl 25
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Poliwhirl
-  Second StageEvolves through ->: Water Stone
-  Third Stage: Poliwrath
-- First Stage/Baby: "\u221F"
-  First StageEvolves through ->: "\u2014"
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: "\u2192"
-  Second StageEvolves through ->: Trade while holding King's Rock
-  Third Stage: Politoed
-- First Stage/Baby: Abra
-  First StageEvolves through ->: lvl 16
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Kadabra
-  Second StageEvolves through ->: Trade
-  Third Stage: Alakazam
-- First Stage/Baby: Machop
-  First StageEvolves through ->: lvl 28
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Machoke
-  Second StageEvolves through ->: Trade
-  Third Stage: Machamp
-- First Stage/Baby: Bellsprout
-  First StageEvolves through ->: lvl 21
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Weepinbell
-  Second StageEvolves through ->: Leaf Stone
-  Third Stage: Victreebel
-- First Stage/Baby: Tentacool
-  First StageEvolves through ->: lvl 30
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Tentacruel
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Geodude
-  First StageEvolves through ->: lvl 25
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Graveler
-  Second StageEvolves through ->: Trade
-  Third Stage: Golem
-- First Stage/Baby: Alolan Geodude
-  First StageEvolves through ->: lvl 25
-  KEY: ''
-  Notes (Some evos still being tested): VERIFIED
-  Second Stage: Alolan Graveler
-  Second StageEvolves through ->: Trade
-  Third Stage: Alolan Golem
-- First Stage/Baby: Ponyta
-  First StageEvolves through ->: lvl 40
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Rapidash
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Galarian Ponyta
-  First StageEvolves through ->: lvl 40
-  KEY: ''
-  Notes (Some evos still being tested): EVOLUTION NOT IMPLEMENTED
-  Second Stage: Galarian Rapidash
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Slowpoke
-  First StageEvolves through ->: lvl 37
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Slowbro
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: ''
-  First StageEvolves through ->: Trade while holding King's Rock
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Slowking
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Magnemite
-  First StageEvolves through ->: lvl 30
-  KEY: ''
-  Notes (Some evos still being tested): cannot evo to magnezone yet
-  Second Stage: Magneton
-  Second StageEvolves through ->: lvl up in Magnetic Field
-  Third Stage: Magnezone
-- First Stage/Baby: Farfetch'd
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Galarian Farfetch'd
-  First StageEvolves through ->: '-'
-  KEY: ''
-  Notes (Some evos still being tested): EVOLUTION NOT IMPLENTED
-  Second Stage: Sirfetch'd
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Doduo
-  First StageEvolves through ->: lvl 31
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Dodrio
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Seel
-  First StageEvolves through ->: lvl 34
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Dewgong
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Grimer
-  First StageEvolves through ->: lvl 38
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Muk
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Alolan Grimer
-  First StageEvolves through ->: lvl 38
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Alolan Muk
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Shellder
-  First StageEvolves through ->: Water Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Cloyster
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Gastly
-  First StageEvolves through ->: lvl 25
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Haunter
-  Second StageEvolves through ->: Trade
-  Third Stage: Gengar
-- First Stage/Baby: Onix
-  First StageEvolves through ->: Trade while holding Metal Coat
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Steelix
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Drowzee
-  First StageEvolves through ->: lvl 26
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Hypno
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Krabby
-  First StageEvolves through ->: lvl 28
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Kingler
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Voltorb
-  First StageEvolves through ->: lvl 30
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Electrode
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Exeggcute
-  First StageEvolves through ->: Leaf Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Exeggutor
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: ''
-  First StageEvolves through ->: ??? Leaf Stone in Alola, in-games
-  KEY: ''
-  Notes (Some evos still being tested): Not yet implemented
-  Second Stage: Alolan Exeggutor
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Cubone
-  First StageEvolves through ->: lvl 28
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Marowak
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: ''
-  First StageEvolves through ->: lvl 28, Night, in Alola
-  KEY: ''
-  Notes (Some evos still being tested): Not yet implemented
-  Second Stage: Alolan Marowak
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Tyrogue
-  First StageEvolves through ->: lvl 20, Attack > Defense
-  KEY: ''
-  Notes (Some evos still being tested): entire evo line broken
-  Second Stage: Hitmonlee
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: ''
-  First StageEvolves through ->: lvl 20, Attack < Defense
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Hitmonchan
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: ''
-  First StageEvolves through ->: lvl 20, Attack = Defense
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Hitmontop
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Lickitung
-  First StageEvolves through ->: learn Rollout then level up
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Lickilicky
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Koffing
-  First StageEvolves through ->: lvl 35
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Weezing
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: ''
-  First StageEvolves through ->: ''
-  KEY: ''
-  Notes (Some evos still being tested): EVOLUTION NOT IMPLEMENTED
-  Second Stage: Galarian Weezing
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Rhyhorn
-  First StageEvolves through ->: lvl 42
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Rhydon
-  Second StageEvolves through ->: Trade while holding Protector
-  Third Stage: Rhyperior
-- First Stage/Baby: Happiny
-  First StageEvolves through ->: lvl up in Day channel
-  KEY: ''
-  Notes (Some evos still being tested): ??? shouldn't be day restricted but is
-  Second Stage: Chansey
-  Second StageEvolves through ->: Friendship Bracelet
-  Third Stage: Blissey
-- First Stage/Baby: Tangela
-  First StageEvolves through ->: learn Ancient Power then level up
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Tangrowth
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Kangaskhan
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Horsea
-  First StageEvolves through ->: lvl 32
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Seadra
-  Second StageEvolves through ->: Trade while holding Dragon Scale
-  Third Stage: Kingdra
-- First Stage/Baby: Goldeen
-  First StageEvolves through ->: lvl 33
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Seaking
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Staryu
-  First StageEvolves through ->: Water Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Starmie
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Mime Jr.
-  First StageEvolves through ->: learn Mimic
-  KEY: ''
-  Notes (Some evos still being tested): move not implemented
-  Second Stage: Mr. Mime
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: ''
-  First StageEvolves through ->: ''
-  KEY: ''
-  Notes (Some evos still being tested): EVOLUTION NOT IMPLEMENTED
-  Second Stage: Galarian Mr. Mime
-  Second StageEvolves through ->: lvl 42
-  Third Stage: Mr. Rime
-- First Stage/Baby: Scyther
-  First StageEvolves through ->: Trade while holding Metal Coat
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Scizor
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Smoochum
-  First StageEvolves through ->: lvl 30
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Jynx
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Elekid
-  First StageEvolves through ->: lvl 30
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Electabuzz
-  Second StageEvolves through ->: Trade while holding Electrizer
-  Third Stage: Electivire
-- First Stage/Baby: Magby
-  First StageEvolves through ->: lvl 30
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Magmar
-  Second StageEvolves through ->: Trade while holding Magmarizer
-  Third Stage: Magmortar
-- First Stage/Baby: Pinsir
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Tauros
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Magikarp
-  First StageEvolves through ->: lvl 20
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Gyarados
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Lapras
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Ditto
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Eevee
-  First StageEvolves through ->: Water Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Vaporeon
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: ''
-  First StageEvolves through ->: Thunder Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Jolteon
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: ''
-  First StageEvolves through ->: Fire Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Flareon
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: ''
-  First StageEvolves through ->: Sun Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Espeon
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: ''
-  First StageEvolves through ->: Moon Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Umbreon
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: ''
-  First StageEvolves through ->: Leaf Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Leafeon
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: ''
-  First StageEvolves through ->: Ice Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Glaceon
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: ''
-  First StageEvolves through ->: Shiny Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Sylveon
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Porygon
-  First StageEvolves through ->: Trade while holding Upgrade
-  KEY: ''
-  Notes (Some evos still being tested): verified x2
-  Second Stage: Porygon2
-  Second StageEvolves through ->: Trade while holding Dubious Disc
-  Third Stage: Porygon-Z
-- First Stage/Baby: Omanyte
-  First StageEvolves through ->: lvl 40
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Omastar
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Kabuto
-  First StageEvolves through ->: lvl 40
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Kabutops
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Aerodactyl
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Munchlax
-  First StageEvolves through ->: Friendship Bracelet
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Snorlax
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Articuno
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Zapdos
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Moltres
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Dratini
-  First StageEvolves through ->: lvl 30
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Dragonair
-  Second StageEvolves through ->: lvl 55
-  Third Stage: Dragonite
-- First Stage/Baby: Mewtwo
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Mew
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Chikorita
-  First StageEvolves through ->: lvl 16
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Bayleef
-  Second StageEvolves through ->: lvl 32
-  Third Stage: Meganium
-- First Stage/Baby: Cyndaquil
-  First StageEvolves through ->: lvl 14
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Quilava
-  Second StageEvolves through ->: lvl 36
-  Third Stage: Typhlosion
-- First Stage/Baby: Totodile
-  First StageEvolves through ->: lvl 18
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Croconaw
-  Second StageEvolves through ->: lvl 30
-  Third Stage: Feraligatr
-- First Stage/Baby: Sentret
-  First StageEvolves through ->: lvl 15
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Furret
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Hoothoot
-  First StageEvolves through ->: lvl 20
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Noctowl
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Ledyba
-  First StageEvolves through ->: lvl 18
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Ledian
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Spinarak
-  First StageEvolves through ->: lvl 22
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Ariados
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Chinchou
-  First StageEvolves through ->: lvl 27
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Lanturn
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Togepi
-  First StageEvolves through ->: Friendship Bracelet
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Togetic
-  Second StageEvolves through ->: Shiny Stone
-  Third Stage: Togekiss
-- First Stage/Baby: Natu
-  First StageEvolves through ->: lvl 25
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Xatu
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Mareep
-  First StageEvolves through ->: lvl 15
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Flaaffy
-  Second StageEvolves through ->: lvl 30
-  Third Stage: Ampharos
-- First Stage/Baby: Azurill
-  First StageEvolves through ->: Friendship Bracelet
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Marill
-  Second StageEvolves through ->: lvl 18
-  Third Stage: Azumarill
-- First Stage/Baby: Bonsly
-  First StageEvolves through ->: learn Mimic
-  KEY: ''
-  Notes (Some evos still being tested): move not implemented
-  Second Stage: Sudowoodo
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Hoppip
-  First StageEvolves through ->: lvl 18
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Skiploom
-  Second StageEvolves through ->: lvl 27
-  Third Stage: Jumpluff
-- First Stage/Baby: Aipom
-  First StageEvolves through ->: learn Double Hit then level up
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Ambipom
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Sunkern
-  First StageEvolves through ->: Sun Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Sunflora
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: 'Yanma              '
-  First StageEvolves through ->: learn Ancient Power then level up
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Yanmega
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Wooper
-  First StageEvolves through ->: lvl 20
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Quagsire
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Murkrow
-  First StageEvolves through ->: Dusk Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Honchkrow
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Misdreavus
-  First StageEvolves through ->: Dusk Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Mismagius
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Unown
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Wynaut
-  First StageEvolves through ->: lvl 15
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Wobbuffet
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Girafarig
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Pineco
-  First StageEvolves through ->: lvl 31
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Forretress
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Dunsparce
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Gligar
-  First StageEvolves through ->: hold Razor Fang, Night channel
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Gliscor
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Snubbull
-  First StageEvolves through ->: lvl 23
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Granbull
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Qwilfish
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Shuckle
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Heracross
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Sneasel
-  First StageEvolves through ->: hold Razor Claw, Night channel
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Weavile
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Teddiursa
-  First StageEvolves through ->: lvl 30
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Ursaring
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Slugma
-  First StageEvolves through ->: lvl 38
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Magcargo
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Swinub
-  First StageEvolves through ->: lvl 33
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Piloswine
-  Second StageEvolves through ->: learn Ancient Power then level up
-  Third Stage: Mamoswine
-- First Stage/Baby: Corsola
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Galaraian Corsola
-  First StageEvolves through ->: lvl 38
-  KEY: ''
-  Notes (Some evos still being tested): EVOLUTION NOT IMPLEMENTED
-  Second Stage: Cursola
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Remoraid
-  First StageEvolves through ->: lvl 25
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Octillery
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Delibird
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Mantyke
-  First StageEvolves through ->: with Remoraid in the party
-  KEY: ''
-  Notes (Some evos still being tested): evolution not possible
-  Second Stage: Mantine
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Skarmory
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Houndour
-  First StageEvolves through ->: lvl 24
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Houndoom
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Phanpy
-  First StageEvolves through ->: lvl 25
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Donphan
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Stantler
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Smeargle
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Miltank
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Raikou
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Entei
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Suicune
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Larvitar
-  First StageEvolves through ->: lvl 30
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Pupitar
-  Second StageEvolves through ->: lvl 55
-  Third Stage: Tyranitar
-- First Stage/Baby: Lugia
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Ho-oh
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Celebi
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Treecko
-  First StageEvolves through ->: lvl 16
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Grovyle
-  Second StageEvolves through ->: lvl 36
-  Third Stage: Sceptile
-- First Stage/Baby: Torchic
-  First StageEvolves through ->: lvl 16
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Combusken
-  Second StageEvolves through ->: lvl 36
-  Third Stage: Blaziken
-- First Stage/Baby: Mudkip
-  First StageEvolves through ->: lvl 16
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Marshtomp
-  Second StageEvolves through ->: lvl 36
-  Third Stage: Swampert
-- First Stage/Baby: Poochyena
-  First StageEvolves through ->: lvl 18
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Mightyena
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Zigzagoon
-  First StageEvolves through ->: lvl 20
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Linoone
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Galarian Zigzagoon
-  First StageEvolves through ->: lvl 20
-  KEY: ''
-  Notes (Some evos still being tested): EVOLUTION NOT IMPLEMENTED
-  Second Stage: Galarian Linoone
-  Second StageEvolves through ->: lvl 35, Night
-  Third Stage: Obstagoon
-- First Stage/Baby: Wurmple
-  First StageEvolves through ->: Random/Personality
-  KEY: ''
-  Notes (Some evos still being tested): evolution for line not possible
-  Second Stage: Silcoon
-  Second StageEvolves through ->: lvl 10
-  Third Stage: Beautifly
-- First Stage/Baby: ''
-  First StageEvolves through ->: ''
-  KEY: ''
-  Notes (Some evos still being tested): '"'
-  Second Stage: Cascoon
-  Second StageEvolves through ->: lvl 10
-  Third Stage: Dustox
-- First Stage/Baby: Lotad
-  First StageEvolves through ->: lvl 14
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Lombre
-  Second StageEvolves through ->: Water Stone
-  Third Stage: Ludicolo
-- First Stage/Baby: Seedot
-  First StageEvolves through ->: lvl 14
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Nuzleaf
-  Second StageEvolves through ->: Leaf Stone
-  Third Stage: Shiftry
-- First Stage/Baby: Taillow
-  First StageEvolves through ->: lvl 22
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Swellow
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Wingull
-  First StageEvolves through ->: lvl 25
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Pelipper
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Ralts
-  First StageEvolves through ->: lvl 20
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Kirlia
-  Second StageEvolves through ->: lvl 30
-  Third Stage: Gardevoir
-- First Stage/Baby: ''
-  First StageEvolves through ->: ''
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: ''
-  Second StageEvolves through ->: Dawn Stone
-  Third Stage: Gallade
-- First Stage/Baby: Surskit
-  First StageEvolves through ->: lvl 22
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Masquerain
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Shroomish
-  First StageEvolves through ->: lvl 23
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Breloom
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Slakoth
-  First StageEvolves through ->: lvl 18
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Vigoroth
-  Second StageEvolves through ->: lvl 36
-  Third Stage: Slaking
-- First Stage/Baby: Nincada
-  First StageEvolves through ->: lvl 20
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Ninjask
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: ''
-  First StageEvolves through ->: lvl 20 + empty pokeball and party spot
-  KEY: ''
-  Notes (Some evos still being tested): evolution not possible
-  Second Stage: Ninjask + Shedinja
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Whismur
-  First StageEvolves through ->: lvl 20
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Loudred
-  Second StageEvolves through ->: lvl 40
-  Third Stage: Exploud
-- First Stage/Baby: Makuhita
-  First StageEvolves through ->: lvl 24
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Hariyama
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Nosepass
-  First StageEvolves through ->: lvl up in Magnetic Field
-  KEY: ''
-  Notes (Some evos still being tested): evolution not possible
-  Second Stage: Probopass
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Skitty
-  First StageEvolves through ->: Moon Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Delcatty
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Sableye
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Mawile
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Aron
-  First StageEvolves through ->: lvl 32
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Lairon
-  Second StageEvolves through ->: lvl 42
-  Third Stage: Aggron
-- First Stage/Baby: Meditite
-  First StageEvolves through ->: lvl 37
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Medicham
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Electrike
-  First StageEvolves through ->: lvl 36
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Manectric
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Plusle
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Minun
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Volbeat
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Illumise
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Budew
-  First StageEvolves through ->: Friendship Bracelet
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Roselia
-  Second StageEvolves through ->: Shiny Stone
-  Third Stage: Roserade
-- First Stage/Baby: Gulpin
-  First StageEvolves through ->: lvl 26
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Swalot
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Carvanha
-  First StageEvolves through ->: lvl 30
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Sharpedo
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Wailmer
-  First StageEvolves through ->: lvl 40
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Wailord
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Numel
-  First StageEvolves through ->: lvl 33
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Camerupt
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Torkoal
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Spoink
-  First StageEvolves through ->: lvl 32
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Grumpig
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Spinda
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Trapinch
-  First StageEvolves through ->: lvl 35
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Vibrava
-  Second StageEvolves through ->: lvl 45
-  Third Stage: Flygon
-- First Stage/Baby: Cacnea
-  First StageEvolves through ->: lvl 32
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Cacturne
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Swablu
-  First StageEvolves through ->: lvl 35
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Altaria
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Zangoose
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Seviper
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Lunatone
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Solrock
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Barboach
-  First StageEvolves through ->: lvl 30
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Whiscash
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Corphish
-  First StageEvolves through ->: lvl 30
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Crawdaunt
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Baltoy
-  First StageEvolves through ->: lvl 36
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Claydol
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Lileep
-  First StageEvolves through ->: lvl 40
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Cradily
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Anorith
-  First StageEvolves through ->: lvl 40
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Armaldo
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Feebas
-  First StageEvolves through ->: Trade while holding Prism Scale
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Milotic
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Castform
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Kecleon
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Shuppet
-  First StageEvolves through ->: lvl 37
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Banette
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Duskull
-  First StageEvolves through ->: lvl 37
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Dusclops
-  Second StageEvolves through ->: Trade while holding Reaper Cloth
-  Third Stage: Dusknoir
-- First Stage/Baby: 'Tropius '
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Chingling
-  First StageEvolves through ->: Friendship Bracelet
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Chimecho
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Absol
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Snorunt
-  First StageEvolves through ->: lvl 42
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Glalie
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: ''
-  First StageEvolves through ->: Dawn Stone on Female
-  KEY: ''
-  Notes (Some evos still being tested): Dawn stone evolves no matter what
-  Second Stage: Froslass
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Spheal
-  First StageEvolves through ->: lvl 32
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Sealeo
-  Second StageEvolves through ->: lvl 44
-  Third Stage: Walrein
-- First Stage/Baby: Clamperl
-  First StageEvolves through ->: Trade while holding Deep Sea Tooth
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Huntail
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: ''
-  First StageEvolves through ->: Trade while holding Deep Sea Scale
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Gorebyss
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Relicanth
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Luvdisc
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Bagon
-  First StageEvolves through ->: lvl 30
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Shelgon
-  Second StageEvolves through ->: lvl 50
-  Third Stage: Salamence
-- First Stage/Baby: Beldum
-  First StageEvolves through ->: lvl 20
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Metang
-  Second StageEvolves through ->: lvl 45
-  Third Stage: Metagross
-- First Stage/Baby: Regirock
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Regice
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Registeel
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Latias
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Latios
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Kyogre
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Groudon
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Rayquaza
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Jirachi
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Deoxys
-  First StageEvolves through ->: None
-  KEY: forms can be bought using p!shop 6
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Turtwig
-  First StageEvolves through ->: lvl 18
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Grotle
-  Second StageEvolves through ->: lvl 32
-  Third Stage: Torterra
-- First Stage/Baby: Chimchar
-  First StageEvolves through ->: lvl 14
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Monferno
-  Second StageEvolves through ->: lvl 36
-  Third Stage: Infernape
-- First Stage/Baby: Piplup
-  First StageEvolves through ->: lvl 16
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Prinplup
-  Second StageEvolves through ->: lvl 36
-  Third Stage: Empoleon
-- First Stage/Baby: Starly
-  First StageEvolves through ->: lvl 14
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Staravia
-  Second StageEvolves through ->: lvl 34
-  Third Stage: Staraptor
-- First Stage/Baby: Bidoof
-  First StageEvolves through ->: lvl 15
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Bibarel
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Kricketot
-  First StageEvolves through ->: lvl 10
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Kricketune
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Shinx
-  First StageEvolves through ->: lvl 15
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Luxio
-  Second StageEvolves through ->: lvl 30
-  Third Stage: Luxray
-- First Stage/Baby: Cranidos
-  First StageEvolves through ->: lvl 30
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Rampardos
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Shieldon
-  First StageEvolves through ->: lvl 30
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Bastiodon
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Burmy (cloak changes by location)
-  First StageEvolves through ->: lvl 20, Male
-  KEY: ''
-  Notes (Some evos still being tested): does not currently evo
-  Second Stage: Mothim
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: ''
-  First StageEvolves through ->: lvl 20, in Grass
-  KEY: ''
-  Notes (Some evos still being tested): '"'
-  Second Stage: Wormadam (Plant Cloak)
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: ''
-  First StageEvolves through ->: lvl 20, in Caves
-  KEY: ''
-  Notes (Some evos still being tested): '"'
-  Second Stage: Wormadam (Sand Cloak)
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: ''
-  First StageEvolves through ->: lvl 20, in Buildings
-  KEY: ''
-  Notes (Some evos still being tested): '"'
-  Second Stage: Wormadam (Trash Cloak)
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Combee
-  First StageEvolves through ->: lvl 21, Female
-  KEY: ''
-  Notes (Some evos still being tested): DOES NOT EVOLVE AT THIS TIME
-  Second Stage: Vespiquen
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Pachirisu
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Buizel
-  First StageEvolves through ->: lvl 26
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Floatzel
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Cherubi
-  First StageEvolves through ->: lvl 25
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Cherrim
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Shellos
-  First StageEvolves through ->: lvl 30
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Gastrodon
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Drifloon
-  First StageEvolves through ->: lvl 28
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Drifblim
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Buneary
-  First StageEvolves through ->: Friendship Bracelet
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Lopunny
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Glameow
-  First StageEvolves through ->: lvl 38
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Purugly
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Stunky
-  First StageEvolves through ->: lvl 34
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Skuntank
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Bronzor
-  First StageEvolves through ->: lvl 33
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Bronzong
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Chatot
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Spiritomb
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Gible
-  First StageEvolves through ->: lvl 24
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Gabite
-  Second StageEvolves through ->: lvl 48
-  Third Stage: Garchomp
-- First Stage/Baby: Riolu
-  First StageEvolves through ->: Friendship Bracelet
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Lucario
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Hippopotas
-  First StageEvolves through ->: lvl 34
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Hippowdon
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Skorupi
-  First StageEvolves through ->: lvl 40
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Drapion
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Croagunk
-  First StageEvolves through ->: lvl 37
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Toxicroak
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Carnivine
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Finneon
-  First StageEvolves through ->: lvl 31
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Lumineon
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Snover
-  First StageEvolves through ->: lvl 40
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Abomasnow
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Rotom
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Uxie
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Mesprit
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Azelf
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Dialga
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Palkia
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Heatran
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Regigigas
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Giratina
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Cresselia
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Phione
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Manaphy
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Darkrai
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Shaymin
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Arceus
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Victini
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Snivy
-  First StageEvolves through ->: lvl 17
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Servine
-  Second StageEvolves through ->: lvl 36
-  Third Stage: Serperior
-- First Stage/Baby: Tepig
-  First StageEvolves through ->: lvl 17
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Pignite
-  Second StageEvolves through ->: lvl 36
-  Third Stage: Emboar
-- First Stage/Baby: Oshawott
-  First StageEvolves through ->: lvl 17
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Dewott
-  Second StageEvolves through ->: lvl 36
-  Third Stage: Samurott
-- First Stage/Baby: Patrat
-  First StageEvolves through ->: lvl 20
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Watchog
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Lillipup
-  First StageEvolves through ->: lvl 16
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Herdier
-  Second StageEvolves through ->: lvl 32
-  Third Stage: Stoutland
-- First Stage/Baby: Purrloin
-  First StageEvolves through ->: lvl 20
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Liepard
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Pansage
-  First StageEvolves through ->: Leaf Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Simisage
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Pansear
-  First StageEvolves through ->: Fire Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Simisear
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Panpour
-  First StageEvolves through ->: Water Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Simipour
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Munna
-  First StageEvolves through ->: Moon Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Musharna
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Pidove
-  First StageEvolves through ->: lvl 21
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Tranquill
-  Second StageEvolves through ->: lvl 32
-  Third Stage: Unfezant
-- First Stage/Baby: Blitzle
-  First StageEvolves through ->: lvl 27
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Zebstrika
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Roggenrola
-  First StageEvolves through ->: lvl 25
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Boldore
-  Second StageEvolves through ->: Trade
-  Third Stage: Gigalith
-- First Stage/Baby: Woobat
-  First StageEvolves through ->: Friendship Bracelet
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Swoobat
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Drilbur
-  First StageEvolves through ->: lvl 31
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Excadrill
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Audino
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Timburr
-  First StageEvolves through ->: lvl 25
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Gurdurr
-  Second StageEvolves through ->: Trade
-  Third Stage: Conkeldurr
-- First Stage/Baby: Tympole
-  First StageEvolves through ->: lvl 25
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Palpitoad
-  Second StageEvolves through ->: lvl 36
-  Third Stage: Seismitoad
-- First Stage/Baby: Throh
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Sawk
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Sewaddle
-  First StageEvolves through ->: lvl 20
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Swadloon
-  Second StageEvolves through ->: Friendship Bracelet
-  Third Stage: Leavanny
-- First Stage/Baby: Venipede
-  First StageEvolves through ->: lvl 22
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Whirlipede
-  Second StageEvolves through ->: lvl 30
-  Third Stage: Scolipede
-- First Stage/Baby: Cottonee
-  First StageEvolves through ->: Sun Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Whimsicott
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Petilil
-  First StageEvolves through ->: Sun Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Lilligant
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Basculin
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Sandile
-  First StageEvolves through ->: lvl 29
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Krokorok
-  Second StageEvolves through ->: lvl 40
-  Third Stage: Krookodile
-- First Stage/Baby: Darumaka
-  First StageEvolves through ->: lvl 35
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Darmanitan
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Galarian Darumaka
-  First StageEvolves through ->: Ice Stone
-  KEY: ''
-  Notes (Some evos still being tested): EVOLUTION NOT IMPLEMENTED
-  Second Stage: Galarian Darmanitan
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Maractus
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Dwebble
-  First StageEvolves through ->: lvl 34
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Crustle
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Scraggy
-  First StageEvolves through ->: lvl 39
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Scrafty
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Sigilyph
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Yamask
-  First StageEvolves through ->: lvl 34
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Cofragrigus
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Galarian Yamask
-  First StageEvolves through ->: ''
-  KEY: ''
-  Notes (Some evos still being tested): EVOLUTION NOT IMPLEMENTED
-  Second Stage: Runerigus
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Tirtouga
-  First StageEvolves through ->: lvl 37
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Carracosta
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Archen
-  First StageEvolves through ->: lvl 37
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Archeops
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Trubbish
-  First StageEvolves through ->: lvl 36
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Garbodor
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Zorua
-  First StageEvolves through ->: lvl 30
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Zoroark
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Minccino
-  First StageEvolves through ->: Shiny Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Cinccino
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Gothita
-  First StageEvolves through ->: lvl 32
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Gothorita
-  Second StageEvolves through ->: lvl 41
-  Third Stage: Gothitelle
-- First Stage/Baby: Solosis
-  First StageEvolves through ->: lvl 32
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Duosion
-  Second StageEvolves through ->: lvl 41
-  Third Stage: Reuniclus
-- First Stage/Baby: Ducklett
-  First StageEvolves through ->: lvl 35
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Swanna
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Vanillite
-  First StageEvolves through ->: lvl 35
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Vanillish
-  Second StageEvolves through ->: lvl 47
-  Third Stage: Vanilluxe
-- First Stage/Baby: Deerling
-  First StageEvolves through ->: lvl 34
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Sawsbuck
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Emolga
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Karrablast
-  First StageEvolves through ->: Trade for Shelmet
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Escavalier
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Foongus
-  First StageEvolves through ->: lvl 39
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Amoonguss
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Frillish
-  First StageEvolves through ->: lvl 40
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Jellicent
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Alomomola
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Joltik
-  First StageEvolves through ->: lvl 36
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Galvantula
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Ferroseed
-  First StageEvolves through ->: lvl 40
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Ferrothorn
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Klink
-  First StageEvolves through ->: lvl 38
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Klang
-  Second StageEvolves through ->: lvl 49
-  Third Stage: Klinklang
-- First Stage/Baby: Tynamo
-  First StageEvolves through ->: lvl 39
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Eelektrik
-  Second StageEvolves through ->: Thunder Stone
-  Third Stage: Eelektross
-- First Stage/Baby: Elgyem
-  First StageEvolves through ->: lvl 42
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Beheeyem
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Litwick
-  First StageEvolves through ->: lvl 41
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Lampent
-  Second StageEvolves through ->: Dusk Stone
-  Third Stage: Chandelure
-- First Stage/Baby: Axew
-  First StageEvolves through ->: lvl 38
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Fraxure
-  Second StageEvolves through ->: lvl 48
-  Third Stage: Haxorus
-- First Stage/Baby: Cubchoo
-  First StageEvolves through ->: lvl 37
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Beartic
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Cryogonal
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Shelmet
-  First StageEvolves through ->: Trade for Karrablast
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Accelgor
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Stunfisk
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Galarian Stunfisk
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Mienfoo
-  First StageEvolves through ->: lvl 50
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Mienshao
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Druddigon
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Golett
-  First StageEvolves through ->: lvl 43
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Golurk
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Pawniard
-  First StageEvolves through ->: lvl 52
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Bisharp
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Bouffalant
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Rufflet
-  First StageEvolves through ->: lvl 54
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Braviary
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Vullaby
-  First StageEvolves through ->: lvl 54
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Mandibuzz
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Heatmor
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Durant
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Deino
-  First StageEvolves through ->: lvl 50
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Zweilous
-  Second StageEvolves through ->: lvl 64
-  Third Stage: Hydreigon
-- First Stage/Baby: Larvesta
-  First StageEvolves through ->: lvl 59
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Volcarona
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Cobalion
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Terrakion
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Virizion
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Tornadus
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Thundurus
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Reshiram
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Zekrom
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: 'Landorus '
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Kyurem
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Keldeo
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Meloetta
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Genesect
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Chespin
-  First StageEvolves through ->: lvl 16
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Quilladin
-  Second StageEvolves through ->: lvl 36
-  Third Stage: Chesnaught
-- First Stage/Baby: Fennekin
-  First StageEvolves through ->: lvl 16
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Braixen
-  Second StageEvolves through ->: lvl 36
-  Third Stage: Delphox
-- First Stage/Baby: Froakie
-  First StageEvolves through ->: lvl 16
-  KEY: ''
-  Notes (Some evos still being tested): Ash's Greninja not available
-  Second Stage: Frogadier
-  Second StageEvolves through ->: lvl 36
-  Third Stage: Greninja
-- First Stage/Baby: Bunnelby
-  First StageEvolves through ->: lvl 20
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Diggersby
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Fletchling
-  First StageEvolves through ->: lvl 17
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Fletchinder
-  Second StageEvolves through ->: lvl 35
-  Third Stage: Talonflame
-- First Stage/Baby: Scatterbug
-  First StageEvolves through ->: lvl 9
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Spewpa
-  Second StageEvolves through ->: lvl 12
-  Third Stage: Vivillon
-- First Stage/Baby: Litleo
-  First StageEvolves through ->: lvl 35
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Pyroar
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: "Flab\xE9b\xE9/Flabebe"
-  First StageEvolves through ->: lvl 19
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Floette
-  Second StageEvolves through ->: Shiny Stone
-  Third Stage: Florges
-- First Stage/Baby: Skiddo
-  First StageEvolves through ->: lvl 32
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Gogoat
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Pancham
-  First StageEvolves through ->: lvl 32
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Pangoro
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Furfrou
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Espurr
-  First StageEvolves through ->: lvl 25
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Meowstic
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Honedge
-  First StageEvolves through ->: lvl 35
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Doublade
-  Second StageEvolves through ->: Dusk Stone
-  Third Stage: Aegislash
-- First Stage/Baby: Spritzee
-  First StageEvolves through ->: Trade while holding Sachet
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Aromatisse
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Swirlix
-  First StageEvolves through ->: Trade while holding Whipped Dream
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Slurpuff
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Inkay
-  First StageEvolves through ->: lvl 30
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Malamar
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Binacle
-  First StageEvolves through ->: lvl 39
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Barbaracle
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Skrelp
-  First StageEvolves through ->: lvl 48
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Dragalge
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Clauncher
-  First StageEvolves through ->: lvl 37
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Clawitzer
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Helioptile
-  First StageEvolves through ->: Sun Stone
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Heliolisk
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Tyrunt
-  First StageEvolves through ->: lvl 39 in a "Day" Channel
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Tyrantrum
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Amaura
-  First StageEvolves through ->: lvl 39 in a "Night" Channel
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Aurorus
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Hawlucha
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Dedenne
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Carbink
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Goomy
-  First StageEvolves through ->: lvl 40
-  KEY: ''
-  Notes (Some evos still being tested): Verified
-  Second Stage: Sliggoo
-  Second StageEvolves through ->: lvl 50
-  Third Stage: Goodra
-- First Stage/Baby: Klefki
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Phantump
-  First StageEvolves through ->: Trade
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Trevenant
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Pumpkaboo
-  First StageEvolves through ->: Trade
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Gourgeist
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Bergmite
-  First StageEvolves through ->: lvl 37
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Avalugg
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Noibat
-  First StageEvolves through ->: lvl 48
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Noivern
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Xerneas
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Yveltal
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Zygarde
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Diancie
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Hoopa
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Volcanion
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Rowlet
-  First StageEvolves through ->: lvl 17
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Dartrix
-  Second StageEvolves through ->: lvl 34
-  Third Stage: Decidueye
-- First Stage/Baby: Litten
-  First StageEvolves through ->: lvl 17
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Torracat
-  Second StageEvolves through ->: lvl 34
-  Third Stage: Incineroar
-- First Stage/Baby: Popplio
-  First StageEvolves through ->: lvl 17
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Brionne
-  Second StageEvolves through ->: lvl 34
-  Third Stage: Primarina
-- First Stage/Baby: Pikipek
-  First StageEvolves through ->: lvl 14
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Trumbeak
-  Second StageEvolves through ->: lvl 28
-  Third Stage: Toucannon
-- First Stage/Baby: Yungoos
-  First StageEvolves through ->: lvl 20, Day
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Gumshoos
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Grubbin
-  First StageEvolves through ->: lvl 20
-  KEY: ''
-  Notes (Some evos still being tested): Verified
-  Second Stage: Charjabug
-  Second StageEvolves through ->: lvl 20
-  Third Stage: Vikavolt
-- First Stage/Baby: Crabrawler
-  First StageEvolves through ->: at Mt. Lanakila
-  KEY: ''
-  Notes (Some evos still being tested): evolution not possible
-  Second Stage: Crabominable
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Oricorio
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Cutiefly
-  First StageEvolves through ->: lvl 25
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Ribombee
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Rockruff
-  First StageEvolves through ->: lvl 25
-  KEY: ''
-  Notes (Some evos still being tested): Only evolves to "midday" picture (only says
-    Lycanroc)
-  Second Stage: Lycanroc
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: '    '
-  First StageEvolves through ->: lvl 25, Day/Sun
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Lycanroc (Midday)
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: ''
-  First StageEvolves through ->: lvl 25, Night/Moon
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Lycanroc (Midnight)
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: ''
-  First StageEvolves through ->: Event version; lvl 25, Dusk (5-6pm)
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Lycanroc (Dusk)
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Wishiwashi
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Mareanie
-  First StageEvolves through ->: lvl 38
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Toxapex
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Mudbray
-  First StageEvolves through ->: lvl 30
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Mudsdale
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Dewpider
-  First StageEvolves through ->: lvl 22
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Araquanid
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Fomantis
-  First StageEvolves through ->: lvl 34, in a channel with "day" in the name
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Lurantis
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Morelull
-  First StageEvolves through ->: lvl 24
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Shiinotic
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Salandit
-  First StageEvolves through ->: lvl 33, Female
-  KEY: ''
-  Notes (Some evos still being tested): DOES NOT EVOLVE AT THIS TIME
-  Second Stage: Salazzle
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Stufful
-  First StageEvolves through ->: lvl 27
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Bewear
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Bounsweet
-  First StageEvolves through ->: lvl 17
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Steenee
-  Second StageEvolves through ->: learn Stomp (lvl 29) | Lvl up 13+
-  Third Stage: Tsareena
-- First Stage/Baby: Comfey
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Oranguru
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Passimian
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Wimpod
-  First StageEvolves through ->: lvl 30
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Golisopod
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Sandygast
-  First StageEvolves through ->: lvl 42
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Palossand
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Pyukumuku
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: 'Type: Null'
-  First StageEvolves through ->: Friendship Bracelet
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Silvally
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Minior
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Komala
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Turtonator
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Togedemaru
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Mimikyu
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Bruxish
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Drampa
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Dhelmise
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Jangmo-o
-  First StageEvolves through ->: lvl 35
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Hakamo-o
-  Second StageEvolves through ->: lvl 45
-  Third Stage: Kommo-o
-- First Stage/Baby: Tapu Koko
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Tapu Lele
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Tapu Bulu
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Tapu Fini
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Cosmog
-  First StageEvolves through ->: lvl 43
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: Cosmoem
-  Second StageEvolves through ->: lvl 53 | Evolve in channel with "sun" in the name
-  Third Stage: Solgaleo
-- First Stage/Baby: ''
-  First StageEvolves through ->: ''
-  KEY: ''
-  Notes (Some evos still being tested): verified
-  Second Stage: ''
-  Second StageEvolves through ->: lvl 53 | Evolve in channel with "moon" in the name
-  Third Stage: Lunala
-- First Stage/Baby: Nihilego
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Buzzwole
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Pheromosa
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Xurkitree
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Celesteela
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Kartana
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Guzzlord
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Necrozma
-  First StageEvolves through ->: None
-  KEY: forms can be bought using p!shop 6
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Magearna
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Marshadow
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Poipole
-  First StageEvolves through ->: learn Dragon Pulse then level up
-  KEY: ''
-  Notes (Some evos still being tested): evolution works as of 16SEP2018
-  Second Stage: Naganadel
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Stakataka
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Blacephalon
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Zeraora
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): '-'
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Meltan
-  First StageEvolves through ->: Unknown
-  KEY: ''
-  Notes (Some evos still being tested): EVOLUTION NOT YET ON BOT
-  Second Stage: Melmetal
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Grookey
-  First StageEvolves through ->: lvl 16
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Thwackey
-  Second StageEvolves through ->: lvl 35
-  Third Stage: Rillaboom
-- First Stage/Baby: Scorbunny
-  First StageEvolves through ->: lvl 16
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Raboot
-  Second StageEvolves through ->: lvl 35
-  Third Stage: Cinderace
-- First Stage/Baby: Sobble
-  First StageEvolves through ->: lvl 16
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Drizzile
-  Second StageEvolves through ->: lvl 35
-  Third Stage: Inteleon
-- First Stage/Baby: Blipbug
-  First StageEvolves through ->: lvl 10
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Dottler
-  Second StageEvolves through ->: lvl 30
-  Third Stage: Orbeetle
-- First Stage/Baby: Rookidee
-  First StageEvolves through ->: lvl 18
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Corvisquire
-  Second StageEvolves through ->: lvl 38
-  Third Stage: Corviknight
-- First Stage/Baby: Skwovet
-  First StageEvolves through ->: lvl 24
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Greedent
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Nickit
-  First StageEvolves through ->: lvl 18
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Thievul
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Wooloo
-  First StageEvolves through ->: lvl 24
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Dubwool
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Chewtle
-  First StageEvolves through ->: lvl 22
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Drednaw
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Yamper
-  First StageEvolves through ->: lvl 25
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Boltund
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Gossifleur
-  First StageEvolves through ->: lvl 20
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Eldegoss
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Sizzlipede
-  First StageEvolves through ->: lvl 28
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Centiskorch
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Rolycoly
-  First StageEvolves through ->: lvl 18
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Carkol
-  Second StageEvolves through ->: lvl 34
-  Third Stage: Coalossal
-- First Stage/Baby: Arrokuda
-  First StageEvolves through ->: lvl 26
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Barraskewda
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Milcery
-  First StageEvolves through ->: candy + spin
-  KEY: ''
-  Notes (Some evos still being tested): EVOLUTION NOT YET IN BOT
-  Second Stage: Alcremie
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Applin
-  First StageEvolves through ->: tart apple
-  KEY: ''
-  Notes (Some evos still being tested): EVOLUTION NOT YET IN BOT
-  Second Stage: Flapple
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: ''
-  First StageEvolves through ->: sweet apple
-  KEY: ''
-  Notes (Some evos still being tested): EVOLUTION NOT YET IN BOT
-  Second Stage: Appletun
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Impidimp
-  First StageEvolves through ->: lvl 32
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Morgrem
-  Second StageEvolves through ->: lvl 42
-  Third Stage: Grimmsnarl
-- First Stage/Baby: Hatenna
-  First StageEvolves through ->: lvl 32
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Hattrem
-  Second StageEvolves through ->: lvl 42
-  Third Stage: Hatterene
-- First Stage/Baby: Cufant
-  First StageEvolves through ->: lvl 34
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Copperajah
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Cramorant
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Toxel
-  First StageEvolves through ->: lvl 30 + lonely, bold, relaxed, timid, serious, modest,
-    mild, quiet, bashful, calm, gentle, careful NATURE
-  KEY: ''
-  Notes (Some evos still being tested): ONLY EVOLVES TO LOWKEY
-  Second Stage: Toxitricity (Low Key)
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: ''
-  First StageEvolves through ->: lvl 30 + hardy, brave, adamant, naughty, docile,
-    impish, lax, hasty, jolly, naive, rash, sassy, quirky
-  KEY: ''
-  Notes (Some evos still being tested): FORM NOT IN BOT
-  Second Stage: Toxitricity (Amped Up)
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Silicobra
-  First StageEvolves through ->: lvl 36
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Sandaconda
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Sinistea
-  First StageEvolves through ->: cracked pot
-  KEY: ''
-  Notes (Some evos still being tested): EVOLUTION NOT YET IN BOT
-  Second Stage: Polteageist
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Indeedee
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): ONLY FEMALE ON BOT
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Morpeko (Full Belly)
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): HANGRY FORM NOT IN BOT
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Falinks
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Snom
-  First StageEvolves through ->: friendship, night (not in bot)
-  KEY: ''
-  Notes (Some evos still being tested): EVOLUTION NOT YET IN BOT
-  Second Stage: Frosmoth
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Clobbopus
-  First StageEvolves through ->: learn TAUNT and lvl
-  KEY: ''
-  Notes (Some evos still being tested): EVOLUTION NOT YET IN BOT
-  Second Stage: Grapploct
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Pincurchin
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Stonjourner
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Eiscue (Ice Face)
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Duraludon
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Dracozolt
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Arctozolt
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Dracovish
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Arctovish
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Dreepy
-  First StageEvolves through ->: lvl 50
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: Drakloak
-  Second StageEvolves through ->: lvl 60
-  Third Stage: Dragapult
-- First Stage/Baby: Zacian
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Zamazenta
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
-- First Stage/Baby: Eternatus
-  First StageEvolves through ->: None
-  KEY: ''
-  Notes (Some evos still being tested): ''
-  Second Stage: ''
-  Second StageEvolves through ->: ''
-  Third Stage: ''
+- base: Bulbasaur
+  into: Ivysaur
+  method: lvl 16
+- base: Ivysaur
+  into: Venusaur
+  method: lvl 32
+- base: Charmander
+  into: Charmeleon
+  method: lvl 16
+- base: Charmeleon
+  into: Charizard
+  method: lvl 36
+- base: Squirtle
+  into: Wartortle
+  method: lvl 16
+- base: Wartortle
+  into: Blastoise
+  method: lvl 36
+- base: Caterpie
+  into: Metapod
+  method: lvl 7
+- base: Metapod
+  into: Butterfree
+  method: lvl 10
+- base: Weedle
+  into: Kakuna
+  method: lvl 7
+- base: Kakuna
+  into: Beedrill
+  method: lvl 10
+- base: Pidgey
+  into: Pidgeotto
+  method: lvl 18
+- base: Pidgeotto
+  into: Pidgeot
+  method: lvl 36
+- base: Rattata
+  into: Raticate
+  method: lvl 20
+- base: Alolan Rattata
+  into: Alolan Raticate
+  method: lvl 20. Night channel
+- base: Spearow
+  into: Fearow
+  method: lvl 20
+- base: Ekans
+  into: Arbok
+  method: lvl 22
+- base: Pichu
+  into: Pikachu
+  method: Friendship Bracelet
+- base: Pikachu
+  into: Raichu
+  method: Thunder Stone
+- base: Pikachu
+  into: Alolan Raichu
+  method: Thunder Stone in Alola
+- base: Sandshrew
+  into: Sandslash
+  method: Lvl 22
+- base: Alolan Sandshrew
+  into: Alolan Sandslash
+  method: Ice Stone
+- base: "Nidoran\u2640"
+  into: Nidorina
+  method: lvl 16
+- base: Nidorina
+  into: Nidoqueen
+  method: Moon Stone
+- base: "Nidoran\u2642"
+  into: Nidorino
+  method: lvl 16
+- base: Nidorino
+  into: Nidoking
+  method: Moon Stone
+- base: Cleffa
+  into: Clefairy
+  method: Friendship Bracelet
+- base: Clefairy
+  into: Clefable
+  method: Moon Stone
+- base: Vulpix
+  into: Ninetales
+  method: Fire Stone
+- base: Alolan Vulpix
+  into: Alolan Ninetales
+  method: Ice Stone
+- base: Igglybuff
+  into: Jigglypuff
+  method: Friendship Bracelet
+- base: Jigglypuff
+  into: Wigglytuff
+  method: Moon Stone
+- base: Zubat
+  into: Golbat
+  method: lvl 22
+- base: Golbat
+  into: Crobat
+  method: Friendship Bracelet
+- base: Oddish
+  into: Gloom
+  method: lvl 21
+- base: Gloom
+  into: Vileplume
+  method: Leaf Stone
+- base: Gloom
+  into: Bellossom
+  method: Sun Stone
+- base: Paras
+  into: Parasect
+  method: lvl 24
+- base: Venonat
+  into: Venomoth
+  method: lvl 31
+- base: Diglett
+  into: Dugtrio
+  method: lvl 26
+- base: Alolan Diglett
+  into: Alolan Dugtrio
+  method: lvl 26
+- base: Meowth
+  into: Persian
+  method: lvl 28
+- base: Alolan Meowth
+  into: Alolan Persian
+  method: Friendship Bracelet
+- base: Galarian Meowth
+  into: Perrserker
+  method: lvl 28
+- base: Psyduck
+  into: Golduck
+  method: lvl 33
+- base: Mankey
+  into: Primeape
+  method: lvl 28
+- base: Growlithe
+  into: Arcanine
+  method: Fire Stone
+- base: Poliwag
+  into: Poliwhirl
+  method: lvl 25
+- base: Poliwhirl
+  into: Poliwrath
+  method: Water Stone
+- base: Poliwhirl
+  into: Politoed
+  method: Trade while holding King's Rock
+- base: Abra
+  into: Kadabra
+  method: lvl 16
+- base: Kadabra
+  into: Alakazam
+  method: Trade
+- base: Machop
+  into: Machoke
+  method: lvl 28
+- base: Machoke
+  into: Machamp
+  method: Trade
+- base: Bellsprout
+  into: Weepinbell
+  method: lvl 21
+- base: Weepinbell
+  into: Victreebel
+  method: Leaf Stone
+- base: Tentacool
+  into: Tentacruel
+  method: lvl 30
+- base: Geodude
+  into: Graveler
+  method: lvl 25
+- base: Graveler
+  into: Golem
+  method: Trade
+- base: Alolan Geodude
+  into: Alolan Graveler
+  method: lvl 25
+- base: Alolan Graveler
+  into: Alolan Golem
+  method: Trade
+- base: Ponyta
+  into: Rapidash
+  method: lvl 40
+- base: Galarian Ponyta
+  into: Galarian Rapidash
+  method: lvl 40
+- base: Slowpoke
+  into: Slowbro
+  method: lvl 37
+- base: Slowpoke
+  into: Slowking
+  method: Trade while holding King's Rock
+- base: Magnemite
+  into: Magneton
+  method: lvl 30
+- base: Magneton
+  into: Magnezone
+  method: lvl up in Magnetic Field
+- base: Galarian Farfetch'd
+  into: Sirfetch'd
+  method: '-'
+- base: Doduo
+  into: Dodrio
+  method: lvl 31
+- base: Seel
+  into: Dewgong
+  method: lvl 34
+- base: Grimer
+  into: Muk
+  method: lvl 38
+- base: Alolan Grimer
+  into: Alolan Muk
+  method: lvl 38
+- base: Shellder
+  into: Cloyster
+  method: Water Stone
+- base: Gastly
+  into: Haunter
+  method: lvl 25
+- base: Haunter
+  into: Gengar
+  method: Trade
+- base: Onix
+  into: Steelix
+  method: Trade while holding Metal Coat
+- base: Drowzee
+  into: Hypno
+  method: lvl 26
+- base: Krabby
+  into: Kingler
+  method: lvl 28
+- base: Voltorb
+  into: Electrode
+  method: lvl 30
+- base: Exeggcute
+  into: Exeggutor
+  method: Leaf Stone
+- base: Exeggcute
+  into: Alolan Exeggutor
+  method: ??? Leaf Stone in Alola, in-games
+- base: Cubone
+  into: Marowak
+  method: lvl 28
+- base: Cubone
+  into: Alolan Marowak
+  method: lvl 28, Night, in Alola
+- base: Tyrogue
+  into: Hitmonlee
+  method: lvl 20, Attack > Defense
+- base: Tyrogue
+  into: Hitmonchan
+  method: lvl 20, Attack < Defense
+- base: Tyrogue
+  into: Hitmontop
+  method: lvl 20, Attack = Defense
+- base: Lickitung
+  into: Lickilicky
+  method: learn Rollout then level up
+- base: Koffing
+  into: Weezing
+  method: lvl 35
+- base: Rhyhorn
+  into: Rhydon
+  method: lvl 42
+- base: Rhydon
+  into: Rhyperior
+  method: Trade while holding Protector
+- base: Happiny
+  into: Chansey
+  method: lvl up in Day channel
+- base: Chansey
+  into: Blissey
+  method: Friendship Bracelet
+- base: Tangela
+  into: Tangrowth
+  method: learn Ancient Power then level up
+- base: Horsea
+  into: Seadra
+  method: lvl 32
+- base: Seadra
+  into: Kingdra
+  method: Trade while holding Dragon Scale
+- base: Goldeen
+  into: Seaking
+  method: lvl 33
+- base: Staryu
+  into: Starmie
+  method: Water Stone
+- base: Mime Jr.
+  into: Mr. Mime
+  method: learn Mimic
+- base: Galarian Mr. Mime
+  into: Mr. Rime
+  method: lvl 42
+- base: Scyther
+  into: Scizor
+  method: Trade while holding Metal Coat
+- base: Smoochum
+  into: Jynx
+  method: lvl 30
+- base: Elekid
+  into: Electabuzz
+  method: lvl 30
+- base: Electabuzz
+  into: Electivire
+  method: Trade while holding Electrizer
+- base: Magby
+  into: Magmar
+  method: lvl 30
+- base: Magmar
+  into: Magmortar
+  method: Trade while holding Magmarizer
+- base: Magikarp
+  into: Gyarados
+  method: lvl 20
+- base: Eevee
+  into: Vaporeon
+  method: Water Stone
+- base: Eevee
+  into: Jolteon
+  method: Thunder Stone
+- base: Eevee
+  into: Flareon
+  method: Fire Stone
+- base: Eevee
+  into: Espeon
+  method: Sun Stone
+- base: Eevee
+  into: Umbreon
+  method: Moon Stone
+- base: Eevee
+  into: Leafeon
+  method: Leaf Stone
+- base: Eevee
+  into: Glaceon
+  method: Ice Stone
+- base: Eevee
+  into: Sylveon
+  method: Shiny Stone
+- base: Porygon
+  into: Porygon2
+  method: Trade while holding Upgrade
+- base: Porygon2
+  into: Porygon-Z
+  method: Trade while holding Dubious Disc
+- base: Omanyte
+  into: Omastar
+  method: lvl 40
+- base: Kabuto
+  into: Kabutops
+  method: lvl 40
+- base: Munchlax
+  into: Snorlax
+  method: Friendship Bracelet
+- base: Dratini
+  into: Dragonair
+  method: lvl 30
+- base: Dragonair
+  into: Dragonite
+  method: lvl 55
+- base: Chikorita
+  into: Bayleef
+  method: lvl 16
+- base: Bayleef
+  into: Meganium
+  method: lvl 32
+- base: Cyndaquil
+  into: Quilava
+  method: lvl 14
+- base: Quilava
+  into: Typhlosion
+  method: lvl 36
+- base: Totodile
+  into: Croconaw
+  method: lvl 18
+- base: Croconaw
+  into: Feraligatr
+  method: lvl 30
+- base: Sentret
+  into: Furret
+  method: lvl 15
+- base: Hoothoot
+  into: Noctowl
+  method: lvl 20
+- base: Ledyba
+  into: Ledian
+  method: lvl 18
+- base: Spinarak
+  into: Ariados
+  method: lvl 22
+- base: Chinchou
+  into: Lanturn
+  method: lvl 27
+- base: Togepi
+  into: Togetic
+  method: Friendship Bracelet
+- base: Togetic
+  into: Togekiss
+  method: Shiny Stone
+- base: Natu
+  into: Xatu
+  method: lvl 25
+- base: Mareep
+  into: Flaaffy
+  method: lvl 15
+- base: Flaaffy
+  into: Ampharos
+  method: lvl 30
+- base: Azurill
+  into: Marill
+  method: Friendship Bracelet
+- base: Marill
+  into: Azumarill
+  method: lvl 18
+- base: Bonsly
+  into: Sudowoodo
+  method: learn Mimic
+- base: Hoppip
+  into: Skiploom
+  method: lvl 18
+- base: Skiploom
+  into: Jumpluff
+  method: lvl 27
+- base: Aipom
+  into: Ambipom
+  method: learn Double Hit then level up
+- base: Sunkern
+  into: Sunflora
+  method: Sun Stone
+- base: Yanma
+  into: Yanmega
+  method: learn Ancient Power then level up
+- base: Wooper
+  into: Quagsire
+  method: lvl 20
+- base: Murkrow
+  into: Honchkrow
+  method: Dusk Stone
+- base: Misdreavus
+  into: Mismagius
+  method: Dusk Stone
+- base: Wynaut
+  into: Wobbuffet
+  method: lvl 15
+- base: Pineco
+  into: Forretress
+  method: lvl 31
+- base: Gligar
+  into: Gliscor
+  method: hold Razor Fang, Night channel
+- base: Snubbull
+  into: Granbull
+  method: lvl 23
+- base: Sneasel
+  into: Weavile
+  method: hold Razor Claw, Night channel
+- base: Teddiursa
+  into: Ursaring
+  method: lvl 30
+- base: Slugma
+  into: Magcargo
+  method: lvl 38
+- base: Swinub
+  into: Piloswine
+  method: lvl 33
+- base: Piloswine
+  into: Mamoswine
+  method: learn Ancient Power then level up
+- base: Galaraian Corsola
+  into: Cursola
+  method: lvl 38
+- base: Remoraid
+  into: Octillery
+  method: lvl 25
+- base: Mantyke
+  into: Mantine
+  method: with Remoraid in the party
+- base: Houndour
+  into: Houndoom
+  method: lvl 24
+- base: Phanpy
+  into: Donphan
+  method: lvl 25
+- base: Larvitar
+  into: Pupitar
+  method: lvl 30
+- base: Pupitar
+  into: Tyranitar
+  method: lvl 55
+- base: Treecko
+  into: Grovyle
+  method: lvl 16
+- base: Grovyle
+  into: Sceptile
+  method: lvl 36
+- base: Torchic
+  into: Combusken
+  method: lvl 16
+- base: Combusken
+  into: Blaziken
+  method: lvl 36
+- base: Mudkip
+  into: Marshtomp
+  method: lvl 16
+- base: Marshtomp
+  into: Swampert
+  method: lvl 36
+- base: Poochyena
+  into: Mightyena
+  method: lvl 18
+- base: Zigzagoon
+  into: Linoone
+  method: lvl 20
+- base: Galarian Zigzagoon
+  into: Galarian Linoone
+  method: lvl 20
+- base: Galarian Linoone
+  into: Obstagoon
+  method: lvl 35, Night
+- base: Wurmple
+  into: Silcoon
+  method: Random/Personality
+- base: Silcoon
+  into: Beautifly
+  method: lvl 10
+- base: Cascoon
+  into: Dustox
+  method: lvl 10
+- base: Lotad
+  into: Lombre
+  method: lvl 14
+- base: Lombre
+  into: Ludicolo
+  method: Water Stone
+- base: Seedot
+  into: Nuzleaf
+  method: lvl 14
+- base: Nuzleaf
+  into: Shiftry
+  method: Leaf Stone
+- base: Taillow
+  into: Swellow
+  method: lvl 22
+- base: Wingull
+  into: Pelipper
+  method: lvl 25
+- base: Ralts
+  into: Kirlia
+  method: lvl 20
+- base: Kirlia
+  into: Gardevoir
+  method: lvl 30
+- base: Kirlia
+  into: Gallade
+  method: Dawn Stone
+- base: Surskit
+  into: Masquerain
+  method: lvl 22
+- base: Shroomish
+  into: Breloom
+  method: lvl 23
+- base: Slakoth
+  into: Vigoroth
+  method: lvl 18
+- base: Vigoroth
+  into: Slaking
+  method: lvl 36
+- base: Nincada
+  into: Ninjask
+  method: lvl 20
+- base: Nincada
+  into: Ninjask + Shedinja
+  method: lvl 20 + empty pokeball and party spot
+- base: Whismur
+  into: Loudred
+  method: lvl 20
+- base: Loudred
+  into: Exploud
+  method: lvl 40
+- base: Makuhita
+  into: Hariyama
+  method: lvl 24
+- base: Nosepass
+  into: Probopass
+  method: lvl up in Magnetic Field
+- base: Skitty
+  into: Delcatty
+  method: Moon Stone
+- base: Aron
+  into: Lairon
+  method: lvl 32
+- base: Lairon
+  into: Aggron
+  method: lvl 42
+- base: Meditite
+  into: Medicham
+  method: lvl 37
+- base: Electrike
+  into: Manectric
+  method: lvl 36
+- base: Budew
+  into: Roselia
+  method: Friendship Bracelet
+- base: Roselia
+  into: Roserade
+  method: Shiny Stone
+- base: Gulpin
+  into: Swalot
+  method: lvl 26
+- base: Carvanha
+  into: Sharpedo
+  method: lvl 30
+- base: Wailmer
+  into: Wailord
+  method: lvl 40
+- base: Numel
+  into: Camerupt
+  method: lvl 33
+- base: Spoink
+  into: Grumpig
+  method: lvl 32
+- base: Trapinch
+  into: Vibrava
+  method: lvl 35
+- base: Vibrava
+  into: Flygon
+  method: lvl 45
+- base: Cacnea
+  into: Cacturne
+  method: lvl 32
+- base: Swablu
+  into: Altaria
+  method: lvl 35
+- base: Barboach
+  into: Whiscash
+  method: lvl 30
+- base: Corphish
+  into: Crawdaunt
+  method: lvl 30
+- base: Baltoy
+  into: Claydol
+  method: lvl 36
+- base: Lileep
+  into: Cradily
+  method: lvl 40
+- base: Anorith
+  into: Armaldo
+  method: lvl 40
+- base: Feebas
+  into: Milotic
+  method: Trade while holding Prism Scale
+- base: Shuppet
+  into: Banette
+  method: lvl 37
+- base: Duskull
+  into: Dusclops
+  method: lvl 37
+- base: Dusclops
+  into: Dusknoir
+  method: Trade while holding Reaper Cloth
+- base: Chingling
+  into: Chimecho
+  method: Friendship Bracelet
+- base: Snorunt
+  into: Glalie
+  method: lvl 42
+- base: Snorunt
+  into: Froslass
+  method: Dawn Stone on Female
+- base: Spheal
+  into: Sealeo
+  method: lvl 32
+- base: Sealeo
+  into: Walrein
+  method: lvl 44
+- base: Clamperl
+  into: Huntail
+  method: Trade while holding Deep Sea Tooth
+- base: Clamperl
+  into: Gorebyss
+  method: Trade while holding Deep Sea Scale
+- base: Bagon
+  into: Shelgon
+  method: lvl 30
+- base: Shelgon
+  into: Salamence
+  method: lvl 50
+- base: Beldum
+  into: Metang
+  method: lvl 20
+- base: Metang
+  into: Metagross
+  method: lvl 45
+- base: Turtwig
+  into: Grotle
+  method: lvl 18
+- base: Grotle
+  into: Torterra
+  method: lvl 32
+- base: Chimchar
+  into: Monferno
+  method: lvl 14
+- base: Monferno
+  into: Infernape
+  method: lvl 36
+- base: Piplup
+  into: Prinplup
+  method: lvl 16
+- base: Prinplup
+  into: Empoleon
+  method: lvl 36
+- base: Starly
+  into: Staravia
+  method: lvl 14
+- base: Staravia
+  into: Staraptor
+  method: lvl 34
+- base: Bidoof
+  into: Bibarel
+  method: lvl 15
+- base: Kricketot
+  into: Kricketune
+  method: lvl 10
+- base: Shinx
+  into: Luxio
+  method: lvl 15
+- base: Luxio
+  into: Luxray
+  method: lvl 30
+- base: Cranidos
+  into: Rampardos
+  method: lvl 30
+- base: Shieldon
+  into: Bastiodon
+  method: lvl 30
+- base: Burmy (cloak changes by location)
+  into: Mothim
+  method: lvl 20, Male
+- base: Burmy (cloak changes by location)
+  into: Wormadam (Plant Cloak)
+  method: lvl 20, in Grass
+- base: Burmy (cloak changes by location)
+  into: Wormadam (Sand Cloak)
+  method: lvl 20, in Caves
+- base: Burmy (cloak changes by location)
+  into: Wormadam (Trash Cloak)
+  method: lvl 20, in Buildings
+- base: Combee
+  into: Vespiquen
+  method: lvl 21, Female
+- base: Buizel
+  into: Floatzel
+  method: lvl 26
+- base: Cherubi
+  into: Cherrim
+  method: lvl 25
+- base: Shellos
+  into: Gastrodon
+  method: lvl 30
+- base: Drifloon
+  into: Drifblim
+  method: lvl 28
+- base: Buneary
+  into: Lopunny
+  method: Friendship Bracelet
+- base: Glameow
+  into: Purugly
+  method: lvl 38
+- base: Stunky
+  into: Skuntank
+  method: lvl 34
+- base: Bronzor
+  into: Bronzong
+  method: lvl 33
+- base: Gible
+  into: Gabite
+  method: lvl 24
+- base: Gabite
+  into: Garchomp
+  method: lvl 48
+- base: Riolu
+  into: Lucario
+  method: Friendship Bracelet
+- base: Hippopotas
+  into: Hippowdon
+  method: lvl 34
+- base: Skorupi
+  into: Drapion
+  method: lvl 40
+- base: Croagunk
+  into: Toxicroak
+  method: lvl 37
+- base: Finneon
+  into: Lumineon
+  method: lvl 31
+- base: Snover
+  into: Abomasnow
+  method: lvl 40
+- base: Snivy
+  into: Servine
+  method: lvl 17
+- base: Servine
+  into: Serperior
+  method: lvl 36
+- base: Tepig
+  into: Pignite
+  method: lvl 17
+- base: Pignite
+  into: Emboar
+  method: lvl 36
+- base: Oshawott
+  into: Dewott
+  method: lvl 17
+- base: Dewott
+  into: Samurott
+  method: lvl 36
+- base: Patrat
+  into: Watchog
+  method: lvl 20
+- base: Lillipup
+  into: Herdier
+  method: lvl 16
+- base: Herdier
+  into: Stoutland
+  method: lvl 32
+- base: Purrloin
+  into: Liepard
+  method: lvl 20
+- base: Pansage
+  into: Simisage
+  method: Leaf Stone
+- base: Pansear
+  into: Simisear
+  method: Fire Stone
+- base: Panpour
+  into: Simipour
+  method: Water Stone
+- base: Munna
+  into: Musharna
+  method: Moon Stone
+- base: Pidove
+  into: Tranquill
+  method: lvl 21
+- base: Tranquill
+  into: Unfezant
+  method: lvl 32
+- base: Blitzle
+  into: Zebstrika
+  method: lvl 27
+- base: Roggenrola
+  into: Boldore
+  method: lvl 25
+- base: Boldore
+  into: Gigalith
+  method: Trade
+- base: Woobat
+  into: Swoobat
+  method: Friendship Bracelet
+- base: Drilbur
+  into: Excadrill
+  method: lvl 31
+- base: Timburr
+  into: Gurdurr
+  method: lvl 25
+- base: Gurdurr
+  into: Conkeldurr
+  method: Trade
+- base: Tympole
+  into: Palpitoad
+  method: lvl 25
+- base: Palpitoad
+  into: Seismitoad
+  method: lvl 36
+- base: Sewaddle
+  into: Swadloon
+  method: lvl 20
+- base: Swadloon
+  into: Leavanny
+  method: Friendship Bracelet
+- base: Venipede
+  into: Whirlipede
+  method: lvl 22
+- base: Whirlipede
+  into: Scolipede
+  method: lvl 30
+- base: Cottonee
+  into: Whimsicott
+  method: Sun Stone
+- base: Petilil
+  into: Lilligant
+  method: Sun Stone
+- base: Sandile
+  into: Krokorok
+  method: lvl 29
+- base: Krokorok
+  into: Krookodile
+  method: lvl 40
+- base: Darumaka
+  into: Darmanitan
+  method: lvl 35
+- base: Galarian Darumaka
+  into: Galarian Darmanitan
+  method: Ice Stone
+- base: Dwebble
+  into: Crustle
+  method: lvl 34
+- base: Scraggy
+  into: Scrafty
+  method: lvl 39
+- base: Yamask
+  into: Cofragrigus
+  method: lvl 34
+- base: Tirtouga
+  into: Carracosta
+  method: lvl 37
+- base: Archen
+  into: Archeops
+  method: lvl 37
+- base: Trubbish
+  into: Garbodor
+  method: lvl 36
+- base: Zorua
+  into: Zoroark
+  method: lvl 30
+- base: Minccino
+  into: Cinccino
+  method: Shiny Stone
+- base: Gothita
+  into: Gothorita
+  method: lvl 32
+- base: Gothorita
+  into: Gothitelle
+  method: lvl 41
+- base: Solosis
+  into: Duosion
+  method: lvl 32
+- base: Duosion
+  into: Reuniclus
+  method: lvl 41
+- base: Ducklett
+  into: Swanna
+  method: lvl 35
+- base: Vanillite
+  into: Vanillish
+  method: lvl 35
+- base: Vanillish
+  into: Vanilluxe
+  method: lvl 47
+- base: Deerling
+  into: Sawsbuck
+  method: lvl 34
+- base: Karrablast
+  into: Escavalier
+  method: Trade for Shelmet
+- base: Foongus
+  into: Amoonguss
+  method: lvl 39
+- base: Frillish
+  into: Jellicent
+  method: lvl 40
+- base: Joltik
+  into: Galvantula
+  method: lvl 36
+- base: Ferroseed
+  into: Ferrothorn
+  method: lvl 40
+- base: Klink
+  into: Klang
+  method: lvl 38
+- base: Klang
+  into: Klinklang
+  method: lvl 49
+- base: Tynamo
+  into: Eelektrik
+  method: lvl 39
+- base: Eelektrik
+  into: Eelektross
+  method: Thunder Stone
+- base: Elgyem
+  into: Beheeyem
+  method: lvl 42
+- base: Litwick
+  into: Lampent
+  method: lvl 41
+- base: Lampent
+  into: Chandelure
+  method: Dusk Stone
+- base: Axew
+  into: Fraxure
+  method: lvl 38
+- base: Fraxure
+  into: Haxorus
+  method: lvl 48
+- base: Cubchoo
+  into: Beartic
+  method: lvl 37
+- base: Shelmet
+  into: Accelgor
+  method: Trade for Karrablast
+- base: Mienfoo
+  into: Mienshao
+  method: lvl 50
+- base: Golett
+  into: Golurk
+  method: lvl 43
+- base: Pawniard
+  into: Bisharp
+  method: lvl 52
+- base: Rufflet
+  into: Braviary
+  method: lvl 54
+- base: Vullaby
+  into: Mandibuzz
+  method: lvl 54
+- base: Deino
+  into: Zweilous
+  method: lvl 50
+- base: Zweilous
+  into: Hydreigon
+  method: lvl 64
+- base: Larvesta
+  into: Volcarona
+  method: lvl 59
+- base: Chespin
+  into: Quilladin
+  method: lvl 16
+- base: Quilladin
+  into: Chesnaught
+  method: lvl 36
+- base: Fennekin
+  into: Braixen
+  method: lvl 16
+- base: Braixen
+  into: Delphox
+  method: lvl 36
+- base: Froakie
+  into: Frogadier
+  method: lvl 16
+- base: Frogadier
+  into: Greninja
+  method: lvl 36
+- base: Bunnelby
+  into: Diggersby
+  method: lvl 20
+- base: Fletchling
+  into: Fletchinder
+  method: lvl 17
+- base: Fletchinder
+  into: Talonflame
+  method: lvl 35
+- base: Scatterbug
+  into: Spewpa
+  method: lvl 9
+- base: Spewpa
+  into: Vivillon
+  method: lvl 12
+- base: Litleo
+  into: Pyroar
+  method: lvl 35
+- base: "Flab\xE9b\xE9/Flabebe"
+  into: Floette
+  method: lvl 19
+- base: Floette
+  into: Florges
+  method: Shiny Stone
+- base: Skiddo
+  into: Gogoat
+  method: lvl 32
+- base: Pancham
+  into: Pangoro
+  method: lvl 32
+- base: Espurr
+  into: Meowstic
+  method: lvl 25
+- base: Honedge
+  into: Doublade
+  method: lvl 35
+- base: Doublade
+  into: Aegislash
+  method: Dusk Stone
+- base: Spritzee
+  into: Aromatisse
+  method: Trade while holding Sachet
+- base: Swirlix
+  into: Slurpuff
+  method: Trade while holding Whipped Dream
+- base: Inkay
+  into: Malamar
+  method: lvl 30
+- base: Binacle
+  into: Barbaracle
+  method: lvl 39
+- base: Skrelp
+  into: Dragalge
+  method: lvl 48
+- base: Clauncher
+  into: Clawitzer
+  method: lvl 37
+- base: Helioptile
+  into: Heliolisk
+  method: Sun Stone
+- base: Tyrunt
+  into: Tyrantrum
+  method: lvl 39 in a "Day" Channel
+- base: Amaura
+  into: Aurorus
+  method: lvl 39 in a "Night" Channel
+- base: Goomy
+  into: Sliggoo
+  method: lvl 40
+- base: Sliggoo
+  into: Goodra
+  method: lvl 50
+- base: Phantump
+  into: Trevenant
+  method: Trade
+- base: Pumpkaboo
+  into: Gourgeist
+  method: Trade
+- base: Bergmite
+  into: Avalugg
+  method: lvl 37
+- base: Noibat
+  into: Noivern
+  method: lvl 48
+- base: Rowlet
+  into: Dartrix
+  method: lvl 17
+- base: Dartrix
+  into: Decidueye
+  method: lvl 34
+- base: Litten
+  into: Torracat
+  method: lvl 17
+- base: Torracat
+  into: Incineroar
+  method: lvl 34
+- base: Popplio
+  into: Brionne
+  method: lvl 17
+- base: Brionne
+  into: Primarina
+  method: lvl 34
+- base: Pikipek
+  into: Trumbeak
+  method: lvl 14
+- base: Trumbeak
+  into: Toucannon
+  method: lvl 28
+- base: Yungoos
+  into: Gumshoos
+  method: lvl 20, Day
+- base: Grubbin
+  into: Charjabug
+  method: lvl 20
+- base: Charjabug
+  into: Vikavolt
+  method: lvl 20
+- base: Crabrawler
+  into: Crabominable
+  method: at Mt. Lanakila
+- base: Cutiefly
+  into: Ribombee
+  method: lvl 25
+- base: Rockruff
+  into: Lycanroc
+  method: lvl 25
+- base: ''
+  into: Lycanroc (Midday)
+  method: lvl 25, Day/Sun
+- base: ''
+  into: Lycanroc (Midnight)
+  method: lvl 25, Night/Moon
+- base: ''
+  into: Lycanroc (Dusk)
+  method: Event version; lvl 25, Dusk (5-6pm)
+- base: Mareanie
+  into: Toxapex
+  method: lvl 38
+- base: Mudbray
+  into: Mudsdale
+  method: lvl 30
+- base: Dewpider
+  into: Araquanid
+  method: lvl 22
+- base: Fomantis
+  into: Lurantis
+  method: lvl 34, in a channel with "day" in the name
+- base: Morelull
+  into: Shiinotic
+  method: lvl 24
+- base: Salandit
+  into: Salazzle
+  method: lvl 33, Female
+- base: Stufful
+  into: Bewear
+  method: lvl 27
+- base: Bounsweet
+  into: Steenee
+  method: lvl 17
+- base: Steenee
+  into: Tsareena
+  method: learn Stomp (lvl 29) | Lvl up 13+
+- base: Wimpod
+  into: Golisopod
+  method: lvl 30
+- base: Sandygast
+  into: Palossand
+  method: lvl 42
+- base: 'Type: Null'
+  into: Silvally
+  method: Friendship Bracelet
+- base: Jangmo-o
+  into: Hakamo-o
+  method: lvl 35
+- base: Hakamo-o
+  into: Kommo-o
+  method: lvl 45
+- base: Cosmog
+  into: Cosmoem
+  method: lvl 43
+- base: Cosmoem
+  into: Solgaleo
+  method: lvl 53 | Evolve in channel with "sun" in the name
+- base: Cosmoem
+  into: Lunala
+  method: lvl 53 | Evolve in channel with "moon" in the name
+- base: Poipole
+  into: Naganadel
+  method: learn Dragon Pulse then level up
+- base: Meltan
+  into: Melmetal
+  method: Unknown
+- base: Grookey
+  into: Thwackey
+  method: lvl 16
+- base: Thwackey
+  into: Rillaboom
+  method: lvl 35
+- base: Scorbunny
+  into: Raboot
+  method: lvl 16
+- base: Raboot
+  into: Cinderace
+  method: lvl 35
+- base: Sobble
+  into: Drizzile
+  method: lvl 16
+- base: Drizzile
+  into: Inteleon
+  method: lvl 35
+- base: Blipbug
+  into: Dottler
+  method: lvl 10
+- base: Dottler
+  into: Orbeetle
+  method: lvl 30
+- base: Rookidee
+  into: Corvisquire
+  method: lvl 18
+- base: Corvisquire
+  into: Corviknight
+  method: lvl 38
+- base: Skwovet
+  into: Greedent
+  method: lvl 24
+- base: Nickit
+  into: Thievul
+  method: lvl 18
+- base: Wooloo
+  into: Dubwool
+  method: lvl 24
+- base: Chewtle
+  into: Drednaw
+  method: lvl 22
+- base: Yamper
+  into: Boltund
+  method: lvl 25
+- base: Gossifleur
+  into: Eldegoss
+  method: lvl 20
+- base: Sizzlipede
+  into: Centiskorch
+  method: lvl 28
+- base: Rolycoly
+  into: Carkol
+  method: lvl 18
+- base: Carkol
+  into: Coalossal
+  method: lvl 34
+- base: Arrokuda
+  into: Barraskewda
+  method: lvl 26
+- base: Milcery
+  into: Alcremie
+  method: candy + spin
+- base: Applin
+  into: Flapple
+  method: tart apple
+- base: Applin
+  into: Appletun
+  method: sweet apple
+- base: Impidimp
+  into: Morgrem
+  method: lvl 32
+- base: Morgrem
+  into: Grimmsnarl
+  method: lvl 42
+- base: Hatenna
+  into: Hattrem
+  method: lvl 32
+- base: Hattrem
+  into: Hatterene
+  method: lvl 42
+- base: Cufant
+  into: Copperajah
+  method: lvl 34
+- base: Toxel
+  into: Toxitricity (Low Key)
+  method: lvl 30 + lonely, bold, relaxed, timid, serious, modest, mild, quiet, bashful,
+    calm, gentle, careful NATURE
+- base: Toxel
+  into: Toxitricity (Amped Up)
+  method: lvl 30 + hardy, brave, adamant, naughty, docile, impish, lax, hasty, jolly,
+    naive, rash, sassy, quirky
+- base: Silicobra
+  into: Sandaconda
+  method: lvl 36
+- base: Sinistea
+  into: Polteageist
+  method: cracked pot
+- base: Snom
+  into: Frosmoth
+  method: friendship, night (not in bot)
+- base: Clobbopus
+  into: Grapploct
+  method: learn TAUNT and lvl
+- base: Dreepy
+  into: Drakloak
+  method: lvl 50
+- base: Drakloak
+  into: Dragapult
+  method: lvl 60
