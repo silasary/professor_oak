@@ -72,13 +72,10 @@ def evolutions() -> None:
     req = requests.get('https://docs.google.com/spreadsheets/d/1OGNmAax8ncek4VIb9TaeDTnyGKH808MoTHX9x_CwC_U/export?format=tsv&id=1OGNmAax8ncek4VIb9TaeDTnyGKH808MoTHX9x_CwC_U&gid=0')
     sheet = req.content.decode('utf-8').splitlines(False)
     data = []
-    columns = sheet[0].split('\t')
-    columns[1] = 'First Stage ' + columns[1]
-    columns[3] = 'Second Stage ' + columns[3]
     row: List[str] = []
     prevrow: List[str] = []
     def insert(i: int) -> None:
-        if not row[i + 1]: # empty
+        if not row[i + 1]: # no third evolution
             return
         if row[i + 1] == 'None': # Doesn't evolve
             return
@@ -91,7 +88,12 @@ def evolutions() -> None:
         d = {}
         d['base'] = row[i].strip()
         d['method'] = row[i + 1].strip()
-        d['into'] = row[i + 2].strip()
+        d['result'] = row[i + 2].strip()
+        if row[5] == 'verified':
+            d['verified'] = True
+        else:
+            d['verified'] = False
+            d['note'] = row[5]
         data.append(d)
 
     for line in sheet[1:]:
