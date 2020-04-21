@@ -90,9 +90,9 @@ def evolutions() -> None:
         d['method'] = row[i + 1].strip()
         d['result'] = row[i + 2].strip()
         if row[5] == 'verified':
-            d['verified'] = True
+            d['verified'] = 'True'
         else:
-            d['verified'] = False
+            d['verified'] = 'False'
             d['note'] = row[5]
         data.append(d)
 
