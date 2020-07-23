@@ -9,8 +9,6 @@ import PIL
 import requests
 import yaml
 
-import database
-
 NAMEFIXES = {
     'Mime Jr': 'Mime Jr.',
     'TypeNull': 'Type: Null',
@@ -49,6 +47,8 @@ NAMEFIXES = {
 #         yaml.dump(phashes, f)
 
 def hash2phash() -> None:
+    import database
+
     db = database.Database(None)
     phashes: Dict[str, str] = {}
     with open('phashes.yaml', mode='r') as f:

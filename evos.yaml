@@ -1,1879 +1,1889 @@
+- base: First Stage/Baby
+  method: Evolves through ->
+  note: Notes (Some evos still being tested)
+  result: Second Stage
+  verified: 'False'
+- base: Second Stage
+  method: Evolves through ->
+  note: Notes (Some evos still being tested)
+  result: Third Stage
+  verified: 'False'
 - base: Bulbasaur
   method: lvl 16
   result: Ivysaur
-  verified: true
+  verified: 'True'
 - base: Ivysaur
   method: lvl 32
   result: Venusaur
-  verified: true
+  verified: 'True'
 - base: Charmander
   method: lvl 16
   result: Charmeleon
-  verified: true
+  verified: 'True'
 - base: Charmeleon
   method: lvl 36
   result: Charizard
-  verified: true
+  verified: 'True'
 - base: Squirtle
   method: lvl 16
   result: Wartortle
-  verified: true
+  verified: 'True'
 - base: Wartortle
   method: lvl 36
   result: Blastoise
-  verified: true
+  verified: 'True'
 - base: Caterpie
   method: lvl 7
   result: Metapod
-  verified: true
+  verified: 'True'
 - base: Metapod
   method: lvl 10
   result: Butterfree
-  verified: true
+  verified: 'True'
 - base: Weedle
   method: lvl 7
   result: Kakuna
-  verified: true
+  verified: 'True'
 - base: Kakuna
   method: lvl 10
   result: Beedrill
-  verified: true
+  verified: 'True'
 - base: Pidgey
   method: lvl 18
   result: Pidgeotto
-  verified: true
+  verified: 'True'
 - base: Pidgeotto
   method: lvl 36
   result: Pidgeot
-  verified: true
+  verified: 'True'
 - base: Rattata
   method: lvl 20
   result: Raticate
-  verified: true
+  verified: 'True'
 - base: Alolan Rattata
   method: lvl 20. Night channel
   result: Alolan Raticate
-  verified: true
+  verified: 'True'
 - base: Spearow
   method: lvl 20
   result: Fearow
-  verified: true
+  verified: 'True'
 - base: Ekans
   method: lvl 22
   result: Arbok
-  verified: true
+  verified: 'True'
 - base: Pichu
   method: Friendship Bracelet
   result: Pikachu
-  verified: true
+  verified: 'True'
 - base: Pikachu
   method: Thunder Stone
   result: Raichu
-  verified: true
+  verified: 'True'
 - base: Pikachu
   method: Thunder Stone in Alola
   note: Does not evolve; Not implemented
   result: Alolan Raichu
-  verified: false
+  verified: 'False'
 - base: Sandshrew
   method: Lvl 22
   result: Sandslash
-  verified: true
+  verified: 'True'
 - base: Alolan Sandshrew
   method: Ice Stone
   note: VERIFIED
   result: Alolan Sandslash
-  verified: false
+  verified: 'False'
 - base: "Nidoran\u2640"
   method: lvl 16
   result: Nidorina
-  verified: true
+  verified: 'True'
 - base: Nidorina
   method: Moon Stone
   result: Nidoqueen
-  verified: true
+  verified: 'True'
 - base: "Nidoran\u2642"
   method: lvl 16
   result: Nidorino
-  verified: true
+  verified: 'True'
 - base: Nidorino
   method: Moon Stone
   result: Nidoking
-  verified: true
+  verified: 'True'
 - base: Cleffa
   method: Friendship Bracelet
   result: Clefairy
-  verified: true
+  verified: 'True'
 - base: Clefairy
   method: Moon Stone
   result: Clefable
-  verified: true
+  verified: 'True'
 - base: Vulpix
   method: Fire Stone
   result: Ninetales
-  verified: true
+  verified: 'True'
 - base: Alolan Vulpix
   method: Ice Stone
   note: VERIFIED
   result: Alolan Ninetales
-  verified: false
+  verified: 'False'
 - base: Igglybuff
   method: Friendship Bracelet
   result: Jigglypuff
-  verified: true
+  verified: 'True'
 - base: Jigglypuff
   method: Moon Stone
   result: Wigglytuff
-  verified: true
+  verified: 'True'
 - base: Zubat
   method: lvl 22
   result: Golbat
-  verified: true
+  verified: 'True'
 - base: Golbat
   method: Friendship Bracelet
   result: Crobat
-  verified: true
+  verified: 'True'
 - base: Oddish
   method: lvl 21
   result: Gloom
-  verified: true
+  verified: 'True'
 - base: Gloom
   method: Leaf Stone
   result: Vileplume
-  verified: true
+  verified: 'True'
 - base: Gloom
   method: Sun Stone
   result: Bellossom
-  verified: true
+  verified: 'True'
 - base: Paras
   method: lvl 24
   result: Parasect
-  verified: true
+  verified: 'True'
 - base: Venonat
   method: lvl 31
   result: Venomoth
-  verified: true
+  verified: 'True'
 - base: Diglett
   method: lvl 26
   result: Dugtrio
-  verified: true
+  verified: 'True'
 - base: Alolan Diglett
   method: lvl 26
   result: Alolan Dugtrio
-  verified: true
+  verified: 'True'
 - base: Meowth
   method: lvl 28
   result: Persian
-  verified: true
+  verified: 'True'
 - base: Alolan Meowth
   method: Friendship Bracelet
   note: VERIFIED
   result: Alolan Persian
-  verified: false
+  verified: 'False'
 - base: Galarian Meowth
   method: lvl 28
   note: ''
   result: Perrserker
-  verified: false
+  verified: 'False'
 - base: Psyduck
   method: lvl 33
   result: Golduck
-  verified: true
+  verified: 'True'
 - base: Mankey
   method: lvl 28
   result: Primeape
-  verified: true
+  verified: 'True'
 - base: Growlithe
   method: Fire Stone
   result: Arcanine
-  verified: true
+  verified: 'True'
 - base: Poliwag
   method: lvl 25
   result: Poliwhirl
-  verified: true
+  verified: 'True'
 - base: Poliwhirl
   method: Water Stone
   result: Poliwrath
-  verified: true
+  verified: 'True'
 - base: Poliwhirl
   method: Trade while holding King's Rock
   result: Politoed
-  verified: true
+  verified: 'True'
 - base: Abra
   method: lvl 16
   result: Kadabra
-  verified: true
+  verified: 'True'
 - base: Kadabra
   method: Trade
   result: Alakazam
-  verified: true
+  verified: 'True'
 - base: Machop
   method: lvl 28
   result: Machoke
-  verified: true
+  verified: 'True'
 - base: Machoke
   method: Trade
   result: Machamp
-  verified: true
+  verified: 'True'
 - base: Bellsprout
   method: lvl 21
   result: Weepinbell
-  verified: true
+  verified: 'True'
 - base: Weepinbell
   method: Leaf Stone
   result: Victreebel
-  verified: true
+  verified: 'True'
 - base: Tentacool
   method: lvl 30
   result: Tentacruel
-  verified: true
+  verified: 'True'
 - base: Geodude
   method: lvl 25
   result: Graveler
-  verified: true
+  verified: 'True'
 - base: Graveler
   method: Trade
   result: Golem
-  verified: true
+  verified: 'True'
 - base: Alolan Geodude
   method: lvl 25
   note: VERIFIED
   result: Alolan Graveler
-  verified: false
+  verified: 'False'
 - base: Alolan Graveler
   method: Trade
   note: VERIFIED
   result: Alolan Golem
-  verified: false
+  verified: 'False'
 - base: Ponyta
   method: lvl 40
   result: Rapidash
-  verified: true
+  verified: 'True'
 - base: Galarian Ponyta
   method: lvl 40
   note: EVOLUTION NOT IMPLEMENTED
   result: Galarian Rapidash
-  verified: false
+  verified: 'False'
 - base: Slowpoke
   method: lvl 37
   result: Slowbro
-  verified: true
+  verified: 'True'
 - base: Slowpoke
   method: Trade while holding King's Rock
   result: Slowking
-  verified: true
+  verified: 'True'
 - base: Magnemite
   method: lvl 30
   note: cannot evo to magnezone yet
   result: Magneton
-  verified: false
+  verified: 'False'
 - base: Magneton
   method: lvl up in Magnetic Field
   note: cannot evo to magnezone yet
   result: Magnezone
-  verified: false
+  verified: 'False'
 - base: Galarian Farfetch'd
   method: '-'
   note: EVOLUTION NOT IMPLENTED
   result: Sirfetch'd
-  verified: false
+  verified: 'False'
 - base: Doduo
   method: lvl 31
   result: Dodrio
-  verified: true
+  verified: 'True'
 - base: Seel
   method: lvl 34
   result: Dewgong
-  verified: true
+  verified: 'True'
 - base: Grimer
   method: lvl 38
   result: Muk
-  verified: true
+  verified: 'True'
 - base: Alolan Grimer
   method: lvl 38
   result: Alolan Muk
-  verified: true
+  verified: 'True'
 - base: Shellder
   method: Water Stone
   result: Cloyster
-  verified: true
+  verified: 'True'
 - base: Gastly
   method: lvl 25
   result: Haunter
-  verified: true
+  verified: 'True'
 - base: Haunter
   method: Trade
   result: Gengar
-  verified: true
+  verified: 'True'
 - base: Onix
   method: Trade while holding Metal Coat
   result: Steelix
-  verified: true
+  verified: 'True'
 - base: Drowzee
   method: lvl 26
   result: Hypno
-  verified: true
+  verified: 'True'
 - base: Krabby
   method: lvl 28
   result: Kingler
-  verified: true
+  verified: 'True'
 - base: Voltorb
   method: lvl 30
   result: Electrode
-  verified: true
+  verified: 'True'
 - base: Exeggcute
   method: Leaf Stone
   result: Exeggutor
-  verified: true
+  verified: 'True'
 - base: Exeggcute
   method: ??? Leaf Stone in Alola, in-games
   note: Not yet implemented
   result: Alolan Exeggutor
-  verified: false
+  verified: 'False'
 - base: Cubone
   method: lvl 28
   result: Marowak
-  verified: true
+  verified: 'True'
 - base: Cubone
   method: lvl 28, Night, in Alola
   note: Not yet implemented
   result: Alolan Marowak
-  verified: false
+  verified: 'False'
 - base: Tyrogue
   method: lvl 20, Attack > Defense
   note: entire evo line broken
   result: Hitmonlee
-  verified: false
+  verified: 'False'
 - base: Tyrogue
   method: lvl 20, Attack < Defense
   note: ''
   result: Hitmonchan
-  verified: false
+  verified: 'False'
 - base: Tyrogue
   method: lvl 20, Attack = Defense
   note: ''
   result: Hitmontop
-  verified: false
+  verified: 'False'
 - base: Lickitung
   method: learn Rollout then level up
   result: Lickilicky
-  verified: true
+  verified: 'True'
 - base: Koffing
   method: lvl 35
   result: Weezing
-  verified: true
+  verified: 'True'
 - base: Rhyhorn
   method: lvl 42
   result: Rhydon
-  verified: true
+  verified: 'True'
 - base: Rhydon
   method: Trade while holding Protector
   result: Rhyperior
-  verified: true
+  verified: 'True'
 - base: Happiny
-  method: lvl up in Day channel
-  note: ??? shouldn't be day restricted but is
+  method: lvl up holding Oval Stone
+  note: ''
   result: Chansey
-  verified: false
+  verified: 'False'
 - base: Chansey
   method: Friendship Bracelet
-  note: ??? shouldn't be day restricted but is
+  note: ''
   result: Blissey
-  verified: false
+  verified: 'False'
 - base: Tangela
   method: learn Ancient Power then level up
   result: Tangrowth
-  verified: true
+  verified: 'True'
 - base: Horsea
   method: lvl 32
   result: Seadra
-  verified: true
+  verified: 'True'
 - base: Seadra
   method: Trade while holding Dragon Scale
   result: Kingdra
-  verified: true
+  verified: 'True'
 - base: Goldeen
   method: lvl 33
   result: Seaking
-  verified: true
+  verified: 'True'
 - base: Staryu
   method: Water Stone
   result: Starmie
-  verified: true
+  verified: 'True'
 - base: Mime Jr.
   method: learn Mimic
   note: move not implemented
   result: Mr. Mime
-  verified: false
+  verified: 'False'
 - base: Galarian Mr. Mime
   method: lvl 42
   note: EVOLUTION NOT IMPLEMENTED
   result: Mr. Rime
-  verified: false
+  verified: 'False'
 - base: Scyther
   method: Trade while holding Metal Coat
   result: Scizor
-  verified: true
+  verified: 'True'
 - base: Smoochum
   method: lvl 30
   result: Jynx
-  verified: true
+  verified: 'True'
 - base: Elekid
   method: lvl 30
   result: Electabuzz
-  verified: true
+  verified: 'True'
 - base: Electabuzz
   method: Trade while holding Electrizer
   result: Electivire
-  verified: true
+  verified: 'True'
 - base: Magby
   method: lvl 30
   result: Magmar
-  verified: true
+  verified: 'True'
 - base: Magmar
   method: Trade while holding Magmarizer
   result: Magmortar
-  verified: true
+  verified: 'True'
 - base: Magikarp
   method: lvl 20
   result: Gyarados
-  verified: true
+  verified: 'True'
 - base: Eevee
   method: Water Stone
   result: Vaporeon
-  verified: true
+  verified: 'True'
 - base: Eevee
   method: Thunder Stone
   result: Jolteon
-  verified: true
+  verified: 'True'
 - base: Eevee
   method: Fire Stone
   result: Flareon
-  verified: true
+  verified: 'True'
 - base: Eevee
   method: Sun Stone
   result: Espeon
-  verified: true
+  verified: 'True'
 - base: Eevee
   method: Moon Stone
   result: Umbreon
-  verified: true
+  verified: 'True'
 - base: Eevee
   method: Leaf Stone
   result: Leafeon
-  verified: true
+  verified: 'True'
 - base: Eevee
   method: Ice Stone
   result: Glaceon
-  verified: true
+  verified: 'True'
 - base: Eevee
   method: Shiny Stone
   result: Sylveon
-  verified: true
+  verified: 'True'
 - base: Porygon
   method: Trade while holding Upgrade
   note: verified x2
   result: Porygon2
-  verified: false
+  verified: 'False'
 - base: Porygon2
   method: Trade while holding Dubious Disc
   note: verified x2
   result: Porygon-Z
-  verified: false
+  verified: 'False'
 - base: Omanyte
   method: lvl 40
   result: Omastar
-  verified: true
+  verified: 'True'
 - base: Kabuto
   method: lvl 40
   result: Kabutops
-  verified: true
+  verified: 'True'
 - base: Munchlax
   method: Friendship Bracelet
   result: Snorlax
-  verified: true
+  verified: 'True'
 - base: Dratini
   method: lvl 30
   result: Dragonair
-  verified: true
+  verified: 'True'
 - base: Dragonair
   method: lvl 55
   result: Dragonite
-  verified: true
+  verified: 'True'
 - base: Chikorita
   method: lvl 16
   result: Bayleef
-  verified: true
+  verified: 'True'
 - base: Bayleef
   method: lvl 32
   result: Meganium
-  verified: true
+  verified: 'True'
 - base: Cyndaquil
   method: lvl 14
   result: Quilava
-  verified: true
+  verified: 'True'
 - base: Quilava
   method: lvl 36
   result: Typhlosion
-  verified: true
+  verified: 'True'
 - base: Totodile
   method: lvl 18
   result: Croconaw
-  verified: true
+  verified: 'True'
 - base: Croconaw
   method: lvl 30
   result: Feraligatr
-  verified: true
+  verified: 'True'
 - base: Sentret
   method: lvl 15
   result: Furret
-  verified: true
+  verified: 'True'
 - base: Hoothoot
   method: lvl 20
   result: Noctowl
-  verified: true
+  verified: 'True'
 - base: Ledyba
   method: lvl 18
   result: Ledian
-  verified: true
+  verified: 'True'
 - base: Spinarak
   method: lvl 22
   result: Ariados
-  verified: true
+  verified: 'True'
 - base: Chinchou
   method: lvl 27
   result: Lanturn
-  verified: true
+  verified: 'True'
 - base: Togepi
   method: Friendship Bracelet
   result: Togetic
-  verified: true
+  verified: 'True'
 - base: Togetic
   method: Shiny Stone
   result: Togekiss
-  verified: true
+  verified: 'True'
 - base: Natu
   method: lvl 25
   result: Xatu
-  verified: true
+  verified: 'True'
 - base: Mareep
   method: lvl 15
   result: Flaaffy
-  verified: true
+  verified: 'True'
 - base: Flaaffy
   method: lvl 30
   result: Ampharos
-  verified: true
+  verified: 'True'
 - base: Azurill
   method: Friendship Bracelet
   result: Marill
-  verified: true
+  verified: 'True'
 - base: Marill
   method: lvl 18
   result: Azumarill
-  verified: true
+  verified: 'True'
 - base: Bonsly
   method: learn Mimic
   note: move not implemented
   result: Sudowoodo
-  verified: false
+  verified: 'False'
 - base: Hoppip
   method: lvl 18
   result: Skiploom
-  verified: true
+  verified: 'True'
 - base: Skiploom
   method: lvl 27
   result: Jumpluff
-  verified: true
+  verified: 'True'
 - base: Aipom
   method: learn Double Hit then level up
   result: Ambipom
-  verified: true
+  verified: 'True'
 - base: Sunkern
   method: Sun Stone
   result: Sunflora
-  verified: true
+  verified: 'True'
 - base: Yanma
   method: learn Ancient Power then level up
   result: Yanmega
-  verified: true
+  verified: 'True'
 - base: Wooper
   method: lvl 20
   result: Quagsire
-  verified: true
+  verified: 'True'
 - base: Murkrow
   method: Dusk Stone
   result: Honchkrow
-  verified: true
+  verified: 'True'
 - base: Misdreavus
   method: Dusk Stone
   result: Mismagius
-  verified: true
+  verified: 'True'
 - base: Wynaut
   method: lvl 15
   result: Wobbuffet
-  verified: true
+  verified: 'True'
 - base: Pineco
   method: lvl 31
   result: Forretress
-  verified: true
+  verified: 'True'
 - base: Gligar
   method: hold Razor Fang, Night channel
   result: Gliscor
-  verified: true
+  verified: 'True'
 - base: Snubbull
   method: lvl 23
   result: Granbull
-  verified: true
+  verified: 'True'
 - base: Sneasel
   method: hold Razor Claw, Night channel
   result: Weavile
-  verified: true
+  verified: 'True'
 - base: Teddiursa
   method: lvl 30
   result: Ursaring
-  verified: true
+  verified: 'True'
 - base: Slugma
   method: lvl 38
   result: Magcargo
-  verified: true
+  verified: 'True'
 - base: Swinub
   method: lvl 33
   result: Piloswine
-  verified: true
+  verified: 'True'
 - base: Piloswine
   method: learn Ancient Power then level up
   result: Mamoswine
-  verified: true
+  verified: 'True'
 - base: Galaraian Corsola
   method: lvl 38
   note: EVOLUTION NOT IMPLEMENTED
   result: Cursola
-  verified: false
+  verified: 'False'
 - base: Remoraid
   method: lvl 25
   result: Octillery
-  verified: true
+  verified: 'True'
 - base: Mantyke
   method: with Remoraid in the party
   note: evolution not possible
   result: Mantine
-  verified: false
+  verified: 'False'
 - base: Houndour
   method: lvl 24
   result: Houndoom
-  verified: true
+  verified: 'True'
 - base: Phanpy
   method: lvl 25
   result: Donphan
-  verified: true
+  verified: 'True'
 - base: Larvitar
   method: lvl 30
   result: Pupitar
-  verified: true
+  verified: 'True'
 - base: Pupitar
   method: lvl 55
   result: Tyranitar
-  verified: true
+  verified: 'True'
 - base: Treecko
   method: lvl 16
   result: Grovyle
-  verified: true
+  verified: 'True'
 - base: Grovyle
   method: lvl 36
   result: Sceptile
-  verified: true
+  verified: 'True'
 - base: Torchic
   method: lvl 16
   result: Combusken
-  verified: true
+  verified: 'True'
 - base: Combusken
   method: lvl 36
   result: Blaziken
-  verified: true
+  verified: 'True'
 - base: Mudkip
   method: lvl 16
   result: Marshtomp
-  verified: true
+  verified: 'True'
 - base: Marshtomp
   method: lvl 36
   result: Swampert
-  verified: true
+  verified: 'True'
 - base: Poochyena
   method: lvl 18
   result: Mightyena
-  verified: true
+  verified: 'True'
 - base: Zigzagoon
   method: lvl 20
   result: Linoone
-  verified: true
+  verified: 'True'
 - base: Galarian Zigzagoon
   method: lvl 20
   note: EVOLUTION NOT IMPLEMENTED
   result: Galarian Linoone
-  verified: false
+  verified: 'False'
 - base: Galarian Linoone
   method: lvl 35, Night
   note: EVOLUTION NOT IMPLEMENTED
   result: Obstagoon
-  verified: false
+  verified: 'False'
 - base: Wurmple
   method: Random/Personality
   note: evolution for line not possible
   result: Silcoon
-  verified: false
+  verified: 'False'
 - base: Silcoon
   method: lvl 10
   note: evolution for line not possible
   result: Beautifly
-  verified: false
+  verified: 'False'
 - base: Cascoon
   method: lvl 10
   note: '"'
   result: Dustox
-  verified: false
+  verified: 'False'
 - base: Lotad
   method: lvl 14
   result: Lombre
-  verified: true
+  verified: 'True'
 - base: Lombre
   method: Water Stone
   result: Ludicolo
-  verified: true
+  verified: 'True'
 - base: Seedot
   method: lvl 14
   result: Nuzleaf
-  verified: true
+  verified: 'True'
 - base: Nuzleaf
   method: Leaf Stone
   result: Shiftry
-  verified: true
+  verified: 'True'
 - base: Taillow
   method: lvl 22
   result: Swellow
-  verified: true
+  verified: 'True'
 - base: Wingull
   method: lvl 25
   result: Pelipper
-  verified: true
+  verified: 'True'
 - base: Ralts
   method: lvl 20
   result: Kirlia
-  verified: true
+  verified: 'True'
 - base: Kirlia
   method: lvl 30
   result: Gardevoir
-  verified: true
+  verified: 'True'
 - base: Kirlia
   method: Dawn Stone
   result: Gallade
-  verified: true
+  verified: 'True'
 - base: Surskit
   method: lvl 22
   result: Masquerain
-  verified: true
+  verified: 'True'
 - base: Shroomish
   method: lvl 23
   result: Breloom
-  verified: true
+  verified: 'True'
 - base: Slakoth
   method: lvl 18
   result: Vigoroth
-  verified: true
+  verified: 'True'
 - base: Vigoroth
   method: lvl 36
   result: Slaking
-  verified: true
+  verified: 'True'
 - base: Nincada
   method: lvl 20
   result: Ninjask
-  verified: true
+  verified: 'True'
 - base: Nincada
   method: lvl 20 + empty pokeball and party spot
   note: evolution not possible
   result: Ninjask + Shedinja
-  verified: false
+  verified: 'False'
 - base: Whismur
   method: lvl 20
   result: Loudred
-  verified: true
+  verified: 'True'
 - base: Loudred
   method: lvl 40
   result: Exploud
-  verified: true
+  verified: 'True'
 - base: Makuhita
   method: lvl 24
   result: Hariyama
-  verified: true
+  verified: 'True'
 - base: Nosepass
   method: lvl up in Magnetic Field
   note: evolution not possible
   result: Probopass
-  verified: false
+  verified: 'False'
 - base: Skitty
   method: Moon Stone
   result: Delcatty
-  verified: true
+  verified: 'True'
 - base: Aron
   method: lvl 32
   result: Lairon
-  verified: true
+  verified: 'True'
 - base: Lairon
   method: lvl 42
   result: Aggron
-  verified: true
+  verified: 'True'
 - base: Meditite
   method: lvl 37
   result: Medicham
-  verified: true
+  verified: 'True'
 - base: Electrike
   method: lvl 36
   result: Manectric
-  verified: true
+  verified: 'True'
 - base: Budew
   method: Friendship Bracelet
   result: Roselia
-  verified: true
+  verified: 'True'
 - base: Roselia
   method: Shiny Stone
   result: Roserade
-  verified: true
+  verified: 'True'
 - base: Gulpin
   method: lvl 26
   result: Swalot
-  verified: true
+  verified: 'True'
 - base: Carvanha
   method: lvl 30
   result: Sharpedo
-  verified: true
+  verified: 'True'
 - base: Wailmer
   method: lvl 40
   result: Wailord
-  verified: true
+  verified: 'True'
 - base: Numel
   method: lvl 33
   result: Camerupt
-  verified: true
+  verified: 'True'
 - base: Spoink
   method: lvl 32
   result: Grumpig
-  verified: true
+  verified: 'True'
 - base: Trapinch
   method: lvl 35
   result: Vibrava
-  verified: true
+  verified: 'True'
 - base: Vibrava
   method: lvl 45
   result: Flygon
-  verified: true
+  verified: 'True'
 - base: Cacnea
   method: lvl 32
   result: Cacturne
-  verified: true
+  verified: 'True'
 - base: Swablu
   method: lvl 35
   result: Altaria
-  verified: true
+  verified: 'True'
 - base: Barboach
   method: lvl 30
   result: Whiscash
-  verified: true
+  verified: 'True'
 - base: Corphish
   method: lvl 30
   result: Crawdaunt
-  verified: true
+  verified: 'True'
 - base: Baltoy
   method: lvl 36
   result: Claydol
-  verified: true
+  verified: 'True'
 - base: Lileep
   method: lvl 40
   result: Cradily
-  verified: true
+  verified: 'True'
 - base: Anorith
   method: lvl 40
   result: Armaldo
-  verified: true
+  verified: 'True'
 - base: Feebas
   method: Trade while holding Prism Scale
   result: Milotic
-  verified: true
+  verified: 'True'
 - base: Shuppet
   method: lvl 37
   result: Banette
-  verified: true
+  verified: 'True'
 - base: Duskull
   method: lvl 37
   result: Dusclops
-  verified: true
+  verified: 'True'
 - base: Dusclops
   method: Trade while holding Reaper Cloth
   result: Dusknoir
-  verified: true
+  verified: 'True'
 - base: Chingling
   method: Friendship Bracelet
   result: Chimecho
-  verified: true
+  verified: 'True'
 - base: Snorunt
   method: lvl 42
   result: Glalie
-  verified: true
+  verified: 'True'
 - base: Snorunt
   method: Dawn Stone on Female
   note: Dawn stone evolves no matter what
   result: Froslass
-  verified: false
+  verified: 'False'
 - base: Spheal
   method: lvl 32
   result: Sealeo
-  verified: true
+  verified: 'True'
 - base: Sealeo
   method: lvl 44
   result: Walrein
-  verified: true
+  verified: 'True'
 - base: Clamperl
   method: Trade while holding Deep Sea Tooth
   result: Huntail
-  verified: true
+  verified: 'True'
 - base: Clamperl
   method: Trade while holding Deep Sea Scale
   result: Gorebyss
-  verified: true
+  verified: 'True'
 - base: Bagon
   method: lvl 30
   result: Shelgon
-  verified: true
+  verified: 'True'
 - base: Shelgon
   method: lvl 50
   result: Salamence
-  verified: true
+  verified: 'True'
 - base: Beldum
   method: lvl 20
   result: Metang
-  verified: true
+  verified: 'True'
 - base: Metang
   method: lvl 45
   result: Metagross
-  verified: true
+  verified: 'True'
 - base: Turtwig
   method: lvl 18
   result: Grotle
-  verified: true
+  verified: 'True'
 - base: Grotle
   method: lvl 32
   result: Torterra
-  verified: true
+  verified: 'True'
 - base: Chimchar
   method: lvl 14
   result: Monferno
-  verified: true
+  verified: 'True'
 - base: Monferno
   method: lvl 36
   result: Infernape
-  verified: true
+  verified: 'True'
 - base: Piplup
   method: lvl 16
   result: Prinplup
-  verified: true
+  verified: 'True'
 - base: Prinplup
   method: lvl 36
   result: Empoleon
-  verified: true
+  verified: 'True'
 - base: Starly
   method: lvl 14
   result: Staravia
-  verified: true
+  verified: 'True'
 - base: Staravia
   method: lvl 34
   result: Staraptor
-  verified: true
+  verified: 'True'
 - base: Bidoof
   method: lvl 15
   result: Bibarel
-  verified: true
+  verified: 'True'
 - base: Kricketot
   method: lvl 10
   result: Kricketune
-  verified: true
+  verified: 'True'
 - base: Shinx
   method: lvl 15
   result: Luxio
-  verified: true
+  verified: 'True'
 - base: Luxio
   method: lvl 30
   result: Luxray
-  verified: true
+  verified: 'True'
 - base: Cranidos
   method: lvl 30
   result: Rampardos
-  verified: true
+  verified: 'True'
 - base: Shieldon
   method: lvl 30
   result: Bastiodon
-  verified: true
+  verified: 'True'
 - base: Burmy (cloak changes by location)
   method: lvl 20, Male
   note: does not currently evo
   result: Mothim
-  verified: false
+  verified: 'False'
 - base: Burmy (cloak changes by location)
   method: lvl 20, in Grass
   note: '"'
   result: Wormadam (Plant Cloak)
-  verified: false
+  verified: 'False'
 - base: Burmy (cloak changes by location)
   method: lvl 20, in Caves
   note: '"'
   result: Wormadam (Sand Cloak)
-  verified: false
+  verified: 'False'
 - base: Burmy (cloak changes by location)
   method: lvl 20, in Buildings
   note: '"'
   result: Wormadam (Trash Cloak)
-  verified: false
+  verified: 'False'
 - base: Combee
   method: lvl 21, Female
   note: DOES NOT EVOLVE AT THIS TIME
   result: Vespiquen
-  verified: false
+  verified: 'False'
 - base: Buizel
   method: lvl 26
   result: Floatzel
-  verified: true
+  verified: 'True'
 - base: Cherubi
   method: lvl 25
   result: Cherrim
-  verified: true
+  verified: 'True'
 - base: Shellos
   method: lvl 30
   result: Gastrodon
-  verified: true
+  verified: 'True'
 - base: Drifloon
   method: lvl 28
   result: Drifblim
-  verified: true
+  verified: 'True'
 - base: Buneary
   method: Friendship Bracelet
   result: Lopunny
-  verified: true
+  verified: 'True'
 - base: Glameow
   method: lvl 38
   result: Purugly
-  verified: true
+  verified: 'True'
 - base: Stunky
   method: lvl 34
   result: Skuntank
-  verified: true
+  verified: 'True'
 - base: Bronzor
   method: lvl 33
   result: Bronzong
-  verified: true
+  verified: 'True'
 - base: Gible
   method: lvl 24
   result: Gabite
-  verified: true
+  verified: 'True'
 - base: Gabite
   method: lvl 48
   result: Garchomp
-  verified: true
+  verified: 'True'
 - base: Riolu
   method: Friendship Bracelet
   result: Lucario
-  verified: true
+  verified: 'True'
 - base: Hippopotas
   method: lvl 34
   result: Hippowdon
-  verified: true
+  verified: 'True'
 - base: Skorupi
   method: lvl 40
   result: Drapion
-  verified: true
+  verified: 'True'
 - base: Croagunk
   method: lvl 37
   result: Toxicroak
-  verified: true
+  verified: 'True'
 - base: Finneon
   method: lvl 31
   result: Lumineon
-  verified: true
+  verified: 'True'
 - base: Snover
   method: lvl 40
   result: Abomasnow
-  verified: true
+  verified: 'True'
 - base: Snivy
   method: lvl 17
   result: Servine
-  verified: true
+  verified: 'True'
 - base: Servine
   method: lvl 36
   result: Serperior
-  verified: true
+  verified: 'True'
 - base: Tepig
   method: lvl 17
   result: Pignite
-  verified: true
+  verified: 'True'
 - base: Pignite
   method: lvl 36
   result: Emboar
-  verified: true
+  verified: 'True'
 - base: Oshawott
   method: lvl 17
   result: Dewott
-  verified: true
+  verified: 'True'
 - base: Dewott
   method: lvl 36
   result: Samurott
-  verified: true
+  verified: 'True'
 - base: Patrat
   method: lvl 20
   result: Watchog
-  verified: true
+  verified: 'True'
 - base: Lillipup
   method: lvl 16
   result: Herdier
-  verified: true
+  verified: 'True'
 - base: Herdier
   method: lvl 32
   result: Stoutland
-  verified: true
+  verified: 'True'
 - base: Purrloin
   method: lvl 20
   result: Liepard
-  verified: true
+  verified: 'True'
 - base: Pansage
   method: Leaf Stone
   result: Simisage
-  verified: true
+  verified: 'True'
 - base: Pansear
   method: Fire Stone
   result: Simisear
-  verified: true
+  verified: 'True'
 - base: Panpour
   method: Water Stone
   result: Simipour
-  verified: true
+  verified: 'True'
 - base: Munna
   method: Moon Stone
   result: Musharna
-  verified: true
+  verified: 'True'
 - base: Pidove
   method: lvl 21
   result: Tranquill
-  verified: true
+  verified: 'True'
 - base: Tranquill
   method: lvl 32
   result: Unfezant
-  verified: true
+  verified: 'True'
 - base: Blitzle
   method: lvl 27
   result: Zebstrika
-  verified: true
+  verified: 'True'
 - base: Roggenrola
   method: lvl 25
   result: Boldore
-  verified: true
+  verified: 'True'
 - base: Boldore
   method: Trade
   result: Gigalith
-  verified: true
+  verified: 'True'
 - base: Woobat
   method: Friendship Bracelet
   result: Swoobat
-  verified: true
+  verified: 'True'
 - base: Drilbur
   method: lvl 31
   result: Excadrill
-  verified: true
+  verified: 'True'
 - base: Timburr
   method: lvl 25
   result: Gurdurr
-  verified: true
+  verified: 'True'
 - base: Gurdurr
   method: Trade
   result: Conkeldurr
-  verified: true
+  verified: 'True'
 - base: Tympole
   method: lvl 25
   result: Palpitoad
-  verified: true
+  verified: 'True'
 - base: Palpitoad
   method: lvl 36
   result: Seismitoad
-  verified: true
+  verified: 'True'
 - base: Sewaddle
   method: lvl 20
   result: Swadloon
-  verified: true
+  verified: 'True'
 - base: Swadloon
   method: Friendship Bracelet
   result: Leavanny
-  verified: true
+  verified: 'True'
 - base: Venipede
   method: lvl 22
   result: Whirlipede
-  verified: true
+  verified: 'True'
 - base: Whirlipede
   method: lvl 30
   result: Scolipede
-  verified: true
+  verified: 'True'
 - base: Cottonee
   method: Sun Stone
   result: Whimsicott
-  verified: true
+  verified: 'True'
 - base: Petilil
   method: Sun Stone
   result: Lilligant
-  verified: true
+  verified: 'True'
 - base: Sandile
   method: lvl 29
   result: Krokorok
-  verified: true
+  verified: 'True'
 - base: Krokorok
   method: lvl 40
   result: Krookodile
-  verified: true
+  verified: 'True'
 - base: Darumaka
   method: lvl 35
   result: Darmanitan
-  verified: true
+  verified: 'True'
 - base: Galarian Darumaka
   method: Ice Stone
   note: EVOLUTION NOT IMPLEMENTED
   result: Galarian Darmanitan
-  verified: false
+  verified: 'False'
 - base: Dwebble
   method: lvl 34
   result: Crustle
-  verified: true
+  verified: 'True'
 - base: Scraggy
   method: lvl 39
   result: Scrafty
-  verified: true
+  verified: 'True'
 - base: Yamask
   method: lvl 34
   result: Cofragrigus
-  verified: true
+  verified: 'True'
 - base: Tirtouga
   method: lvl 37
   result: Carracosta
-  verified: true
+  verified: 'True'
 - base: Archen
   method: lvl 37
   result: Archeops
-  verified: true
+  verified: 'True'
 - base: Trubbish
   method: lvl 36
   result: Garbodor
-  verified: true
+  verified: 'True'
 - base: Zorua
   method: lvl 30
   result: Zoroark
-  verified: true
+  verified: 'True'
 - base: Minccino
   method: Shiny Stone
   result: Cinccino
-  verified: true
+  verified: 'True'
 - base: Gothita
   method: lvl 32
   result: Gothorita
-  verified: true
+  verified: 'True'
 - base: Gothorita
   method: lvl 41
   result: Gothitelle
-  verified: true
+  verified: 'True'
 - base: Solosis
   method: lvl 32
   result: Duosion
-  verified: true
+  verified: 'True'
 - base: Duosion
   method: lvl 41
   result: Reuniclus
-  verified: true
+  verified: 'True'
 - base: Ducklett
   method: lvl 35
   result: Swanna
-  verified: true
+  verified: 'True'
 - base: Vanillite
   method: lvl 35
   result: Vanillish
-  verified: true
+  verified: 'True'
 - base: Vanillish
   method: lvl 47
   result: Vanilluxe
-  verified: true
+  verified: 'True'
 - base: Deerling
   method: lvl 34
   result: Sawsbuck
-  verified: true
+  verified: 'True'
 - base: Karrablast
   method: Trade for Shelmet
   result: Escavalier
-  verified: true
+  verified: 'True'
 - base: Foongus
   method: lvl 39
   result: Amoonguss
-  verified: true
+  verified: 'True'
 - base: Frillish
   method: lvl 40
   result: Jellicent
-  verified: true
+  verified: 'True'
 - base: Joltik
   method: lvl 36
   result: Galvantula
-  verified: true
+  verified: 'True'
 - base: Ferroseed
   method: lvl 40
   result: Ferrothorn
-  verified: true
+  verified: 'True'
 - base: Klink
   method: lvl 38
   result: Klang
-  verified: true
+  verified: 'True'
 - base: Klang
   method: lvl 49
   result: Klinklang
-  verified: true
+  verified: 'True'
 - base: Tynamo
   method: lvl 39
   result: Eelektrik
-  verified: true
+  verified: 'True'
 - base: Eelektrik
   method: Thunder Stone
   result: Eelektross
-  verified: true
+  verified: 'True'
 - base: Elgyem
   method: lvl 42
   result: Beheeyem
-  verified: true
+  verified: 'True'
 - base: Litwick
   method: lvl 41
   result: Lampent
-  verified: true
+  verified: 'True'
 - base: Lampent
   method: Dusk Stone
   result: Chandelure
-  verified: true
+  verified: 'True'
 - base: Axew
   method: lvl 38
   result: Fraxure
-  verified: true
+  verified: 'True'
 - base: Fraxure
   method: lvl 48
   result: Haxorus
-  verified: true
+  verified: 'True'
 - base: Cubchoo
   method: lvl 37
   result: Beartic
-  verified: true
+  verified: 'True'
 - base: Shelmet
   method: Trade for Karrablast
   result: Accelgor
-  verified: true
+  verified: 'True'
 - base: Mienfoo
   method: lvl 50
   result: Mienshao
-  verified: true
+  verified: 'True'
 - base: Golett
   method: lvl 43
   result: Golurk
-  verified: true
+  verified: 'True'
 - base: Pawniard
   method: lvl 52
   result: Bisharp
-  verified: true
+  verified: 'True'
 - base: Rufflet
   method: lvl 54
   result: Braviary
-  verified: true
+  verified: 'True'
 - base: Vullaby
   method: lvl 54
   result: Mandibuzz
-  verified: true
+  verified: 'True'
 - base: Deino
   method: lvl 50
   result: Zweilous
-  verified: true
+  verified: 'True'
 - base: Zweilous
   method: lvl 64
   result: Hydreigon
-  verified: true
+  verified: 'True'
 - base: Larvesta
   method: lvl 59
   result: Volcarona
-  verified: true
+  verified: 'True'
 - base: Chespin
   method: lvl 16
   result: Quilladin
-  verified: true
+  verified: 'True'
 - base: Quilladin
   method: lvl 36
   result: Chesnaught
-  verified: true
+  verified: 'True'
 - base: Fennekin
   method: lvl 16
   result: Braixen
-  verified: true
+  verified: 'True'
 - base: Braixen
   method: lvl 36
   result: Delphox
-  verified: true
+  verified: 'True'
 - base: Froakie
   method: lvl 16
   note: Ash's Greninja not available
   result: Frogadier
-  verified: false
+  verified: 'False'
 - base: Frogadier
   method: lvl 36
   note: Ash's Greninja not available
   result: Greninja
-  verified: false
+  verified: 'False'
 - base: Bunnelby
   method: lvl 20
   result: Diggersby
-  verified: true
+  verified: 'True'
 - base: Fletchling
   method: lvl 17
   result: Fletchinder
-  verified: true
+  verified: 'True'
 - base: Fletchinder
   method: lvl 35
   result: Talonflame
-  verified: true
+  verified: 'True'
 - base: Scatterbug
   method: lvl 9
   result: Spewpa
-  verified: true
+  verified: 'True'
 - base: Spewpa
   method: lvl 12
   result: Vivillon
-  verified: true
+  verified: 'True'
 - base: Litleo
   method: lvl 35
   result: Pyroar
-  verified: true
+  verified: 'True'
 - base: "Flab\xE9b\xE9/Flabebe"
   method: lvl 19
   result: Floette
-  verified: true
+  verified: 'True'
 - base: Floette
   method: Shiny Stone
   result: Florges
-  verified: true
+  verified: 'True'
 - base: Skiddo
   method: lvl 32
   result: Gogoat
-  verified: true
+  verified: 'True'
 - base: Pancham
   method: lvl 32
   result: Pangoro
-  verified: true
+  verified: 'True'
 - base: Espurr
   method: lvl 25
   result: Meowstic
-  verified: true
+  verified: 'True'
 - base: Honedge
   method: lvl 35
   result: Doublade
-  verified: true
+  verified: 'True'
 - base: Doublade
   method: Dusk Stone
   result: Aegislash
-  verified: true
+  verified: 'True'
 - base: Spritzee
   method: Trade while holding Sachet
   result: Aromatisse
-  verified: true
+  verified: 'True'
 - base: Swirlix
   method: Trade while holding Whipped Dream
   result: Slurpuff
-  verified: true
+  verified: 'True'
 - base: Inkay
   method: lvl 30
   result: Malamar
-  verified: true
+  verified: 'True'
 - base: Binacle
   method: lvl 39
   result: Barbaracle
-  verified: true
+  verified: 'True'
 - base: Skrelp
   method: lvl 48
   result: Dragalge
-  verified: true
+  verified: 'True'
 - base: Clauncher
   method: lvl 37
   result: Clawitzer
-  verified: true
+  verified: 'True'
 - base: Helioptile
   method: Sun Stone
   result: Heliolisk
-  verified: true
+  verified: 'True'
 - base: Tyrunt
   method: lvl 39 in a "Day" Channel
   result: Tyrantrum
-  verified: true
+  verified: 'True'
 - base: Amaura
   method: lvl 39 in a "Night" Channel
   result: Aurorus
-  verified: true
+  verified: 'True'
 - base: Goomy
   method: lvl 40
   note: Verified
   result: Sliggoo
-  verified: false
+  verified: 'False'
 - base: Sliggoo
   method: lvl 50
   note: Verified
   result: Goodra
-  verified: false
+  verified: 'False'
 - base: Phantump
   method: Trade
   result: Trevenant
-  verified: true
+  verified: 'True'
 - base: Pumpkaboo
   method: Trade
   result: Gourgeist
-  verified: true
+  verified: 'True'
 - base: Bergmite
   method: lvl 37
   result: Avalugg
-  verified: true
+  verified: 'True'
 - base: Noibat
   method: lvl 48
   result: Noivern
-  verified: true
+  verified: 'True'
 - base: Rowlet
   method: lvl 17
   result: Dartrix
-  verified: true
+  verified: 'True'
 - base: Dartrix
   method: lvl 34
   result: Decidueye
-  verified: true
+  verified: 'True'
 - base: Litten
   method: lvl 17
   result: Torracat
-  verified: true
+  verified: 'True'
 - base: Torracat
   method: lvl 34
   result: Incineroar
-  verified: true
+  verified: 'True'
 - base: Popplio
   method: lvl 17
   result: Brionne
-  verified: true
+  verified: 'True'
 - base: Brionne
   method: lvl 34
   result: Primarina
-  verified: true
+  verified: 'True'
 - base: Pikipek
   method: lvl 14
   result: Trumbeak
-  verified: true
+  verified: 'True'
 - base: Trumbeak
   method: lvl 28
   result: Toucannon
-  verified: true
+  verified: 'True'
 - base: Yungoos
   method: lvl 20, Day
   result: Gumshoos
-  verified: true
+  verified: 'True'
 - base: Grubbin
   method: lvl 20
   note: Verified
   result: Charjabug
-  verified: false
+  verified: 'False'
 - base: Charjabug
   method: lvl 20
   note: Verified
   result: Vikavolt
-  verified: false
+  verified: 'False'
 - base: Crabrawler
   method: at Mt. Lanakila
   note: evolution not possible
   result: Crabominable
-  verified: false
+  verified: 'False'
 - base: Cutiefly
   method: lvl 25
   result: Ribombee
-  verified: true
+  verified: 'True'
 - base: Rockruff
   method: lvl 25
   note: Only evolves to "midday" picture (only says Lycanroc)
   result: Lycanroc
-  verified: false
+  verified: 'False'
 - base: ''
   method: lvl 25, Day/Sun
   note: ''
   result: Lycanroc (Midday)
-  verified: false
+  verified: 'False'
 - base: ''
   method: lvl 25, Night/Moon
   note: ''
   result: Lycanroc (Midnight)
-  verified: false
+  verified: 'False'
 - base: ''
   method: Event version; lvl 25, Dusk (5-6pm)
   note: ''
   result: Lycanroc (Dusk)
-  verified: false
+  verified: 'False'
 - base: Mareanie
   method: lvl 38
   result: Toxapex
-  verified: true
+  verified: 'True'
 - base: Mudbray
   method: lvl 30
   result: Mudsdale
-  verified: true
+  verified: 'True'
 - base: Dewpider
   method: lvl 22
   result: Araquanid
-  verified: true
+  verified: 'True'
 - base: Fomantis
   method: lvl 34, in a channel with "day" in the name
   result: Lurantis
-  verified: true
+  verified: 'True'
 - base: Morelull
   method: lvl 24
   result: Shiinotic
-  verified: true
+  verified: 'True'
 - base: Salandit
   method: lvl 33, Female
   note: DOES NOT EVOLVE AT THIS TIME
   result: Salazzle
-  verified: false
+  verified: 'False'
 - base: Stufful
   method: lvl 27
   result: Bewear
-  verified: true
+  verified: 'True'
 - base: Bounsweet
   method: lvl 17
   result: Steenee
-  verified: true
+  verified: 'True'
 - base: Steenee
   method: learn Stomp (lvl 29) | Lvl up 13+
   result: Tsareena
-  verified: true
+  verified: 'True'
 - base: Wimpod
   method: lvl 30
   result: Golisopod
-  verified: true
+  verified: 'True'
 - base: Sandygast
   method: lvl 42
   result: Palossand
-  verified: true
+  verified: 'True'
 - base: 'Type: Null'
   method: Friendship Bracelet
   result: Silvally
-  verified: true
+  verified: 'True'
 - base: Jangmo-o
   method: lvl 35
   result: Hakamo-o
-  verified: true
+  verified: 'True'
 - base: Hakamo-o
   method: lvl 45
   result: Kommo-o
-  verified: true
+  verified: 'True'
 - base: Cosmog
   method: lvl 43
   result: Cosmoem
-  verified: true
+  verified: 'True'
 - base: Cosmoem
   method: lvl 53 | Evolve in channel with "sun" in the name
   result: Solgaleo
-  verified: true
+  verified: 'True'
 - base: Cosmoem
   method: lvl 53 | Evolve in channel with "moon" in the name
   result: Lunala
-  verified: true
+  verified: 'True'
 - base: Poipole
   method: learn Dragon Pulse then level up
   note: evolution works as of 16SEP2018
   result: Naganadel
-  verified: false
+  verified: 'False'
 - base: Meltan
   method: Unknown
   note: EVOLUTION NOT YET ON BOT
   result: Melmetal
-  verified: false
+  verified: 'False'
 - base: Grookey
   method: lvl 16
   note: ''
   result: Thwackey
-  verified: false
+  verified: 'False'
 - base: Thwackey
   method: lvl 35
   note: ''
   result: Rillaboom
-  verified: false
+  verified: 'False'
 - base: Scorbunny
   method: lvl 16
   note: ''
   result: Raboot
-  verified: false
+  verified: 'False'
 - base: Raboot
   method: lvl 35
   note: ''
   result: Cinderace
-  verified: false
+  verified: 'False'
 - base: Sobble
   method: lvl 16
   note: ''
   result: Drizzile
-  verified: false
+  verified: 'False'
 - base: Drizzile
   method: lvl 35
   note: ''
   result: Inteleon
-  verified: false
+  verified: 'False'
 - base: Blipbug
   method: lvl 10
   note: ''
   result: Dottler
-  verified: false
+  verified: 'False'
 - base: Dottler
   method: lvl 30
   note: ''
   result: Orbeetle
-  verified: false
+  verified: 'False'
 - base: Rookidee
   method: lvl 18
   note: ''
   result: Corvisquire
-  verified: false
+  verified: 'False'
 - base: Corvisquire
   method: lvl 38
   note: ''
   result: Corviknight
-  verified: false
+  verified: 'False'
 - base: Skwovet
   method: lvl 24
   note: ''
   result: Greedent
-  verified: false
+  verified: 'False'
 - base: Nickit
   method: lvl 18
   note: ''
   result: Thievul
-  verified: false
+  verified: 'False'
 - base: Wooloo
   method: lvl 24
   note: ''
   result: Dubwool
-  verified: false
+  verified: 'False'
 - base: Chewtle
   method: lvl 22
   note: ''
   result: Drednaw
-  verified: false
+  verified: 'False'
 - base: Yamper
   method: lvl 25
   note: ''
   result: Boltund
-  verified: false
+  verified: 'False'
 - base: Gossifleur
   method: lvl 20
   note: ''
   result: Eldegoss
-  verified: false
+  verified: 'False'
 - base: Sizzlipede
   method: lvl 28
   note: ''
   result: Centiskorch
-  verified: false
+  verified: 'False'
 - base: Rolycoly
   method: lvl 18
   note: ''
   result: Carkol
-  verified: false
+  verified: 'False'
 - base: Carkol
   method: lvl 34
   note: ''
   result: Coalossal
-  verified: false
+  verified: 'False'
 - base: Arrokuda
   method: lvl 26
   note: ''
   result: Barraskewda
-  verified: false
+  verified: 'False'
 - base: Milcery
   method: candy + spin
   note: EVOLUTION NOT YET IN BOT
   result: Alcremie
-  verified: false
+  verified: 'False'
 - base: Applin
   method: tart apple
   note: EVOLUTION NOT YET IN BOT
   result: Flapple
-  verified: false
+  verified: 'False'
 - base: Applin
   method: sweet apple
   note: EVOLUTION NOT YET IN BOT
   result: Appletun
-  verified: false
+  verified: 'False'
 - base: Impidimp
   method: lvl 32
   note: ''
   result: Morgrem
-  verified: false
+  verified: 'False'
 - base: Morgrem
   method: lvl 42
   note: ''
   result: Grimmsnarl
-  verified: false
+  verified: 'False'
 - base: Hatenna
   method: lvl 32
   note: ''
   result: Hattrem
-  verified: false
+  verified: 'False'
 - base: Hattrem
   method: lvl 42
   note: ''
   result: Hatterene
-  verified: false
+  verified: 'False'
 - base: Cufant
   method: lvl 34
   note: ''
   result: Copperajah
-  verified: false
+  verified: 'False'
 - base: Toxel
   method: lvl 30 + lonely, bold, relaxed, timid, serious, modest, mild, quiet, bashful,
     calm, gentle, careful NATURE
   note: ONLY EVOLVES TO LOWKEY
   result: Toxitricity (Low Key)
-  verified: false
+  verified: 'False'
 - base: Toxel
   method: lvl 30 + hardy, brave, adamant, naughty, docile, impish, lax, hasty, jolly,
     naive, rash, sassy, quirky
   note: FORM NOT IN BOT
   result: Toxitricity (Amped Up)
-  verified: false
+  verified: 'False'
 - base: Silicobra
   method: lvl 36
   note: ''
   result: Sandaconda
-  verified: false
+  verified: 'False'
 - base: Sinistea
   method: cracked pot
   note: EVOLUTION NOT YET IN BOT
   result: Polteageist
-  verified: false
+  verified: 'False'
 - base: Snom
   method: friendship, night (not in bot)
   note: EVOLUTION NOT YET IN BOT
   result: Frosmoth
-  verified: false
+  verified: 'False'
 - base: Clobbopus
   method: learn TAUNT and lvl
   note: EVOLUTION NOT YET IN BOT
   result: Grapploct
-  verified: false
+  verified: 'False'
 - base: Dreepy
   method: lvl 50
   note: ''
   result: Drakloak
-  verified: false
+  verified: 'False'
 - base: Drakloak
   method: lvl 60
   note: ''
   result: Dragapult
-  verified: false
+  verified: 'False'
