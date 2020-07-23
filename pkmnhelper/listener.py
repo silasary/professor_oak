@@ -57,7 +57,7 @@ class Listener(commands.Cog):
                 await self.catch(message)
             else:
                 print('> no embed')
-        elif re.match(r'^https://cdn.discordapp.com/attachments/.*/PokecordSpawn.jpg$', message.content):
+        elif re.match(r'^https://cdn.discordapp.com/attachments/.*/pokemon.png$', message.content):
             embed = discord.Embed().set_image(url=message.content)
             await self.spawn(embed, message)
         else:
