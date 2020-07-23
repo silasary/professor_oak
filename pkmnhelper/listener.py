@@ -14,7 +14,7 @@ from discord.ext import commands
 if TYPE_CHECKING:
     import database
 
-Pokecord_id = 365975655608745985
+Pokecord_id = 716390085896962058
 catch_msg = re.compile(r'Congratulations <@([0-9]+)>! You caught a level \d+ ([\w ]+)!')
 lvlup_title = re.compile(r'^Congratulations ([\w ]+)!$')
 lvlup_desc = re.compile(r'^Your ([\w ]+) is now level \d+!$')
