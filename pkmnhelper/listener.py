@@ -2,7 +2,7 @@ import asyncio
 import hashlib
 import os
 import re
-from typing import TYPE_CHECKING, List, Optional
+from typing import TYPE_CHECKING, List, Optional, Type
 
 import discord
 import imagehash
@@ -39,7 +39,7 @@ class Listener(commands.Cog):
                         await self.spawn(e, message)
                     elif title.startswith('Congratulations '):
                         await self.levelup(e, message)
-                    elif footer.startswith('Selected Pokémon:'):
+                    elif footer.startswith('Displaying pokémon '):
                         await self.info(e)
                     elif footer.startswith("You haven't caught") or footer.startswith("You've caught "):
                         await self.dex_entry(e)
@@ -193,6 +193,7 @@ class Listener(commands.Cog):
 
     async def info(self, embed: discord.Embed) -> None:
         md5 = get_md5(embed.image.url)
+        filename = os.path.splitext(os.path.basename(embed.image.url))[0]
         with self.get_db() as db:
             img = db.get_pokemon_image_by_hash(md5)
             if not img.pokemon:
@@ -201,6 +202,10 @@ class Listener(commands.Cog):
                 if m:
                     truename = m.group(1)
                     img.pokemon = db.get_pokemon_by_name(truename)
+                    try:
+                        img.pokemon.dex_num = int(filename)
+                    except TypeError:
+                        print(f'{filename} is not an int')
                     img.save()
                     print(f'Learned that {md5} is {truename} from Info')
                 else:

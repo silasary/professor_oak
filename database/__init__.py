@@ -1,4 +1,5 @@
 import asyncio
+from enum import unique
 import json
 import random
 from typing import Dict, List, Optional
@@ -49,6 +50,7 @@ class Player(BaseModel):
 class Pokemon(BaseModel):
     name = peewee.CharField(null=True, unique=True, max_length=32)
     dex_page = peewee.IntegerField(null=True, unique=False)
+    dex_num = peewee.IntegerField(null=True, unique=True)
 
     def random_flavor(self) -> Optional[str]:
         if not FLAVORS:
