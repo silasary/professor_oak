@@ -14,7 +14,8 @@ from discord.ext import commands
 if TYPE_CHECKING:
     import database
 
-Pokecord_id = 716390085896962058
+Pokecord_id = [716390085896962058]
+
 catch_msg = re.compile(r'Congratulations <@!?([0-9]+)>! You caught a level \d+ ([\w ]+)!')
 lvlup_title = re.compile(r'^Congratulations ([\w ]+)!$')
 lvlup_desc = re.compile(r'^Your ([\w ]+) is now level \d+!$')
@@ -27,12 +28,18 @@ class Listener(commands.Cog):
 
     @commands.Cog.listener()
     async def on_message(self, message: discord.Message) -> None:
-        if message.author.id == Pokecord_id:
+        if message.author.bot and message.author.id not in Pokecord_id and message.embeds and message.embeds[0].title == 'A wild pokémon has appeared!':
+            # Detect devenv instances
+            print(f'Identified {message.author} as Pokecord')
+            Pokecord_id.append(message.author.id)
+
+        if message.author.id in Pokecord_id:
             print(f'pokecord message: {message}')
             print(f'"{message.content}"')
             if message.embeds:
                 for e in message.embeds:
-                    title = e.title.strip('\u200c')
+                    title = e.title or ''
+                    title = title.strip('\u200c')
                     title = rationalize_characterset(title) # They're using homographs on us
                     footer = e.footer.text
                     if title == 'A wild pokémon has appeared!' or title == 'A wild pokémon has appearedǃ':
