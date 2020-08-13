@@ -19,13 +19,13 @@ While Oak does use similar mechanisms as auto-catchers to identify pokemon, he's
 The point of Oak is to give everyone even footing when playing Pokecord on in a small server with friends.
 To allow people to intentionally not catch a pokemon they already have, so their friends can fill their dex.
 
-# Why does Oak sometimes not recognise a pokemon?
+## Why does Oak sometimes not recognise a pokemon?
 
-Pokecord occasionally changes up their images, adds new pokemon, or deploys anti-cheat mechanisms.
+Pokecord sometimes changes up their images, adds new pokemon, or deploys anti-cheat mechanisms.
 He'll learn from watching you catch pokemon though, so fill those dexes and show them to Oak.
 
 (He also hasn't seen many shinies)
 
-# Sounds good, how do I use him?
+## Sounds good, how do I use him?
 
 Invite him to your server with this link! <https://discord.com/api/oauth2/authorize?client_id=590057467111538689&permissions=0&scope=bot>
