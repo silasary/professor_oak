@@ -1,9 +1,14 @@
 893772ca8e39e10f: Naganadel
+8b0e2d333339872f: Solosis
 8b1ae4e5b19ece30: Helioptile
 8b631a9cec4ee592: Dewgong
 8b69fcd6c48d8178: Celebi
 8b8d3b4be06af0f0: Togepi
+8b8d714963c37363: Togepi
 8bcef033c4e10b9e: Electrike
+8c1e31594d79cb69: Swadloon
+8c2668ccebec6c71: Cacturne
+8c8c7348ece9c973: Sewaddle
 8e4ab5f0c3b5d20b: Baltoy
 8e60689d9d95f0bc: Numel
 8e98f167879c6a49: Durant
@@ -22,6 +27,8 @@
 8fcbf3a8d027a470: Seismitoad
 9263199e6c793939: Meltan
 926769f0869b9b64: Rookidee
+930f6453936cce63: Dartrix
+953f68c12e3ad14e: Nickit
 95f4b660cc2ba58d: Basculin
 971ea060c9e7c98f: Hattrem
 97c5c93af255058d: Meowstic
@@ -30,6 +37,7 @@
 9a21e59ed6c93926: Woobat
 9a2d30daf834c5e3: Kangaskhan
 9a34e74bf0d89196: Skitty
+9a39696336c63c96: Rainy Castform
 9a39e9c3a5f6e006: Cleffa
 9a3fb0c2c324b5f8: Torterra
 9a3fb5c0c8cfc81a: Gulpin
@@ -46,6 +54,7 @@
 9b1ab8a5a5e0c7a5: Dugtrio
 9b1ae4e5cc3e12d1: Stunfisk
 9b1be4c4c46cf447: Shuckle
+9b1cd3a5b4538eb0: Frillish
 9b1ce1e3e4a69496: Omastar
 9b1eace1e167821e: Camerupt
 9b2c344bb4b3853b: Beartic
@@ -92,7 +101,10 @@
 9fc6f138c4c3998c: Cascoon
 9fc8723ce903d4f0: Simisear
 9ffc3103f2328c3c: Abomasnow
+a00bb0b6b2bc9e79: Luxio
+a386a5cd6531e365: Axew
 a4309bcccf9938ce: Blipbug
+a70f319583b19d71: Combee
 aa31ee4ed4f0919c: Flareon
 aa34d7cbd8e92036: Alolan Geodude
 aa3f95c043953e6a: Arrokuda
@@ -172,6 +184,7 @@ afcfe4e2d038d038: Tsareena
 afd0d02f3bb08cc9: Sizzlipede
 afd0d22f94a4c1cb: Vikavolt
 afd0d96e91399462: Cutiefly
+b00ea5334d7d9734: Zweilous
 b069cf9687647949: Swablu
 b09bc338cf66ce18: Morelull
 b2adacf2c481b33c: Zacian
@@ -228,6 +241,7 @@ ba36c9c1e44bc43d: Servine
 ba376dcd923049d2: Sawsbuck
 ba38b1c7e1c5863c: Lilligant
 ba3964c7c36cc4c6: Growlithe
+ba3ac586f0c195cd: Gastrodon
 ba5931e186b4c33e: Vanillite
 ba78e6c5c89dc1c1: Wurmple
 ba84e17ac62d7a94: Sinistea
@@ -235,6 +249,7 @@ ba9267a5d06b85d8: Rapidash
 ba93c16c8f6c9c38: Ribombee
 ba93c7cc9137c4c1: Gastly
 ba93e1ce9439c165: Escavalier
+ba99e16bc4b4844f: Basculin
 ba9f616295618766: Qwilfish
 baa7e178c49c852b: Shinx
 bab4ad4b93b0b0ac: Ninjask
@@ -354,7 +369,7 @@ bea6e15bd030c13b: Fearow
 beb7c548908dc1e3: Yveltal
 beb7c5c8d0498535: Gumshoos
 bec3e11e9372c06c: Alolan Vulpix
-bec4f3c1e06ae438: "Flab\xE9b\xE9"
+bec4f3c1e06ae438: Flabebe
 bec694b4d04c956b: Skrelp
 bec7c51892b2d34c: Rockruff
 bec8c533903d5a4b: Dottler
@@ -399,6 +414,8 @@ bfe9f0b4851a9486: Farfetch'd
 c1c072696d3c17d7: Zeraora
 c3cfbc3080cf4b3a: Pyroar
 c3e3ec2da59c94c8: Arcanine
+c4323f1971dc16c7: Detective Pikachu
+c7b3384c4c39c3c7: Corvisquire
 ca0bb5b483c2cb3d: Jirachi
 ca2f2b66b49396d0: Jigglypuff
 ca3c3dc3d0cfc930: Silcoon
@@ -456,6 +473,9 @@ cbe0e84bb03eb43c: Shedinja
 cbe0f03d9517cc83: Poliwhirl
 cbe4f269cc12958b: Palkia
 cbf3b227844ec1e4: Combusken
+cc5363ce4f238363: Quilava
+cc7731cec6993864: Blipbug
+ccc86070f2e2cf9e: Skiploom
 cdcd303867c3cd4c: Chewtle
 ce0f7ec8a1b0b433: Lickitung
 ce1b7cf0e126d194: Grotle
@@ -497,9 +517,11 @@ cfccb033878664cd: Mankey
 cfd1a82eb07c9525: Darumaka
 d0782e873fd8c227: Shellos
 d411abfe9761681a: Jellicent
+d8f2309a9ab1e3c9: Litwick
 da0fe5f0841f7886: Elekid
 da4da5b2d12c36c9: Archen
 da96a769b107e461: Wooper
+da9931632666e49e: Corviknight
 dab6a4499594d873: Cyndaquil
 dac22fcfa13ca470: Blissey
 dac2a535929adc4e: Tynamo
@@ -507,6 +529,8 @@ dad83d17d0a4ce61: Pelipper
 daf0b5a5e07ac14a: Gible
 daf2b30f8d74d480: Diggersby
 dbceb1c9e4328493: Venusaur
+dcd6731832b99236: Seadra
+dcdc9c9c9db482e0: Weedle
 de03b1fca174868e: Forretress
 de4ea5b0d399d809: Wynaut
 de7ca587c1d3c0b0: Garbodor
@@ -519,8 +543,11 @@ e199939993668736: Inteleon
 e49393339b30ce6c: Watchog
 e499c6319ace9ac6: Sentret
 e4c693389233cfc9: Chimecho
+e54e770d4c368627: Gabite
+e5ce8e319b24ce64: Toxtricity
 e5cfc6309b328663: Toxtricity
 e83087ce93cf94c9: Mimikyu
+e85b734c20f3cc6c: Yamask
 e86c7992926fc43c: Ledian
 e86e903397999738: Tapu Fini
 e8799786917287c6: Hakamo-o
@@ -723,6 +750,7 @@ edc7c73892369438: Magby
 edcfc63292389331: Drifloon
 ee0cb1ccd1b5d072: Palpitoad
 ee1db1c2962dccc2: Chingling
+ee26855a992dc2d9: Galarian Rapidash
 ee27b4d881c6d195: Druddigon
 ee2c93cbf0979460: Trevenant
 ee2e91d1843d6ac6: Latios
@@ -743,6 +771,7 @@ ee4939969163d29c: Magikarp
 ee4bb0b4e030f1f2: Kecleon
 ee609d1ff08694d4: Herdier
 ee60f196941e95c5: Scolipede
+ee61969ee1c4903e: Shellos
 ee63951891a56ec9: Toxel
 ee65319b9160d18f: Manectric
 ee65319bb6349990: Furfrou
