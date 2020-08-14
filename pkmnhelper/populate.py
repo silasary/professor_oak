@@ -1,7 +1,4 @@
-import hashlib
-import json
 import os
-import subprocess
 from typing import Dict, List
 
 import imagehash
