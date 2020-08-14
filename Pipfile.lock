@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "bc6335a2c26b27a63469462f9d01205d7a57c08711be0a2efe5430ead516fe11"
+            "sha256": "cc988baec297b2f0563f5de31559e209abae4d9e2bf027fb929b9fe258538301"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -43,7 +43,7 @@
         },
         "ajani": {
             "git": "https://github.com/silasary/modbot.git",
-            "ref": "6dcd84d3767a568b8471088b6adeac8714c83052"
+            "ref": "ad653e5a161a813000756a9c9b3fbb8e4300c219"
         },
         "async-timeout": {
             "hashes": [
@@ -87,6 +87,13 @@
             ],
             "index": "pypi",
             "version": "==3.2.0"
+        },
+        "deprecated": {
+            "hashes": [
+                "sha256:525ba66fb5f90b07169fdd48b6373c18f1ee12728ca277ca44567a367d9d7f74",
+                "sha256:a766c1dccb30c5f6eb2b203f87edd1d8588847709c78589e1521d769addc8218"
+            ],
+            "version": "==1.2.10"
         },
         "discord.py": {
             "hashes": [
@@ -272,6 +279,21 @@
             "index": "pypi",
             "version": "==7.2.0"
         },
+        "pygithub": {
+            "hashes": [
+                "sha256:371d17e855a2fd7a9ea1a9c71fd1d5d3e805369b60ce21121dd2931e5fbfc4e7",
+                "sha256:fc11a182ca3d88dde6ab2fbbd07e3441685cc8b738f7813fcbfc18be28c1d8ed"
+            ],
+            "index": "pypi",
+            "version": "==1.52"
+        },
+        "pyjwt": {
+            "hashes": [
+                "sha256:5c6eca3c2940464d106b99ba83b00c6add741c9becaec087fb7ccdefea71350e",
+                "sha256:8d59a976fb773f3e6a39c85636357c4f0e242707394cadadd9814f5cbaa20e96"
+            ],
+            "version": "==1.7.1"
+        },
         "pywavelets": {
             "hashes": [
                 "sha256:076ca8907001fdfe4205484f719d12b4a0262dfe6652fa1cfc3c5c362d14dc84",
@@ -366,6 +388,12 @@
             ],
             "version": "==1.25.10"
         },
+        "wrapt": {
+            "hashes": [
+                "sha256:b62ffa81fb85f4332a4f609cab4ac40709470da05643a082ec1eb88e6d9b97d7"
+            ],
+            "version": "==1.12.1"
+        },
         "yarl": {
             "hashes": [
                 "sha256:040b237f58ff7d800e6e0fd89c8439b841f777dd99b4a9cca04d6935564b9409",
@@ -417,6 +445,13 @@
                 "sha256:cf22deb93d4bcf92f345a5c3cd39d3d41d6340adc60c78bbbd6588c384fda6a1"
             ],
             "version": "==3.2.0"
+        },
+        "colorama": {
+            "hashes": [
+                "sha256:7d73d2a99753107a36ac6b455ee49046802e59d9d076ef8e47b61499fa29afff",
+                "sha256:e96da0d330793e2cb9485e9ddfd918d456036c7149416295932478192f4436a1"
+            ],
+            "version": "==0.4.3"
         },
         "distlib": {
             "hashes": [

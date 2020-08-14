@@ -19,6 +19,7 @@ pyyaml = "*"
 pillow = "*"
 imagehash = "*"
 sentry-sdk = "*"
+pygithub = "*"
 
 [dev-packages]
 autopep8 = "*"
