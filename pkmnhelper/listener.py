@@ -102,7 +102,11 @@ class Listener(commands.Cog):
         response: discord.Message = discord.utils.get(self.bot.cached_messages, id=int(rid))
         with self.get_db() as db:
             if response and response.embeds and db.check_player(user.id):
-                entry = db.get_pokedex_entry(user.id, await self.bot.redis.get(f'pkmn:lastspawn:{channel.id}:name'))
+                name = await self.bot.redis.get(f'pkmn:lastspawn:{channel.id}:name')
+                if not name:
+                    return
+
+                entry = db.get_pokedex_entry(user.id, name)
                 embed = response.embeds[0]
                 for field in embed.fields:
                     if field.name == user.display_name:
@@ -148,15 +152,17 @@ class Listener(commands.Cog):
                 pkmn = db.get_pokemon_image_by_phash(phash)
 
             if not pkmn.name:
-                await message.channel.send("I don't know this pokemon")
+                response = await message.channel.send("I don't know this pokemon")
+                await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:response', response.id)
+                await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:name', '')
             else:
                 active_players = self.active_players(message.guild)
                 embed = self.generate_embed(message, active_players, pkmn)
-                reponse: discord.Message = await message.channel.send(f'This is a `{pkmn.name}`!', embed=embed)
+                response: discord.Message = await message.channel.send(f'This is a `{pkmn.name}`!', embed=embed)
 
                 await self.clean_last_message(message.channel)
 
-                await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:response', reponse.id)
+                await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:response', response.id)
                 await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:name', pkmn.name)
 
 
@@ -191,10 +197,11 @@ class Listener(commands.Cog):
             return
         response: discord.Message = discord.utils.get(self.bot.cached_messages, id=int(rid))
         if response:
-            embed: discord.Embed = response.embeds[0]
-            for _ in embed.fields:
-                embed.remove_field(0)
-            await response.edit(embed=embed)
+            if response.embeds:
+                embed: discord.Embed = response.embeds[0]
+                for _ in embed.fields:
+                    embed.remove_field(0)
+                await response.edit(embed=embed)
             await self.bot.redis.delete(f'pkmn:lastspawn:{channel.id}:response')
 
 
