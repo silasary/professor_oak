@@ -1,6 +1,5 @@
 from pkmnhelper import populate
 
-populate.evolutions()
 populate.hash2phash()
 
 # if subprocess.run(['git', 'diff', '--exit-code', 'phashes.yaml'], check=False).returncode > 0:
