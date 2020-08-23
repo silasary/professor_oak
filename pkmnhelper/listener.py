@@ -142,11 +142,12 @@ class Listener(commands.Cog):
             print(f'>> {f.name}={f.value}')
 
     async def spawn(self, embed: discord.Embed, message: discord.Message) -> None:
-        md5 = hashing.get_md5(embed.image.url)
+        img = hashing.EmbedImage(embed.image.url)
+        md5 = img.md5
 
         await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:md5', md5)
         with self.get_db() as db:
-            phash = hashing.get_phash(embed.image.url)
+            phash = img.phash
             pkmn = db.get_pokemon_image_by_phash(phash)
             await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:phash', phash)
 
@@ -155,6 +156,8 @@ class Listener(commands.Cog):
                 response = await message.channel.send("I don't know this pokemon")
                 await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:response', response.id)
                 await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:name', '')
+                await self.do_guess(img, response)
+
             else:
                 active_players = self.active_players(message.guild)
                 embed = self.generate_embed(message, active_players, pkmn)
@@ -165,6 +168,9 @@ class Listener(commands.Cog):
                 await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:response', response.id)
                 await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:name', pkmn.name)
 
+    async def do_guess(self, img: hashing.EmbedImage, response: discord.Message) -> None:
+        await response.edit(content=f'I think that might be a {img.get_closest().name}')
+
 
     async def catch(self, message: discord.Message) -> None:
         match = catch_msg.match(message.content)
@@ -173,13 +179,13 @@ class Listener(commands.Cog):
         player_id = int(match.group(1))
         truename = match.group(2)
         print(f'Caught {truename}!')
-        md5 = await self.bot.redis.get(f'pkmn:lastspawn:{message.channel.id}:md5')
+        phash = await self.bot.redis.get(f'pkmn:lastspawn:{message.channel.id}:phash')
         with self.get_db() as db:
-            img = db.get_pokemon_image_by_hash(md5)
+            img = db.get_pokemon_image_by_phash(phash)
             if not img.pokemon:
                 img.pokemon = db.get_pokemon_by_name(truename)
                 img.save()
-                print(f'Learned that {md5} is {truename} from Catch')
+                print(f'Learned that {phash} is {truename} from Catch')
 
             elif img.name != truename:
                 print(f'Caught {truename}, expected {img.name}. Updating')
@@ -322,6 +328,3 @@ def delete_after_delay(message: discord.Message) -> None:
         await asyncio.sleep(3)
         await message.delete()
     asyncio.ensure_future(delete())
-
-
-

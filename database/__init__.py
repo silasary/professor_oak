@@ -3,6 +3,8 @@ from enum import unique
 import json
 import random
 from typing import Dict, List, Optional
+from imagehash import ImageHash
+import imagehash
 
 import peewee
 import peeweedbevolve
@@ -103,6 +105,9 @@ class PHash(BaseModel, HashMixin):
                 self.pokemon = pkmn
             self.pokemon.name = name
             self.save()
+
+    def ihash(self) -> ImageHash:
+        return imagehash.hex_to_hash(self.phash)
 
 class PokedexEntry(BaseModel):
     pokemon = peewee.ForeignKeyField(Pokemon)

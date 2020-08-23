@@ -1,12 +1,8 @@
-import hashlib
-import json
 import os
-import subprocess
-from typing import Dict, List
+from typing import Dict
 
 import imagehash
 import PIL
-import requests
 import yaml
 
 def hash2phash() -> None:
