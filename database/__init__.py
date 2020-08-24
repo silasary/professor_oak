@@ -124,7 +124,7 @@ class PokedexEntry(BaseModel):
 
 # pylint: disable=no-self-use
 class Database(Cog):
-    def __init__(self, bot: Bot):
+    def __init__(self, bot: Optional[Bot]):
         self.bot = bot
         self.pool = POOL
         if bot is not None:
@@ -172,7 +172,7 @@ class Database(Cog):
 
 
 
-POOL.evolve(interactive=False, ignore_tables=['basemodel'])
+peeweedbevolve.evolve(POOL, interactive=False, ignore_tables=['basemodel'])
 
 
 def setup(bot: Bot) -> None:
