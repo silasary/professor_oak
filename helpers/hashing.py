@@ -1,3 +1,4 @@
+from discord.errors import NoMoreItems
 import database
 from database import PHash
 import requests
@@ -5,6 +6,7 @@ import hashlib
 import os
 import PIL
 import imagehash
+import warnings
 
 class EmbedImage():
     _filename = None
@@ -44,13 +46,14 @@ class EmbedImage():
         def sortkey(h):
             return _hash - h.ihash()
 
-        with database.Database(None) as db:
+        with database.Database(None):
             hashes = list(PHash.select().where(PHash.pokemon != None))
 
             hashes.sort(key=sortkey)
             if hashes:
                 return hashes[0]
-        return None
+            raise NoMoreItems('DB Empty')
+
 
 
 def get_phash(url: str) -> str:

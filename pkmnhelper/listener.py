@@ -1,5 +1,6 @@
 import asyncio
 import hashlib
+from helpers.hashing import EmbedImage
 import os
 import re
 from typing import TYPE_CHECKING, List, Optional, Type
@@ -153,7 +154,7 @@ class Listener(commands.Cog):
 
 
             if not pkmn.name:
-                response = await message.channel.send("I don't know this pokemon")
+                response: discord.Message = await message.channel.send("I don't know this pokemon")
                 await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:response', response.id)
                 await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:name', '')
                 await self.do_guess(img, response)
@@ -161,7 +162,7 @@ class Listener(commands.Cog):
             else:
                 active_players = self.active_players(message.guild)
                 embed = self.generate_embed(message, active_players, pkmn)
-                response: discord.Message = await message.channel.send(f'This is a `{pkmn.name}`!', embed=embed)
+                response = await message.channel.send(f'This is a `{pkmn.name}`!', embed=embed)
 
                 await self.clean_last_message(message.channel)
 
@@ -212,7 +213,8 @@ class Listener(commands.Cog):
 
 
     async def info(self, embed: discord.Embed) -> None:
-        md5 = hashing.get_md5(embed.image.url)
+        embedimage = EmbedImage(embed.image.url)
+        md5 = embedimage.md5
         filename = os.path.splitext(os.path.basename(embed.image.url))[0]
         with self.get_db() as db:
             img = db.get_pokemon_image_by_hash(md5)
