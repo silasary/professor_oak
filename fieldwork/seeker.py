@@ -1,3 +1,4 @@
+from typing import List, Tuple
 import database
 import random
 import csv
@@ -8,7 +9,7 @@ from discord.ext import commands
 from discord.ext.commands import Bot, Cog
 from discord.ext.tasks import loop
 
-mons = []
+mons: List[Tuple[int, str]] = []
 
 
 # pylint: disable=no-self-use
@@ -20,9 +21,9 @@ class Fieldwork(Cog):
             self.db = bot.get_cog('database')
         if not self.db:
             self.db = database.Database(None)
-        self.observe_random_mon.start()
+        # self.observe_random_mon.start()
 
-    @loop(seconds=90)
+    # @loop(seconds=90)
     async def observe_random_mon(self) -> None:
         if not mons:
             load()
@@ -54,7 +55,7 @@ def load() -> None:
             {k: int(v) if isnumber(v) else v for k, v in row.items() if v != ""}
             for row in reader
         )
-    mons.extend([(p['id'], p.get('name.en', p.get('slug'))) for p in data])
+    mons.extend([(p['id'], p.get('name.en', p.get('slug'))) for p in data]) # type: ignore
     random.shuffle(mons)
 
 def setup(bot: commands.Bot) -> None:
