@@ -108,10 +108,13 @@ class PHash(BaseModel, HashMixin):
 
     def ihash(self) -> ImageHash:
         return imagehash.hex_to_hash(self.phash)
+class DiscordBot(BaseModel):
+    discord_id = peewee.BigIntegerField(null=False, unique=True)
 
 class PokedexEntry(BaseModel):
     pokemon = peewee.ForeignKeyField(Pokemon)
     person = peewee.ForeignKeyField(Player)
+    bot = peewee.ForeignKeyField(DiscordBot)
     caught = peewee.BooleanField(null=True)
 
     def checkmark(self) -> str:
@@ -120,6 +123,7 @@ class PokedexEntry(BaseModel):
         if self.caught:
             return '✅'
         return '❌'
+
 
 
 # pylint: disable=no-self-use
@@ -153,10 +157,11 @@ class Database(Cog):
         pkmn, _ = Pokemon.get_or_create(name=name)
         return pkmn
 
-    def get_pokedex_entry(self, player_id: int, pkmn_name: str) -> PokedexEntry:
+    def get_pokedex_entry(self, player_id: int, pkmn_name: str, bot_id: int) -> PokedexEntry:
         player = self.get_player(player_id)
+        bot = DiscordBot.get_or_create(discord_id=bot_id)[0]
         pkmn = self.get_pokemon_by_name(pkmn_name)
-        entry, _ = PokedexEntry.get_or_create(pokemon=pkmn, person=player)
+        entry, _ = PokedexEntry.get_or_create(pokemon=pkmn, person=player, bot=bot)
         return entry
 
     def get_all_pokemon(self) -> List[Pokemon]:

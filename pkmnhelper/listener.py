@@ -1,15 +1,12 @@
 import asyncio
-import hashlib
+from os import truncate
 from helpers.hashing import EmbedImage
 import os
 import re
-from typing import TYPE_CHECKING, List, Optional, Type
+from typing import TYPE_CHECKING, List, Optional
 
 from helpers import hashing
 import discord
-import imagehash
-import PIL
-import requests
 from confusable_homoglyphs import categories, confusables
 from discord.ext import commands
 
@@ -22,6 +19,7 @@ catch_msg = re.compile(r'Congratulations <@!?([0-9]+)>! You caught a level \d+ (
 lvlup_title = re.compile(r'^Congratulations ([\w ]+)!$')
 lvlup_desc = re.compile(r'^Your ([\w ]+) is now level \d+!$')
 info_title = re.compile(r'^Level \d+ (.+)$')
+hint_text = re.compile(r'^The pokémon is ([A-Za-z\_]+)\.')
 
 class Listener(commands.Cog):
     def __init__(self, bot: commands.Bot) -> None:
@@ -52,7 +50,7 @@ class Listener(commands.Cog):
                         await self.info(e)
                     elif footer.startswith("You haven't caught") or footer.startswith("You've caught "):
                         await self.dex_entry(e)
-                    elif title == 'Pokédex':
+                    elif title == 'Your pokédex':
                         await self.dex_list(e, message)
                     else:
                         print('> unknown pokecord message')
@@ -64,12 +62,14 @@ class Listener(commands.Cog):
                         print(e.to_dict())
             elif catch_msg.match(message.content):
                 await self.catch(message)
+            elif m := hint_text.match(message.content):
+                self.parse_hint(m, message)
             else:
                 print('> no embed')
-        elif re.match(r'^https://cdn.discordapp.com/attachments/.*/pokemon.png$', message.content):
+        elif re.match(r'^https://cdn.discordapp.com/attachments/.*/pokemon.(png|jpg)$', message.content):
             embed = discord.Embed().set_image(url=message.content)
             await self.spawn(embed, message)
-        else:
+        elif not message.author.bot:
             await self.bot.redis.set(f'pkmn:last:{message.channel.id}:author', message.author.id)
             await self.bot.redis.set(f'pkmn:last:{message.channel.id}:content', message.content)
 
@@ -108,7 +108,7 @@ class Listener(commands.Cog):
                 if not name:
                     return
 
-                entry = db.get_pokedex_entry(user.id, name)
+                entry = db.get_pokedex_entry(user.id, name, 716390085896962058)
                 embed = response.embeds[0]
                 for field in embed.fields:
                     if field.name == user.display_name:
@@ -117,8 +117,6 @@ class Listener(commands.Cog):
                 await response.edit(embed=embed)
 
     async def levelup(self, embed: discord.Embed, message: discord.Message) -> None:
-        if message.guild.me.permissions_in(message.channel).manage_messages:
-            delete_after_delay(message)
         reg_level = lvlup_title.match(embed.title)
         if reg_level:
             name = reg_level.group(1)
@@ -132,7 +130,7 @@ class Listener(commands.Cog):
                 return
             print(f'{member}->{reg_desc.group(1)}')
             with self.get_db() as db:
-                entry = db.get_pokedex_entry(member.id, reg_desc.group(1))
+                entry = db.get_pokedex_entry(member.id, reg_desc.group(1), message.author.id)
                 if not entry.caught:
                     entry.caught = True
                     entry.save()
@@ -172,6 +170,8 @@ class Listener(commands.Cog):
     async def do_guess(self, img: hashing.EmbedImage, response: discord.Message) -> None:
         await response.edit(content=f'I think that might be a {img.get_closest().name}')
 
+    async def parse_hint(self, m, message) -> None:
+        pass
 
     async def catch(self, message: discord.Message) -> None:
         match = catch_msg.match(message.content)
@@ -193,7 +193,7 @@ class Listener(commands.Cog):
                 img.pokemon = db.get_pokemon_by_name(truename)
                 img.save()
                 return
-            entry = db.get_pokedex_entry(player_id, truename)
+            entry = db.get_pokedex_entry(player_id, truename, message.author.id)
             entry.caught = True
             entry.save()
         await self.clean_last_message(message.channel)
@@ -210,7 +210,6 @@ class Listener(commands.Cog):
                     embed.remove_field(0)
                 await response.edit(embed=embed)
             await self.bot.redis.delete(f'pkmn:lastspawn:{channel.id}:response')
-
 
     async def info(self, embed: discord.Embed) -> None:
         embedimage = EmbedImage(embed.image.url)
@@ -264,12 +263,13 @@ class Listener(commands.Cog):
                 player.save()
             for f in embed.fields:
                 truename = f.name.split('#')[0].strip()
+                truename = truename.split('>')[1].strip()
                 pkmn = db.get_pokemon_by_name(truename)
                 if pkmn.dex_page != dex_page:
                     pkmn.dex_page = dex_page
                     pkmn.save()
                 caught = '✅' in f.value
-                entry = db.get_pokedex_entry(player_id, truename)
+                entry = db.get_pokedex_entry(player_id, truename, message.author.id)
                 if entry.caught != caught:
                     print(f'{p_name} >> {truename}={caught}')
                     entry.caught = caught
@@ -282,10 +282,10 @@ class Listener(commands.Cog):
         embed = discord.Embed()
         if message.guild:
             for p in active_players:
-                entry = db.get_pokedex_entry(p.id, pkmn.name)
+                entry = db.get_pokedex_entry(p.id, pkmn.name, message.author.id)
                 embed.add_field(name=p.display_name, value=entry.checkmark(), inline=False)
         else:
-            entry = db.get_pokedex_entry(message.author.id, pkmn.name)
+            entry = db.get_pokedex_entry(message.author.id, pkmn.name, message.author.id)
             embed.add_field(name=message.author.display_name, value=entry.checkmark(), inline=False)
         if not pkmn.flavor:
             embed.set_footer(text="I don't know what to say about this Pokémon.", icon_url='https://cdn.bulbagarden.net/upload/3/36/479Rotom-Pok%C3%A9dex.png')

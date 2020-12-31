@@ -15,7 +15,7 @@ class Recommendations(commands.Cog):
         with self.get_db() as db:
             for pkmn in db.get_all_pokemon():
                 if db.get_pokemon_by_name(pkmn.name).dex_page is not None:
-                    entry = db.get_pokedex_entry(ctx.author.id, pkmn.name)
+                    entry = db.get_pokedex_entry(ctx.author.id, pkmn.name, 716390085896962058)
 
                     if entry.caught is None:
                         missing_pages.add(pkmn.dex_page)
