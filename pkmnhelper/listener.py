@@ -13,6 +13,9 @@ import requests
 from confusable_homoglyphs import categories, confusables
 from discord.ext import commands
 
+from fastai import *
+from fastai.vision import load_learner, open_image, sys
+
 if TYPE_CHECKING:
     import database
 
@@ -144,30 +147,32 @@ class Listener(commands.Cog):
 
     async def spawn(self, embed: discord.Embed, message: discord.Message) -> None:
         img = hashing.EmbedImage(embed.image.url)
-        md5 = img.md5
+        fimg = open_image(img.filename)
+        prediction = self.bot.learn.predict(fimg)[0]
+        response = await message.channel.send(f'This is a `{prediction}`!')
 
-        await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:md5', md5)
-        with self.get_db() as db:
-            phash = img.phash
-            pkmn = db.get_pokemon_image_by_phash(phash)
-            await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:phash', phash)
+        # await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:md5', md5)
+        # with self.get_db() as db:
+        #     phash = img.phash
+        #     pkmn = db.get_pokemon_image_by_phash(phash)
+        #     await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:phash', phash)
 
 
-            if not pkmn.name:
-                response: discord.Message = await message.channel.send("I don't know this pokemon")
-                await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:response', response.id)
-                await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:name', '')
-                await self.do_guess(img, response)
+        #     if not pkmn.name:
+        #         response: discord.Message = await message.channel.send("I don't know this pokemon")
+        #         await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:response', response.id)
+        #         await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:name', '')
+        #         await self.do_guess(img, response)
 
-            else:
-                active_players = self.active_players(message.guild)
-                embed = self.generate_embed(message, active_players, pkmn)
-                response = await message.channel.send(f'This is a `{pkmn.name}`!', embed=embed)
+        #     else:
+        #         active_players = self.active_players(message.guild)
+        #         embed = self.generate_embed(message, active_players, pkmn)
+        #         response = await message.channel.send(f'This is a `{pkmn.name}`!', embed=embed)
 
-                await self.clean_last_message(message.channel)
+        #         await self.clean_last_message(message.channel)
 
-                await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:response', response.id)
-                await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:name', pkmn.name)
+        #         await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:response', response.id)
+        #         await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:name', pkmn.name)
 
     async def do_guess(self, img: hashing.EmbedImage, response: discord.Message) -> None:
         await response.edit(content=f'I think that might be a {img.get_closest().name}')
