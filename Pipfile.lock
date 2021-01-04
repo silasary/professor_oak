@@ -157,10 +157,11 @@
         },
         "imagehash": {
             "hashes": [
-                "sha256:978e25d3df66ae8fa4fb24542e46cea6d0724f02c0c760b2de4931a54d5c7482"
+                "sha256:a969a806cb704a1a88a459a2c53adf87c01b477604b4f25d565cf0f7a49ef14d",
+                "sha256:ce6c97695810f1a78da68f9e422cee8a5ed986b73398149bb015741495add656"
             ],
             "index": "pypi",
-            "version": "==4.1.0"
+            "version": "==4.2.0"
         },
         "multidict": {
             "hashes": [
