@@ -32,6 +32,6 @@ def setup_learner():
 
 AI = setup_learner()
 
-def predict(fname) -> str:
+def predict(fname: str) -> str:
     fimg = open_image(fname)
     return str(AI.predict(fimg)[0])
