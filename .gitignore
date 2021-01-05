@@ -4,5 +4,6 @@ config.json
 *.pyc
 /images/*.jpg
 /DisCatcher/
+*.pkl
 
 .pytype/
