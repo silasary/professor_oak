@@ -28,7 +28,10 @@ class Config():
 class Bot(discord.ext.commands.Bot):
     def __init__(self) -> None:
         self.config = Config()
-        super().__init__(command_prefix=discord.ext.commands.when_mentioned_or('='))
+        intents = discord.Intents.default()
+        intents.members = True
+        intents.presences = True
+        super().__init__(command_prefix=discord.ext.commands.when_mentioned_or('='), intents=intents)
         super().load_extension('pkmnhelper.listener')
         super().load_extension('pkmnhelper.recommendations')
         super().load_extension('pkmnhelper.updater')
