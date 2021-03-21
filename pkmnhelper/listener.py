@@ -64,6 +64,8 @@ class Listener(commands.Cog):
                         print(e.to_dict())
             elif catch_msg.match(message.content):
                 await self.catch(message)
+            elif message.content == 'Your account has been suspended.':
+                await message.guild.leave()
             else:
                 print('> no embed')
         elif re.match(r'^https://cdn.discordapp.com/attachments/.*/pokemon.png$', message.content):
