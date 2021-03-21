@@ -38,6 +38,7 @@ class Bot(discord.ext.commands.Bot):
         super().load_extension('database')
         super().load_extension('discordbot.owner')
         super().load_extension('discordbot.errors')
+        super().load_extension('jishaku')
         self.redis: aioredis.Redis = None
 
     def init(self) -> None:

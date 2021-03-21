@@ -25,6 +25,7 @@ pillow = "*"
 imagehash = "*"
 sentry-sdk = "*"
 fastai = "==1.0.57"
+jishaku = "*"
 
 [dev-packages]
 autopep8 = "*"
