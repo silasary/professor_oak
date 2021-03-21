@@ -22,7 +22,7 @@ jobs:
         python-version: 3.9
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip pipenv
+        python -m pip install --upgrade pip pipenv mypy flake8
         pipenv install --dev
     - name: Lint with flake8
       run: |
