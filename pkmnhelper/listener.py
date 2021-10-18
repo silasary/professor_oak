@@ -5,6 +5,7 @@ import os
 import re
 from typing import TYPE_CHECKING, List, Optional
 
+from data import get_pokemon
 from helpers import hashing
 import discord
 from confusable_homoglyphs import categories, confusables
@@ -16,6 +17,7 @@ if TYPE_CHECKING:
 Pokecord_id = [716390085896962058, 743761282108227584]
 
 catch_msg = re.compile(r'Congratulations <@!?([0-9]+)>! You caught a level \d+ ([\w ]+)!')
+hint_msg = re.compile(r'The pokémon is ([\\_\w ]+)\.')
 lvlup_title = re.compile(r'^Congratulations ([\w ]+)!$')
 lvlup_desc = re.compile(r'^Your ([\w ]+) is now level \d+!$')
 info_title = re.compile(r'^Level \d+ (.+)$')
@@ -64,6 +66,8 @@ class Listener(commands.Cog):
                         print(e.to_dict())
             elif catch_msg.match(message.content):
                 await self.catch(message)
+            elif hint_msg.match(message.content):
+                await self.hint(message)
             elif message.content == 'Your account has been suspended.':
                 await message.guild.leave()
             else:
@@ -148,22 +152,25 @@ class Listener(commands.Cog):
         img = hashing.EmbedImage(embed.image.url)
 
         await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:md5', img.md5)
+        prediction = ai.predict(img.filename)
+        phash = img.phash
+        await self.make_embed(prediction, phash, message)
+
+    async def make_embed(self, prediction, phash, message):
         with self.get_db() as db:
-            prediction = ai.predict(img.filename)
             print(prediction)
             pkmn = db.get_pokemon_by_name(prediction)
 
-            phash = img.phash
-            await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:phash', phash)
+            if phash:
+                await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:phash', phash)
             if not pkmn:
                 pkmn = db.get_pokemon_image_by_phash(phash)
-
 
             if not pkmn.name:
                 response: discord.Message = await message.channel.send("I don't know this pokemon")
                 await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:response', response.id)
                 await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:name', '')
-                await self.do_guess(img, response)
+                # await self.do_guess(img, response)
 
             else:
                 active_players = self.active_players(message.guild)
@@ -177,6 +184,26 @@ class Listener(commands.Cog):
 
     async def do_guess(self, img: hashing.EmbedImage, response: discord.Message) -> None:
         await response.edit(content=f'I think that might be a {img.get_closest().name}')
+
+    async def hint(self, message: discord.Message) -> None:
+        print("examaning hint")
+        match = hint_msg.match(message.content)
+        if match is None:
+            return
+        partial_name = match.group(1)
+        matches = []
+        for p in get_pokemon(None).values():
+            if re.match(partial_name.replace('\_', '.'), p.name):
+                matches.append(p.name)
+        print(repr(matches))
+        if not matches:
+            await message.channel.send("hmm, I think my pokedex needs updating")
+        elif len(matches) == 1:
+            if matches[0] != self.bot.redis.get(f'pkmn:lastspawn:{message.channel.id}:name'):
+                await self.bot.redis.set(f'pkmn:lastspawn:{message.channel.id}:name', matches[0])
+                await self.make_embed(matches[0], None, message)
+        else:
+            await message.channel.send("Please use Hint again")
 
 
     async def catch(self, message: discord.Message) -> None:
