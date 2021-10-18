@@ -34,6 +34,8 @@ pylint = "*"
 mypy = "*"
 pre-commit = "*"
 pytest = "*"
+types-pyyaml = "*"
+types-requests = "*"
 
 [pipenv]
 allow_prereleases = true
